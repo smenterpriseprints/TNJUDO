@@ -1,0 +1,348 @@
+<!-- <div class="col-md-6 col-md-offset-3">
+        <h2>Login</h2>
+        <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" [(ngModel)]="model.username"  required />
+                <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+            </div>
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="model.password"  required />
+                <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+            </div>
+            <div class="form-group">
+                <button [disabled]="loading" class="btn btn-primary">Login</button>
+                <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                <a [routerLink]="['/register']" class="btn btn-link">Register</a>
+            </div>
+        </form>
+    </div> -->
+
+
+    
+    <div class="main-content" style="margin-top:128px">
+	  
+            <!--
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+              | Form
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+              !-->
+              <div class="col-lg-12">
+                <div class="card">
+                  <h4 class="card-title"><strong>Form</strong></h4>
+    
+                  <div class="card-body">
+                    <form data-provide="wizard">
+                      <ul class="nav nav-process nav-process-circle">
+                        <li class="nav-item">
+                          <span class="nav-title">Sign Up Form</span>
+                          <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <span class="nav-title">Map</span>
+                          <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <span class="nav-title">Subscribe</span>
+                          <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <span class="nav-title">Confirmation and Payment</span>
+                          <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
+                        </li>
+                      </ul>
+    
+    
+                      <div class="tab-content">
+                        <div class="tab-pane fade active show" id="wizard-form-1">
+                          <br><br>
+                          <p class="text-center fs-35 text-muted">District  <strong class="text-primary">Registeration</strong></p>
+                          <p class="text-center text-gray">Please complete the following 4 steps</p>
+                          <hr class="w-100px">
+                          
+            
+    
+              <!--
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+              | Form row
+              |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+              !-->
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                                        <label for="inputName1" class="col-form-label">President Name</label>
+                        <input type="text" class="form-control" id="inputName1" placeholder="Name">
+                      </div>
+                     <div class="form-group">
+                      <label>President Phone Number</label>
+                      <small class="sidetitle">E.g. +91 123-456-7890</small>
+                      <input type="text" class="form-control" data-format="+91 123-456-789">
+                    </div>
+                     <div class="form-group col-md-6">
+                                        <label for="inputName2" class="col-form-label">President Address</label>
+                        <input type="text" class="form-control" id="inputName2" placeholder="Address">
+                      </div>
+                       <div class="col-md-6">
+                    <p>President Photo</p>
+                    <div class="form-group file-group">
+                      <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                      <input type="file" multiple>
+                    </div>
+                  </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputName3" class="col-form-label">Secretary Name</label>
+                        <input type="text" class="form-control" id="inputName3" placeholder="Name">
+                      </div>
+                    <div class="form-group">
+                      <label>Secretary Phone Number</label>
+                      <small class="sidetitle">E.g. +91 123-456-7890</small>
+                      <input type="text" class="form-control" data-format="+91 123-456-789">
+                    </div>
+                     <div class="form-group col-md-6">
+                                        <label for="inputName4" class="col-form-label">Secretary Address</label>
+                        <input type="text" class="form-control" id="inputName4" placeholder="Address">
+                      </div>
+                      <div class="col-md-6">
+                    <p>Secretary Photo</p>
+                    <div class="form-group file-group">
+                      <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                      <input type="file" multiple>
+                    </div>
+                  </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputName5" class="col-form-label">Coach Name</label>
+                        <input type="text" class="form-control" id="inputName5" placeholder="Name">
+                      </div>
+                      <div class="col-md-6 col-xl-4">
+                    <hr>
+                    <div class="form-group">
+                      <label>Coach Phone Number</label>
+                      <small class="sidetitle">E.g. +91 123-456-7890</small>
+                      <input type="text" class="form-control" data-format="+91 123-456-789">
+                    </div>
+                  </div>
+                     <div class="form-group col-md-6">
+                                        <label for="inputName6" class="col-form-label">Coach Address</label>
+                        <input type="text" class="form-control" id="inputName6" placeholder="Address">
+                      </div>
+                      <div class="col-md-6">
+                    <p>Coach Photo</p>
+                    <div class="form-group file-group">
+                      <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                      <input type="file" multiple>
+                    </div>
+                  </div>
+                       <div class="form-group col-md-6">
+                                          <label for="inputEmail4" class="col-form-label">District Phone Number</label>
+                        <input type="text" class="form-control" id="inputEmail7" placeholder="Phone No">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4" class="col-form-label">District Email</label>
+                        <input type="email" class="form-control" id="inputEmail8" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4" class="col-form-label">District Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                      </div>
+                 
+                    <div class="form-group">
+                      <label for="inputAddress" class="col-form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+    
+                    <div class="form-group">
+                      <label for="inputAddress2" class="col-form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+    
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="col-form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState" class="col-form-label">State</label>
+                        <select id="inputState" class="form-control">
+                          <option>California</option>
+                          <option>New Mexico</option>
+                          <option>New York</option>
+                          <option>Texas</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip" class="col-form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+    
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox mr-3">
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label">I agree to terms and conditions.</label>
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  
+                  
+                        </div>
+                        
+                                           <div class="tab-pane fade" id="wizard-form-2">
+                          <br><br>
+                          <p class="text-center fs-35 text-muted">Enter Your <strong class="text-primary">Club </strong> Details</p>
+                          <p class="text-center text-gray">Plot the address of the club and details</p>
+                          <hr class="w-100px">
+                          <br>
+    
+                    Map and Form ( Based on the logic)
+                    
+                        </div>
+    
+    
+    
+                        <div class="tab-pane fade" id="wizard-form-3">
+                         
+    
+             <div class="tab-pane" id="pricing-2" role="tabpanel">
+                <div class="row">
+    
+                  <div class="col-lg-3">
+                    <div class="card card-inverse card-purple text-center p-50">
+                      <div class="card-body">
+                        <h5 class="text-uppercase text-muted">Platinum</h5>
+                        <br>
+                        <h3 class="fw-100 fs-70">$25</h3>
+                        <small>Full Year</small>
+    
+                        <hr>
+    
+                        <p><strong>Discount Seminar</strong></p>
+                        <p><strong>24x7</strong> Support</p>
+                        <p><strong>5</strong> Projects</p>
+    
+                        <br><br>
+                        <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+    
+    
+    
+                  <div class="col-lg-3">
+                    <div class="card card-inverse card-primary text-center p-50">
+                      <div class="card-body">
+                        <h5 class="text-uppercase text-muted">Diamond</h5>
+                        <br>
+                        <h3 class="fw-100 fs-70">$15</h3>
+                        <small>Half Year</small>
+    
+                        <hr>
+    
+                        <p><strong>Free Seminar</strong></p>
+                        <p><strong>24x7</strong> Support</p>
+                        <p><strong>50</strong> Projects</p>
+    
+                        <br><br>
+                        <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="col-lg-3">
+                    <div class="card card-inverse card-info text-center p-50">
+                      <div class="card-body">
+                        <h5 class="text-uppercase text-muted">Gold</h5>
+                        <br>
+                        <h3 class="fw-100 fs-70">$10</h3>
+                        <small>Quarterly</small>
+    
+                        <hr>
+    
+                        <p><strong>Online</strong></p>
+                        <p><strong>24x7</strong> Support</p>
+                        <p><strong>Unlimited</strong> Projects</p>
+    
+                        <br><br>
+                        <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3">
+                    <div class="card card-inverse card-info text-center p-50">
+                      <div class="card-body">
+                        <h5 class="text-uppercase text-muted">Silver</h5>
+                        <br>
+                        <h3 class="fw-100 fs-70">$5</h3>
+                        <small>Monthly</small>
+    
+                        <hr>
+    
+                        <p><strong>Unlimited</strong> Storage</p>
+                        <p><strong>24x7</strong> Support</p>
+                        <p><strong>Unlimited</strong> Projects</p>
+    
+                        <br><br>
+                        <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+                </div>
+              </div>
+            
+    
+                        </div>
+    
+    
+    
+                        <div class="tab-pane fade" id="wizard-form-4">
+                          <br><br>
+                          <p class="text-center fs-35 text-muted">Ready to go?</p>
+                          <p class="text-center text-gray">Rapidiously facilitate web-enabled products through innovative collaboration.</p>
+                          <hr class="w-100px">
+                          <br>
+    
+                          <div class="px-20">
+                            <div class="form-group row">
+                              <label class="col-form-label col-sm-4">Username</label>
+                              <div class="form-control-plaintext col-sm-8">TheAdmin</div>
+                            </div>
+    
+                            <div class="form-group row">
+                              <label class="col-form-label col-sm-4">Email</label>
+                              <div class="form-control-plaintext col-sm-8">support@theadmin.io</div>
+                            </div>
+    
+                            <div class="form-group row">
+                              <label class="col-form-label col-sm-4">Card number</label>
+                              <div class="form-control-plaintext col-sm-8">xxxx-xxxx-xxxx-3648</div>
+                            </div>
+                          </div>
+    
+                        </div>
+                        
+                      </div>
+    
+                      <hr>
+    
+                      <div class="flexbox">
+                        <button class="btn btn-secondary" data-wizard="prev" type="button">Back</button>
+                        <button class="btn btn-secondary" data-wizard="next" type="button">Next</button>
+                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Finish</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+    
+          </div><!--/.main-content --> 
