@@ -4,14 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/components/home.component'
 import {AppModuleRouting} from './app.module.routing'
-import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
-import {FormsModule,ReactiveFormsModule,FormBuilder } from '@angular/forms'
+import {FormsModule,ReactiveFormsModule } from '@angular/forms'
 import {LoginComponent} from './login/components/login.component'
 import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
-import {HttpHelper} from './Shared/Services/http-helper.service'
-import {RegistrationDistrictService} from './registration/Service/registration-district.service'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -19,19 +15,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     LoginComponent,
     RegistrationDistrictComponent
+  
   ],
   imports: [
-    BrowserModule,    
-    HttpClientModule, 
-    HttpModule,   
-    FormsModule,       
+    BrowserModule,
+    FormsModule,    
     ReactiveFormsModule,
     RouterModule,
     AppModuleRouting,
-    BrowserAnimationsModule,
-    //ToasterModule
+    
   ],
-  providers: [HttpHelper,RegistrationDistrictService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
