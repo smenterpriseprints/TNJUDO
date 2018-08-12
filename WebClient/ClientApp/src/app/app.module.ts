@@ -6,7 +6,7 @@ import { HomeComponent } from './home/components/home.component'
 import {AppModuleRouting} from './app.module.routing'
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import {FormsModule,ReactiveFormsModule,FormBuilder } from '@angular/forms'
+import {FormsModule,ReactiveFormsModule,FormBuilder,FormGroup } from '@angular/forms'
 import {LoginComponent} from './login/components/login.component'
 import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
 import {HttpHelper} from './Shared/Services/http-helper.service'
@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule,
     AppModuleRouting,
     BrowserAnimationsModule,
+    FormGroup
     //ToasterModule
   ],
   providers: [HttpHelper,RegistrationDistrictService],
