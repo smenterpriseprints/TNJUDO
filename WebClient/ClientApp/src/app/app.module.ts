@@ -4,9 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/components/home.component'
 import {AppModuleRouting} from './app.module.routing'
-import {FormsModule,ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import {FormsModule,ReactiveFormsModule,FormBuilder,FormGroup } from '@angular/forms'
 import {LoginComponent} from './login/components/login.component'
-import {RegistrationDistrictComponent} from './registration/components/registration-district.component';
+import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
+import {HttpHelper} from './Shared/Services/http-helper.service'
+import {RegistrationDistrictService} from './registration/Service/registration-district.service'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EventRegistrationComponent } from './event-registration/event-registration.component'
 import {RegistrationMapComponent} from './registration/components/Map/registrataion-map.component'
 
@@ -18,17 +23,20 @@ import {RegistrationMapComponent} from './registration/components/Map/registrata
     RegistrationDistrictComponent,
     RegistrationMapComponent,
     EventRegistrationComponent
-  
   ],
   imports: [
-    BrowserModule,
-    FormsModule,    
+    BrowserModule,    
+    HttpClientModule, 
+    HttpModule,   
+    FormsModule,       
     ReactiveFormsModule,
     RouterModule,
     AppModuleRouting,
-    
+    BrowserAnimationsModule,
+    FormGroup
+    //ToasterModule
   ],
-  providers: [],
+  providers: [HttpHelper,RegistrationDistrictService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
