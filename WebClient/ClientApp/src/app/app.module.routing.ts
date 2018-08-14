@@ -4,11 +4,14 @@ import { HomeComponent } from "./home/components/home.component";
 import { LoginComponent } from './login/components/login.component';
 import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
 
+import {EventRegistrationComponent} from './event-registration/event-registration.component'
+
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'login',  component: LoginComponent },
     { path: 'registration-district',  component: RegistrationDistrictComponent },
+    { path: 'event',  component: EventRegistrationComponent },
     { path: 'home', component: HomeComponent,
 //     children: [           
 //         { path: 'registration-district', component: './registration/registration-district.module#RegistrationDistrictModule' },

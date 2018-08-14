@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core'
-import { FormGroup, FormControl } from '@angular/forms'
+import { Component, OnInit,Input } from '@angular/core'
+  import { FormGroup, FormControl } from '@angular/forms'
+
+  declare let L;
 
 @Component({
   templateUrl: 'registration-district.component.html'
 })
 
 export class RegistrationDistrictComponent implements OnInit {
-  ngOnInit(): void {
+
+  ngOnInit() {   
 
   }
+
+  @Input()
+  mapLatLng: string="Test Message";
 
   distRegistration: any = {};
 
@@ -17,6 +23,11 @@ export class RegistrationDistrictComponent implements OnInit {
     if (!this.distRegistration.invalid) {
       let distRegistration = this.distRegistration;
     }
+  }
+
+  receiveLatLng($event){
+    debugger;
+    this.mapLatLng = $event
   }
 
 }

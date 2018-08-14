@@ -6,15 +6,18 @@ import { HomeComponent } from './home/components/home.component'
 import {AppModuleRouting} from './app.module.routing'
 import {FormsModule,ReactiveFormsModule } from '@angular/forms'
 import {LoginComponent} from './login/components/login.component'
-import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
-
+import {RegistrationDistrictComponent} from './registration/components/registration-district.component';
+import { EventRegistrationComponent } from './event-registration/event-registration.component'
+import {RegistrationMapComponent} from './registration/components/Map/registrataion-map.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegistrationDistrictComponent
+    RegistrationDistrictComponent,
+    RegistrationMapComponent,
+    EventRegistrationComponent
   
   ],
   imports: [
