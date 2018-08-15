@@ -14,6 +14,7 @@ import {RegistrationDistrictService} from './registration/Service/registration-d
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EventRegistrationComponent } from './event-registration/event-registration.component'
 import {RegistrationMapComponent} from './registration/components/Map/registrataion-map.component'
+import {CustomTextBoxComponent} from './Shared/custom-textbox/custom-textbox.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {RegistrationMapComponent} from './registration/components/Map/registrata
     LoginComponent,
     RegistrationDistrictComponent,
     RegistrationMapComponent,
-    EventRegistrationComponent
+    EventRegistrationComponent,
+    CustomTextBoxComponent
   ],
   imports: [
     BrowserModule,    
@@ -33,7 +35,7 @@ import {RegistrationMapComponent} from './registration/components/Map/registrata
     RouterModule,
     AppModuleRouting,
     BrowserAnimationsModule,
-    FormGroup
+   // FormGroup
     //ToasterModule
   ],
   providers: [HttpHelper,RegistrationDistrictService],

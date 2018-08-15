@@ -12,7 +12,7 @@ export class RegistrationMapComponent implements OnInit {
     mapLatLangEvent: EventEmitter<string> = new EventEmitter<string>();
 
     ngOnInit() {
-        const map = L.map('map').setView([13.081803, -279.717543], 8);
+        const map = L.map('map').setView([13.067439, -279.717543], 12);
 
         map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')); //base layer
 
@@ -30,7 +30,7 @@ export class RegistrationMapComponent implements OnInit {
     private onMapClick = (event: any) => {
         alert("You clicked the map at " + event.latlng);
        // console.log(this.receiveLatLng);
-        this.mapLatLangEvent.emit("My Test Child"); // now correct this
+        this.mapLatLangEvent.emit(event.latlng); // now correct this
       }  
 
 

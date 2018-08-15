@@ -1,0 +1,15 @@
+
+<form [formGroup]="group">
+    <!-- <input type="text" data-input-hint="right" maxlength={{max}} [formControlName]="name" class="k-txt-field" placeholder={{placeHolder}}
+           [(ngModel)]="value" (keyup)="textValueChange($event.target.value)" [attr.disabled]="editMode ? null : ''" 
+           [ngClass]="{'textbox-error': (!isValid || group.get(name).dirty) && group.get(name).invalid }"> -->
+           <input type="text" data-input-hint="right" maxlength={{max}} [formControlName]="name" class="form-control" placeholder={{placeHolder}}
+          (keyup)="textValueChange($event.target.value)" [attr.disabled]="editMode ? null : ''" 
+           [ngClass]="{'alert-danger': (!isValid || group.get(name).dirty) && group.get(name).invalid }">
+</form>
+
+
+
+      
+
+

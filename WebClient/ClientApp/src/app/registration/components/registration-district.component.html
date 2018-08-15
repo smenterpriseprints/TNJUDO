@@ -45,17 +45,18 @@
              
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="presidentName" class="col-form-label">President Name</label>
-                                    <input type="text" class="form-control" id="presidentName" formControlName="PresidentName" placeholder="Name">
+                                    <label for="presidentName" class="col-form-label">President Name</label>                                 
+                                    <custom-textbox [group]="registrationForm" name="PresidentName" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
                                 </div>
                                 <div class="form-group">
                                     <label>President Phone Number</label>
                                     <small class="phoneNumber">E.g. +91 123-456-7890</small>
-                                    <input type="text" class="form-control" formControlName="PhoneNumber" >
+                                    <custom-textbox [group]="registrationForm" name="PhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="15"></custom-textbox>                                    
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="presidentAddress" class="col-form-label">President Address</label>
-                                    <input type="text" class="form-control" id="presidentAddress" formControlName="PresidentAddress" placeholder="Address">
+                                    <custom-textbox [group]="registrationForm" name="PresidentAddress" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Address"></custom-textbox>
+                                    
                                 </div>
                                 <div class="col-md-6">
                                     <p>President Photo</p>
@@ -66,16 +67,16 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="secretaryName" class="col-form-label">Secretary Name</label>
-                                    <input type="text" class="form-control" id="secretaryName" formControlName="SecretaryName" placeholder="Name">
+                                    <custom-textbox [group]="registrationForm" name="SecretaryName" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
                                 </div>
                                 <div class="form-group">
                                     <label>Secretary Phone Number</label>
                                     <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                    <input type="text" class="form-control" formControlName="SecretaryPhoneNumber" >
+                                    <custom-textbox [group]="registrationForm" name="SecretaryPhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="15" placeHolder="Name"></custom-textbox>                                    
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
-                                    <input type="text" class="form-control" id="secretaryAddress" formControlName="SecretaryAddress" placeholder="Address">
+                                    <custom-textbox [group]="registrationForm" name="SecretaryAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
                                 </div>
                                 <div class="col-md-6">
                                     <p>Secretary Photo</p>
@@ -86,19 +87,19 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="coachName" class="col-form-label">Coach Name</label>
-                                    <input type="text" class="form-control" id="coachName" formControlName="CoachName" placeholder="Name">
+                                    <custom-textbox [group]="registrationForm" name="CoachName" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
                                 </div>
                                 <div class="col-md-6 col-xl-4">
                                     <hr>
                                     <div class="form-group">
                                         <label>Coach Phone Number</label>
                                         <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <input type="text" class="form-control" formControlName="CoachPhoneNumber">
+                                        <custom-textbox [group]="registrationForm" name="CoachPhoneNumber" [pattern]="'[0-9]+'" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="15"></custom-textbox>                                        
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="coachAddress" class="col-form-label">Coach Address</label>
-                                    <input type="text" class="form-control" id="CoachAddress" formControlName="CoachAddress" placeholder="Address">
+                                    <custom-textbox [group]="registrationForm" name="CoachAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Address"></custom-textbox>                                
                                 </div>
                                 <div class="col-md-6">
                                     <p>Coach Photo</p>
@@ -109,44 +110,44 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="districtPhoneNumber" class="col-form-label">District Phone Number</label>
-                                    <input type="text" class="form-control" id="districtPhoneNumber" formControlName="DistrictPhoneNumber" placeholder="Phone No">
+                                    <custom-textbox [group]="registrationForm" name="DistrictPhoneNumber" [pattern]="'[0-9]+'" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="15" placeHolder="Phone No"></custom-textbox>                                    
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="districtEmail" class="col-form-label">District Email</label>
-                                    <input type="email" class="form-control" id="districtEmail" formControlName="DistrictEmail" placeholder="Email">
+                                    <custom-textbox [group]="registrationForm" name="DistrictEmail" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Email"></custom-textbox>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="districtPassword" class="col-form-label">District Password</label>
-                                    <input type="password" class="form-control" formControlName="DistrictPassword" id="districtPassword" placeholder="Password">
+                                    <custom-textbox [group]="registrationForm" name="DistrictPassword" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Password"></custom-textbox>                                    
                                 </div>
 
                                 <div class="form-group">
                                     <label for="districtAddress1" class="col-form-label">Address</label>
-                                    <input type="text" class="form-control" id="districtAddress1" formControlName="DistrictAddress1" placeholder="1234 Main St">
+                                    <custom-textbox [group]="registrationForm" name="DistrictAddress1" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="1234 Main St"></custom-textbox>                                    
                                 </div>
 
                                 <div class="form-group">
                                     <label for="districtAddress2" class="col-form-label">Address 2</label>
-                                    <input type="text" class="form-control" id="districtAddress2" formControlName="DistrictAddress2" placeholder="Apartment, studio, or floor">
+                                    <custom-textbox [group]="registrationForm" name="DistrictAddress2" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Apartment, studio, or floor"></custom-textbox>                                    
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="districtCity" class="col-form-label">City</label>
-                                        <input type="text" class="form-control" formControlName="DistrictCity" id="districtCity">
+                                        <custom-textbox [group]="registrationForm" name="DistrictCity" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="City"></custom-textbox>                                        
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="districtState" class="col-form-label">State</label>
-                                        <select id="districtState" formControlName="DistrictState" class="form-control">
+                                        <!-- <select id="districtState" formControlName="DistrictState" class="form-control">
                                             <option>California</option>
                                             <option>New Mexico</option>
                                             <option>New York</option>
                                             <option>Texas</option>
-                                        </select>
+                                        </select> -->
                                     </div>
                                     <div class="form-group col-md-2">
                                         <label for="districtZip" class="col-form-label">Zip</label>
-                                        <input type="text" formControlName="DistrictZip" class="form-control" id="districtZip">
+                                        <custom-textbox [group]="registrationForm" name="DistrictZip" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="6" placeHolder="Zip Code"></custom-textbox>                                        
                                     </div>
                                 </div>
 
