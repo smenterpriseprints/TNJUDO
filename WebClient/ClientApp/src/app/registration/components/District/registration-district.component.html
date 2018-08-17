@@ -1,0 +1,188 @@
+<div class="main-content" style="margin-top:128px">
+
+    <div class="col-lg-12">
+        <div class="card">
+            <h4 class="card-title">
+                <strong>Form</strong>
+            </h4>
+            <div class="card-body">
+                <form [formGroup]="registrationForm" (ngSubmit)="onDistrictRegistration()" data-provide="wizard">
+                    <ul class="nav nav-process nav-process-circle">
+                        <li class="nav-item">
+                         <span class="nav-title">Map</span>
+                           
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
+                        </li>
+
+                        <li class="nav-item">
+                                <span class="nav-title">Sign Up Form</span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                        </li>
+                       
+                    </ul>
+
+
+                    <div class="tab-content">
+                         <!-- Map starts-->
+
+                         <div class="tab-pane fade active show"  id="wizard-form-1">
+                                <br>
+                                <br>
+                                <p class="text-center fs-35 text-muted">Enter Your
+                                    <strong class="text-primary">Club </strong> Details</p>
+                                <p class="text-center text-gray">Plot the address of the club and details</p>
+                                <hr class="w-100px">
+                                <br> Map and Form ( Based on the logic)
+    {{mapLatLng}}
+                                <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
+                            </div>
+    
+                            <!-- Map Ends-->
+
+                        <div  class="tab-pane fade" id="wizard-form-2">
+                            <br>
+                            <br>
+                            <p class="text-center fs-35 text-muted">District
+                                <strong class="text-primary">Registeration</strong>
+                            </p>
+                            <!-- <p class="text-center text-gray">Please complete the following 4 steps</p> -->
+                            <hr class="w-100px">
+
+
+
+             
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="presidentName" class="col-form-label">President Name</label>                                 
+                                    <custom-textbox [group]="registrationForm" name="PresidentName" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
+                                </div>
+                                <div class="form-group">
+                                    <label>President Phone Number</label>
+                                    <small class="phoneNumber">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="registrationForm" name="PhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="15"></custom-textbox>                                    
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="presidentAddress" class="col-form-label">President Address</label>
+                                    <custom-textbox [group]="registrationForm" name="PresidentAddress" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Address"></custom-textbox>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <p>President Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser"  placeholder="Choose file..." readonly>
+                                        <input type="file" (change)="onSelectPhoto($event,'PresidentPhoto')" multiple>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="secretaryName" class="col-form-label">Secretary Name</label>
+                                    <custom-textbox [group]="registrationForm" name="SecretaryName" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Secretary Phone Number</label>
+                                    <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="registrationForm" name="SecretaryPhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="15" placeHolder="Name"></custom-textbox>                                    
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
+                                    <custom-textbox [group]="registrationForm" name="SecretaryAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Secretary Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                                        <input type="file"  (change)="onSelectPhoto($event,'SecretaryPhoto')" multiple>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="coachName" class="col-form-label">Coach Name</label>
+                                    <custom-textbox [group]="registrationForm" name="CoachName" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>                                    
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <hr>
+                                    <div class="form-group">
+                                        <label>Coach Phone Number</label>
+                                        <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                        <custom-textbox [group]="registrationForm" name="CoachPhoneNumber" [pattern]="'[0-9]+'" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="15"></custom-textbox>                                        
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="coachAddress" class="col-form-label">Coach Address</label>
+                                    <custom-textbox [group]="registrationForm" name="CoachAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Address"></custom-textbox>                                
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Coach Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                                        <input type="file"  (change)="onSelectPhoto($event,'CoachPhoto')" multiple>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="districtPhoneNumber" class="col-form-label">District Phone Number</label>
+                                    <custom-textbox [group]="registrationForm" name="DistrictPhoneNumber" [pattern]="'[0-9]+'" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="15" placeHolder="Phone No"></custom-textbox>                                    
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="districtEmail" class="col-form-label">District Email</label>
+                                    <custom-textbox [group]="registrationForm" name="DistrictEmail" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Email"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="districtPassword" class="col-form-label">District Password</label>
+                                    <custom-textbox [group]="registrationForm" name="DistrictPassword" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Password"></custom-textbox>                                    
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="districtAddress1" class="col-form-label">Address</label>
+                                    <custom-textbox [group]="registrationForm" name="DistrictAddress1" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="1234 Main St"></custom-textbox>                                    
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="districtAddress2" class="col-form-label">Address 2</label>
+                                    <custom-textbox [group]="registrationForm" name="DistrictAddress2" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Apartment, studio, or floor"></custom-textbox>                                    
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="districtCity" class="col-form-label">City</label>
+                                        <custom-textbox [group]="registrationForm" name="DistrictCity" [required]="false" [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="City"></custom-textbox>                                        
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="districtState" class="col-form-label">State</label>
+                                        <!-- <select id="districtState" formControlName="DistrictState" class="form-control">
+                                            <option>California</option>
+                                            <option>New Mexico</option>
+                                            <option>New York</option>
+                                            <option>Texas</option>
+                                        </select> -->
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="districtZip" class="col-form-label">Zip</label>
+                                        <custom-textbox [group]="registrationForm" name="DistrictZip" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode" [isValid]="isValid" [max]="6" placeHolder="Zip Code"></custom-textbox>                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox mr-3">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label">I agree to terms and conditions.</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="flexbox">
+                        <button class="btn btn-secondary" data-wizard="prev" type="button">Back</button>
+                        <button class="btn btn-secondary" data-wizard="next" type="button">Next</button>
+                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Finish</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--/.main-content -->

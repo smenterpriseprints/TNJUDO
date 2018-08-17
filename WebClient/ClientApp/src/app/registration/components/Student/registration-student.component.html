@@ -9,12 +9,12 @@
                 <form [formGroup]="registrationForm" (ngSubmit)="onDistrictRegistration()" data-provide="wizard">
                     <ul class="nav nav-process nav-process-circle">
                         <li class="nav-item">
-                            <span class="nav-title">Sign Up Form</span>
+                            <span class="nav-title">Map</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                         </li>
 
                         <li class="nav-item">
-                            <span class="nav-title">Map</span>
+                            <span class="nav-title">Sign Up Form</span>                            
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
                         </li>
 
@@ -31,13 +31,29 @@
 
 
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="wizard-form-1">
+                           <!-- Map starts-->
+
+                           <div class="tab-pane fade active show" id="wizard-form-1">
+                                <br>
+                                <br>
+                                <p class="text-center fs-35 text-muted">Enter Your
+                                    <strong class="text-primary">Club </strong> Details</p>
+                                <p class="text-center text-gray">Plot the address of the club and details</p>
+                                <hr class="w-100px">
+                                <br> Map and Form ( Based on the logic)
+    {{mapLatLng}}
+                                <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
+                            </div>
+    
+                            <!-- Map Ends-->
+
+                        <div class="tab-pane fade" id="wizard-form-2">
                             <br>
                             <br>
-                            <p class="text-center fs-35 text-muted">District
+                            <p class="text-center fs-35 text-muted">Student
                                 <strong class="text-primary">Registeration</strong>
                             </p>
-                            <p class="text-center text-gray">Please complete the following 4 steps</p>
+                            <!-- <p class="text-center text-gray">Please complete the following 4 steps</p> -->
                             <hr class="w-100px">
 
 
@@ -161,21 +177,7 @@
                             </div>
                         </div>
 
-                        <!-- Map starts-->
-
-                        <div class="tab-pane fade" id="wizard-form-2">
-                            <br>
-                            <br>
-                            <p class="text-center fs-35 text-muted">Enter Your
-                                <strong class="text-primary">Club </strong> Details</p>
-                            <p class="text-center text-gray">Plot the address of the club and details</p>
-                            <hr class="w-100px">
-                            <br> Map and Form ( Based on the logic)
-{{mapLatLng}}
-                            <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
-                        </div>
-
-                        <!-- Map Ends-->
+                     
 
 
                         <div class="tab-pane fade" id="wizard-form-3">

@@ -1,6 +1,6 @@
 import { Component, OnInit,Input,ChangeDetectorRef  } from '@angular/core'
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
-import { RegistrationDistrictService } from '../Service/registration-district.service'
+import { RegistrationDistrictService } from '../../Service/registration-district.service'
 
 import { Router } from '@angular/router'
 

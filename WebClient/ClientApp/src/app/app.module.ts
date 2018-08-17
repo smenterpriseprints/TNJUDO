@@ -8,7 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import {FormsModule,ReactiveFormsModule,FormBuilder,FormGroup } from '@angular/forms'
 import {LoginComponent} from './login/components/login.component'
-import {RegistrationDistrictComponent} from './registration/components/registration-district.component'
+import {RegistrationDistrictComponent} from './registration/components/District/registration-district.component'
+import {RegistrationStudentComponent} from './registration/components/Student/registration-student.component'
+import {RegistrationClubComponent} from './registration/components/Club/registration-club.component'
+
 import {HttpHelper} from './Shared/Services/http-helper.service'
 import {RegistrationDistrictService} from './registration/Service/registration-district.service'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +25,8 @@ import {CustomTextBoxComponent} from './Shared/custom-textbox/custom-textbox.com
     HomeComponent,
     LoginComponent,
     RegistrationDistrictComponent,
+    RegistrationStudentComponent,
+    RegistrationClubComponent,
     RegistrationMapComponent,
     EventRegistrationComponent,
     CustomTextBoxComponent
@@ -34,9 +39,7 @@ import {CustomTextBoxComponent} from './Shared/custom-textbox/custom-textbox.com
     ReactiveFormsModule,
     RouterModule,
     AppModuleRouting,
-    BrowserAnimationsModule,
-   // FormGroup
-    //ToasterModule
+    BrowserAnimationsModule
   ],
   providers: [HttpHelper,RegistrationDistrictService],
   bootstrap: [AppComponent]
