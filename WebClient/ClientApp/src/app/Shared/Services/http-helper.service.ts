@@ -1,34 +1,34 @@
-import { Observer } from 'rxjs';
-import { Injectable, Inject, OnInit, } from '@angular/core';
+import { Injectable,  OnInit, } from '@angular/core';
 import { Http,RequestOptions,Headers } from '@angular/http';
-import { HttpClient, HttpHeaders,HttpErrorResponse } from '@angular/common/http';
+import {  HttpHeaders,HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import 'rxjs/Rx';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/publishReplay';
 import 'rxjs/add/observable/throw';
 import { Router } from '@angular/router';
-import {APP_CONFIG} from '../../../environments/environment'
-import {AppConfig} from '../../app.config'
+import {APP_CONFIG} from 'src/environments/environment';
 
 @Injectable()
 export class HttpHelper implements OnInit {
+    //members declaration
     protected headers: HttpHeaders;
-     appServiceEndpoint:any="http://localhost:61009/";
+    protected appServiceEndpoint:any="";
+
     constructor(protected router: Router, protected _http: Http) {
+        debugger;
+        this.appServiceEndpoint=APP_CONFIG.appServiceEndpoint;
      
     }
     ngOnInit(){
-        this.appServiceEndpoint=APP_CONFIG.appServiceEndpoint;
     }
 
-    
     //Get Method of API
     protected get(url: string): Observable<any> {   
         debugger;
-        const httpOptions = {
-            headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-          };
+        // const httpOptions = {
+        //     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+        //   };
 
         return this._http.get(this.appServiceEndpoint + url)
            .map(res => { return HttpHelper.json(res); })
@@ -40,7 +40,7 @@ export class HttpHelper implements OnInit {
         if (args == null) args = {};
         if (args.headers === undefined) args.headers = this.headers;
 
-        let body = JSON.stringify({data});            
+        //let body = JSON.stringify({data});            
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
 
@@ -106,17 +106,4 @@ export class HttpHelper implements OnInit {
         return Observable.throw(error);
     }
 
-    // initializeheaders() {
-    //     this.headers = new HttpHeaders();
-    //     this.headers = this.headers.append('Authorization', "Bearer ".concat(this.authService.userInfo.token));
-    //     this.headers = this.headers.append('Content-Type', 'application/json');
-    //     if (this.authService.getSessionTenantId() != null && this.authService.getSessionTenantId() != "") {
-    //         let sessionId = this.authService.getSessionTenantId();
-    //         this.headers = this.headers.append('SessionTenantId', sessionId != null ? sessionId : "");
-    //     }
-    //     if (this.authService.getSessionTenantName() != null && this.authService.getSessionTenantName() != "") {
-    //         let sessionName = this.authService.getSessionTenantName();
-    //         this.headers = this.headers.append('SessionTenantName', sessionName != null ? sessionName : "");
-    //     }
-    // }
 }

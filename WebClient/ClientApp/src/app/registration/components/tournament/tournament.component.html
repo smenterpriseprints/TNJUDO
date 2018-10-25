@@ -1,0 +1,226 @@
+<div class="col-12">
+  <form [formGroup]="tournamentRegistrationForm" (ngSubmit)="onTournamentRegistration()" data-provide="wizard">
+    <div class="card">
+      <h4 class="card-title"><strong>Tournament</strong> Registration</h4>
+
+
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="FullName" class="col-form-label">Full Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="FullName" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="FullName"></custom-textbox>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="DateOfBirth" class="col-form-label">Date Of Birth</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="DateOfBirth" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="DateOfBirth"></custom-textbox>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="MobileNo" class="col-form-label">Mobile No</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="MobileNo" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="MobileNo"></custom-textbox>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="EmailId" class="col-form-label">Email Id</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="EmailId" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="EmailId"></custom-textbox>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="AgeAsPerLastBirthday" class="col-form-label">Age As Per Last Birthday</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="AgeAsPerLastBirthday" [required]="true"
+                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="AgeAsPerLastBirthday"></custom-textbox>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="Height" class="col-form-label">Height (cm)</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="Height" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="Height"></custom-textbox>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="Weight" class="col-form-label">Weight (kg)</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="Weight" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="Weight"></custom-textbox>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="CompleteResidentialAddress" class="col-form-label">Complete Residential Address</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="CompleteResidentialAddress" [required]="true"
+                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="CompleteResidentialAddress"></custom-textbox>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="EducationalInstitutionName" class="col-form-label">Educational Institution Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="EducationalInstitutionName" [required]="true"
+                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="EducationalInstitutionName"></custom-textbox>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="CurrentStandardLevel" class="col-form-label">Current Standard Level</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="CurrentStandardLevel" [required]="true"
+                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="CurrentStandardLevel"></custom-textbox>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="District" class="col-form-label">District</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="District" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="District"></custom-textbox>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="ClubName" class="col-form-label">Club Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="ClubName" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="ClubName"></custom-textbox>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="CoachName" class="col-form-label">Coach Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="CoachName" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="Coach Name"></custom-textbox>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h4 class="card-title"><strong>Family</strong> Details</h4>
+
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="FatherName" class="col-form-label">Father Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="FatherName" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="Father Name"></custom-textbox>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="FatherOccupation" class="col-form-label">Father Occupation</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="FatherOccupation" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="FatherOccupation"></custom-textbox>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="MotherName" class="col-form-label">Mother Name</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="MotherName" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="MotherName"></custom-textbox>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="MotherOccupation" class="col-form-label">Mother Occupation</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="MotherOccupation" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="MotherOccupation"></custom-textbox>
+
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="FamilyIncome" class="col-form-label">Family Income</label>
+              <custom-textbox [group]="tournamentRegistrationForm" name="FamilyIncome" [required]="true" [editMode]="isEditMode"
+                [isValid]="isValid" [max]="100" placeHolder="FamilyIncome"></custom-textbox>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="card">
+      <h4 class="card-title"><strong>Documents</strong> To Be Uploaded
+
+      </h4>
+
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <p>Passport Size Photo</p>
+            <div class="input-group file-group">
+              <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+              <input type="file" multiple>
+              <span class="input-group-append">
+                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+              </span>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <p>Any document (Aadhaar card, Class X certificate)</p>
+            <div class="input-group file-group">
+              <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+              <input type="file" multiple>
+              <span class="input-group-append">
+                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+              </span>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4">
+            <p>Income Certificate (Father / Mother )</p>
+            <div class="input-group file-group">
+              <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+              <input type="file" multiple>
+              <span class="input-group-append">
+                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="col-md-4">
+      <button class="btn btn-w-md btn-info" type="submit">Submit</button>
+    </div>
+  </form>
+</div>

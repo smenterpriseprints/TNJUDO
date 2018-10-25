@@ -1,10 +1,7 @@
 
 import {Router} from '@angular/router'
-import {HttpClient} from '@angular/common/http'
 import { HttpHelper } from '../../Shared/Services/http-helper.service'
 import { Injectable, Inject, OnInit } from '@angular/core';
-import {APP_CONFIG} from '../../../environments/environment'
-import {AppConfig} from '../../app.config'
 import { Http, Response, Headers, Request, RequestMethod, URLSearchParams, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs';
 
@@ -17,7 +14,7 @@ export class RegistrationDistrictService extends HttpHelper{
     }
 
     postDistrictRegistration(values) {        
-        return this.post("api/DistrictRegistration/SaveDistRegistration",values);
+        return this.post("api/District/SaveDistrict",values);
     }
 
     postDistrictRegistration1(values) {        

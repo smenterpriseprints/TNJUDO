@@ -2,6 +2,7 @@ var clientapp = require('clientapp');
 var app=clientapp();
 
 app.get('/',function(req,res){
+    debugger;
     res.sendFile(__dirname+'/indix.html');
 });
 

@@ -14,7 +14,7 @@ export class RegistrationDistrictComponent implements OnInit {
   
   
   isEditMode: boolean = true;
-    isValid: boolean = true;
+  isValid: boolean = true;
 
   mapLatLng: string="Test Message";
   distRegistration: any = {};
