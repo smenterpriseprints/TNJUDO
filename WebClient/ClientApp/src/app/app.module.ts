@@ -23,7 +23,8 @@ import {TournamentComponent} from './registration/components/tournament/tourname
 import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid';
 import {TournamentListGridComponent} from './registration/components/tournament-list-grid/tournament-list-grid.component'
 import { AuthGuard } from "./_guard/auth.guard";
-import {BrowserToaster} from "src/app/CommonModules/common"
+import {BrowserToaster} from "src/app/CommonModules/common";
+import { UploadComponent } from './registration/components/Upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {BrowserToaster} from "src/app/CommonModules/common"
     CustomTextBoxComponent,
     TournamentComponent,
     jqxGridComponent,
-    TournamentListGridComponent
+    TournamentListGridComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,    
@@ -48,7 +50,7 @@ import {BrowserToaster} from "src/app/CommonModules/common"
     ReactiveFormsModule,
     RouterModule,
     AppModuleRouting,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [HttpHelper,RegistrationDistrictService,TournamentRegistrationService,AuthGuard,BrowserToaster],
   bootstrap: [AppComponent]

@@ -6,6 +6,8 @@ import {APP_CONFIG} from 'src/environments/environment';
 @Component({
   //selector: 'app-tournament-list-grid',
   templateUrl: './tournament-list-grid.component.html',
+  styles:['.red {color:red}'],
+  styleUrls:['./tournament-list-grid.component.css']
 })
 export class TournamentListGridComponent {
 
@@ -16,6 +18,10 @@ export class TournamentListGridComponent {
         { name: 'UserId', type: 'string' },
         { name: 'UserName', type: 'string' },
         { name: 'MobileNo', type: 'string' },
+        { name: 'IsAadharNameValid', type: 'string' },
+        { name: 'IsAadharDOBValid', type: 'string' },
+        { name: 'IsAadharNumberValid', type: 'string' },
+        { name: 'IsAadharAddressValid', type: 'string' },
    
       ],
       id: 'id',
@@ -29,11 +35,23 @@ export class TournamentListGridComponent {
 
     return 850;
   }
+  cellClass = (row: number, columnfield: any, value: boolean): string => {
+    debugger;
+    if (value) {
+        return 'green';
+    }
+    else {
+        return 'red';
+    }
+}
   columns: any[] =
     [
-      { text: 'UserId', datafield: 'UserId', width: 250 },
-      { text: 'UserName', datafield: 'UserName', width: 250 },
-      { text: 'MobileNo', datafield: 'MobileNo', width: 250 },
-  
+      { text: 'User Id', datafield: 'UserId', width: 250 },
+      { text: 'User Name', datafield: 'UserName', width: 250 },
+      { text: 'Mobile No', datafield: 'MobileNo', width: 250 },
+      { text: 'Is Aadhar Name Valid', datafield: 'IsAadharNameValid', width: 250,cellclassname: this.cellClass },
+      { text: 'Is Aadhar DOB Valid', datafield: 'IsAadharDOBValid', width: 250,cellclassname: this.cellClass },
+      { text: 'Is Aadhar Number Valid', datafield: 'IsAadharNumberValid', width: 250,cellclassname: this.cellClass },
+      { text: 'Is Aadhar Address Valid', datafield: 'IsAadharAddressValid', width: 250,cellclassname: this.cellClass },
     ];
 }

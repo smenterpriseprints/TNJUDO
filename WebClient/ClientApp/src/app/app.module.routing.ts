@@ -9,7 +9,8 @@ import { RegistrationClubComponent } from './registration/components/Club/regist
 import { EventRegistrationComponent } from './event-registration/event-registration.component'
 import { TournamentComponent } from './registration/components/tournament/tournament.component';
 import { TournamentListGridComponent } from './registration/components/tournament-list-grid/tournament-list-grid.component';
-import { AuthGuard } from './_guard/auth.guard'
+import { AuthGuard } from './_guard/auth.guard';
+import { UploadComponent } from './registration/components/Upload/upload.component';
 
 
 const appRoutes: Routes = [
@@ -25,8 +26,9 @@ const appRoutes: Routes = [
         //         { path: 'registration-district', component: './registration/registration-district.module#RegistrationDistrictModule' },
         // ]
     },
-    { path: 'Tournament', component: TournamentComponent, canActivate: [AuthGuard] },
-    { path: 'TournamentList', component: TournamentListGridComponent, canActivate: [AuthGuard] }
+    { path: 'Tournament', component: TournamentComponent },
+    { path: 'TournamentList', component: TournamentListGridComponent },
+    { path: 'Upload', component: UploadComponent }
 
 ];
 
