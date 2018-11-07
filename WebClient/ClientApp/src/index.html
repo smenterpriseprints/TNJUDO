@@ -27,22 +27,54 @@
     <meta name="twitter:card" content="summary_large_image">
     
     <style>
+        .topbar{
+            background: linear-gradient(#EC1711, orange) !important;
+            position:relative !important;
+        }
         .topbar .menu1 {
             margin-left: 12px;
             margin-bottom: 0;
             white-space: nowrap;
+            background: linear-gradient(#EC1711, orange) !important;
         }
 
         .menu-item {
             vertical-align: top;
             -webkit-transition: opacity 0.2s linear;
             transition: opacity 0.2s linear;
-        }
-
+            background: linear-gradient(#EC1711, orange) !important;
+            margin:0px !important;
+            }
         .menu1 {
             list-style: none;
             padding-left: 0;
             margin-bottom: 30px;
+            background: linear-gradient(#EC1711, orange) !important;
+            color:black;
+        }
+
+        body{
+            background: linear-gradient(#EC1711, orange) !important;
+            color:black;
+        }
+        #title1{
+            color: white;
+            font-weight: 900;
+            font-size: 36px;
+            font-family: Lato;
+        }
+        #topbar1{
+            height:100px !important;
+        }
+        #newsslide{
+            font-weight:900;
+            font-size:24px;
+            font-family:Lato;
+            color:white;
+        }
+        .site-footer{
+            background: linear-gradient(#EC1711, orange) !important;
+            color:black !important;
         }
     </style>
     
@@ -64,16 +96,36 @@
            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
            !-->
          
-    <header class="topbar">
+    <header class="topbar" style="height:100px !important"> 
         <div class="topbar-left">
-
-            <p><code>TNJUDO LOGO</code></p>
+            <div class="row">
+             <div class="col-lg-6">
+                    <img src="assets/img/image1.jpeg"  width="75" height="75" alt="TNJA LOGO">
+             </div>       
+             <div class="col-lg-6" style="left:80px !important">
+                    <img src="assets/img/2.jpg"  width="75" height="75" alt="TNJA LOGO">
+             </div>
+             </div>
         </div>
         <div class="topbar-center">
-            <p><code>Tamil Nadu Judo Association</code></p>
+            <div class="row">
+                <div class="col-lg-6">
+                <img src="assets/img/tnjalogo.jpg"  width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-lg-6" style="right:150px; top:25px;">
+            <p><code id="title1">Tamil Nadu Judo Association</code></p>
+                </div>
+            </div>
         </div>
         <div class="topbar-right">
-            <p><code>Association Regd No :</code></p>
+            <div class="row">
+                <div class="col-lg-6" style="right:80px !important">
+                        <img src="assets/img/image2.jpg"  width="75" height="75" alt="TNJA LOGO">
+                </div>
+                 <div class="col-lg-6">
+                        <img src="assets/img/image3.jpeg"  width="75" height="75" alt="TNJA LOGO">
+                 </div>
+            </div>
         </div>
     </header>
     <!--
@@ -81,9 +133,14 @@
     | Three parts TOP BAR
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
+    <!-- News slide-->
+    <header class="topbar" style="height:0px !important; top:20px;">
+                <marquee id="newsslide" direction="left" > Upcoming Tournament scheduled on 29/11/2018.<a href="">Click Here To Register</a></marquee>	
+    </header>
+
     <!-- Topbar -->
    
-    <header class="topbar topbar-expand-lg" style="margin-top:300px;position:absolute">
+    <header class="topbar topbar-expand-lg" style="margin-top:45px;">
         <div class="topbar-left">
 
             <nav class="topbar-navigation">
@@ -278,7 +335,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" [routerLink]="['Student']">
+                                <a class="menu-link" [routerLink]="['Student']" style="background: linear-gradient(#EC1711, orange) !important;">
                                     <span class="title">Student</span>
                                 </a>
                                 <ul class="menu-sub-submenu" style="z-index:999;width:500px">
@@ -771,7 +828,7 @@
     | Pager
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
-    <div class="col-lg-12" style="
+    <!--<div class="col-lg-12" style="
  padding-left: 0px !important;
     padding-right: 0px !important;
     margin-right: 0px !important;
@@ -808,7 +865,7 @@
             </div>
         </div>
     </div>
-    
+-->
     <app-root></app-root>
 
 
@@ -817,7 +874,7 @@
         <div class="row gap-y">
             <div class="col-lg-5">
                 <h5 class="text-uppercase fs-14 ls-1">About TNJA</h5>
-                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-justify" style="color:white;">TNJA  has close to practitioners ,across the state ,  bringing several laurels to the state at  national levels .  TNJA  has produced  32 black belts and 8 Sports Authority Of India certified coaches , who  lay the path to propagate the art to newer heights within the next  two years  , with the help of the  SDAT , government  of Tamilnadu , the schools ,  colleges  and the corporate  world’s  support .Judo , being a recognized Olympic Discipline , has enabled its practitioners to get student cash awards ranging between rs. 10000 to 200,000 through CM trophy, rds bds games , cbse , and khelo india games . The Students also are given a opportunity to get free quota seats in Medical, Engineering, Arts and Science collage’s  . Judo  also enables the player   to  get  Central and state government  Jobs as well  as private Sector Jobs too.The manifest section of this portal shall testify the individual players enhancement through Judo in their life .</p>
             </div>
             <div class="col-6 col-md-4 col-lg-2 text-left1 text-lg-center1">
                 <h5 class="text-uppercase fs-14 ls-1">Company</h5>
