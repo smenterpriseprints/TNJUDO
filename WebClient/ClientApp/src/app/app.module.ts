@@ -25,6 +25,7 @@ import {TournamentListGridComponent} from './registration/components/tournament-
 import { AuthGuard } from "./_guard/auth.guard";
 import {BrowserToaster} from "src/app/CommonModules/common";
 import { UploadComponent } from './registration/components/Upload/upload.component';
+import { LoginNewComponent } from './login-new/login-new.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { UploadComponent } from './registration/components/Upload/upload.compone
     TournamentComponent,
     jqxGridComponent,
     TournamentListGridComponent,
-    UploadComponent
+    UploadComponent,
+    LoginNewComponent
   ],
   imports: [
     BrowserModule,    
