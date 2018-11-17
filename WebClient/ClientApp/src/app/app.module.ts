@@ -27,6 +27,7 @@ import { BrowserToaster } from "src/app/CommonModules/common";
 import { UploadComponent } from './registration/components/Upload/upload.component';
 import { TournamentVerificationListComponent } from './registration/components/tournament-verification-list/tournament-verification-list.component';
 import { TournamentNonverifyListComponent } from './registration/components/tournament-nonverify-list/tournament-nonverify-list.component';
+import { LoginNewComponent } from './login-new/login-new.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TournamentNonverifyListComponent } from './registration/components/tour
     TournamentVerificationListComponent,
     UploadComponent,
     TournamentVerificationListComponent,
-    TournamentNonverifyListComponent
+    TournamentNonverifyListComponent,
+    LoginNewComponent
   ],
   imports: [
     BrowserModule,

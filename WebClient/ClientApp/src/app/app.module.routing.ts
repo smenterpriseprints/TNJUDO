@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./home/components/home.component";
 import { LoginComponent } from './login/components/login.component';
+import { LoginNewComponent } from './login-new/login-new.component';
 import { RegistrationDistrictComponent } from './registration/components/District/registration-district.component'
 import { RegistrationStudentComponent } from './registration/components/Student/registration-student.component'
 import { RegistrationClubComponent } from './registration/components/Club/registration-club.component'
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     { path: 'Tournament', component: TournamentComponent },
     { path: 'TournamentList', component: TournamentListGridComponent },
     { path: 'VerificationList', component: TournamentVerificationListComponent },
-    { path: 'Upload', component: UploadComponent }
+    { path: 'Upload', component: UploadComponent },
+    { path: 'login-new', component: LoginNewComponent }
 
 ];
 
