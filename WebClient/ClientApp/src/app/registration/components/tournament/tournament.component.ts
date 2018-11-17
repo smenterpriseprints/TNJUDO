@@ -57,8 +57,8 @@ export class TournamentComponent implements OnInit {
         debugger;
         let parsedData = JSON.parse(response._body);
         if (parsedData.Status == "Success") {
-          this.displayMessage.NotifyDomToasterMessage("Registered Successfully", parsedData.Status);
-          //this.router.navigate(['/TournamentList']);
+          this.displayMessage.NotifyDomToasterMessage("Registered Successfully, please note down your reference id: " + parsedData.Message, parsedData.Status);
+          //this.router.navigate(['/Tournament']);
         }
         else if(parsedData.Status == "Warning")
         {

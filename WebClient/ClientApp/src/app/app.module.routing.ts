@@ -9,6 +9,7 @@ import { RegistrationClubComponent } from './registration/components/Club/regist
 import { EventRegistrationComponent } from './event-registration/event-registration.component'
 import { TournamentComponent } from './registration/components/tournament/tournament.component';
 import { TournamentListGridComponent } from './registration/components/tournament-list-grid/tournament-list-grid.component';
+import { TournamentVerificationListComponent } from './registration/components/tournament-verification-list/tournament-verification-list.component';
 import { AuthGuard } from './_guard/auth.guard';
 import { UploadComponent } from './registration/components/Upload/upload.component';
 
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     },
     { path: 'Tournament', component: TournamentComponent },
     { path: 'TournamentList', component: TournamentListGridComponent },
+    { path: 'VerificationList', component: TournamentVerificationListComponent },
     { path: 'Upload', component: UploadComponent }
 
 ];

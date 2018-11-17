@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Http } from '@angular/http';
 import { FormGroup } from '@angular/forms';
 import { BrowserToaster } from "src/app/CommonModules/common";
+//import {APP_CONFIG} from 'src/environments/environment';
 
 @Component({
     //selector: 'app-tournament',
@@ -16,7 +17,6 @@ export class UploadComponent extends HttpHelper {
 
     constructor(protected router: Router, protected _http: Http, private displayMessage: BrowserToaster) {
         super(router, _http);
-
     }
 
     onSelectForm(event, modelName) {
@@ -32,10 +32,8 @@ export class UploadComponent extends HttpHelper {
 
     }
     DownloadForm(event) {
-        // this.get("api/Tournament/GetTournamentForm").subscribe(response => {
-        //     debugger;
-        // });
-        window.location.href = "http://localhost:61009/api/Tournament/GetTournamentForm";
+        debugger;
+        window.location.href = this.appServiceEndpoint +  "/api/Tournament/GetTournamentForm";
     }
     onTournamentFormUpload() {
         let data = this.tournamentRegistrationForm.value;
@@ -44,7 +42,7 @@ export class UploadComponent extends HttpHelper {
 
             let parsedData = JSON.parse(response._body);
             if (parsedData.Status === "Success") {
-                this.displayMessage.NotifyDomToasterMessage("Uploaded successfully.Please not the id:" + parsedData.Message, "Success");
+                this.displayMessage.NotifyDomToasterMessage("Form uploaded successfully, please note down your reference id: " + parsedData.Message, "Success");
             }
         },
             err => {
