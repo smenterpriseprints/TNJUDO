@@ -28,6 +28,8 @@ import { UploadComponent } from './registration/components/Upload/upload.compone
 import { TournamentVerificationListComponent } from './registration/components/tournament-verification-list/tournament-verification-list.component';
 import { TournamentNonverifyListComponent } from './registration/components/tournament-nonverify-list/tournament-nonverify-list.component';
 import { LoginNewComponent } from './login-new/login-new.component';
+import { TournamentIndexComponent } from './tournament-index/tournament-index.component';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { LoginNewComponent } from './login-new/login-new.component';
     UploadComponent,
     TournamentVerificationListComponent,
     TournamentNonverifyListComponent,
-    LoginNewComponent
+    LoginNewComponent,
+    TournamentIndexComponent
   ],
   imports: [
     BrowserModule,
@@ -61,5 +64,6 @@ import { LoginNewComponent } from './login-new/login-new.component';
   ],
   providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
