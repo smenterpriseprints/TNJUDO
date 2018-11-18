@@ -14,6 +14,12 @@ import { TournamentListGridComponent } from './registration/components/tournamen
 import { TournamentVerificationListComponent } from './registration/components/tournament-verification-list/tournament-verification-list.component';
 import { AuthGuard } from './_guard/auth.guard';
 import { UploadComponent } from './registration/components/Upload/upload.component';
+import {ImportParticipantsComponent} from './import-participants/import-participants.component';
+import {ImportWinnersComponent} from './import-winners/import-winners.component';
+import {UploadformComponent} from './uploadform/uploadform.component';
+import {PrintParticipantsComponent} from './print-participants/print-participants.component';
+import {PrintWinnersComponent} from './print-winners/print-winners.component';
+import {NocformComponent} from './nocform/nocform.component';
 
 
 const appRoutes: Routes = [
@@ -34,7 +40,14 @@ const appRoutes: Routes = [
     { path: 'VerificationList', component: TournamentVerificationListComponent },
     { path: 'Upload', component: UploadComponent },
     { path: 'login-new', component: LoginNewComponent },
-    { path: 'tournament-index',component:TournamentIndexComponent}
+    { path: 'tournament-index',component:TournamentIndexComponent},
+    { path: 'import-participants',component:ImportParticipantsComponent},
+    { path: 'import-winners',component:ImportWinnersComponent},
+    { path: 'uploadform',component:UploadformComponent},
+    { path: 'print-participants',component:PrintParticipantsComponent},
+    { path: 'print-winners',component:PrintWinnersComponent},
+    { path: 'nocform',component:NocformComponent}
+
 
 ];
 

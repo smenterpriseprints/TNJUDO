@@ -29,6 +29,12 @@ import { TournamentVerificationListComponent } from './registration/components/t
 import { TournamentNonverifyListComponent } from './registration/components/tournament-nonverify-list/tournament-nonverify-list.component';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { TournamentIndexComponent } from './tournament-index/tournament-index.component';
+import { ImportParticipantsComponent } from './import-participants/import-participants.component';
+import { ImportWinnersComponent } from './import-winners/import-winners.component';
+import { UploadformComponent } from './uploadform/uploadform.component';
+import { PrintParticipantsComponent } from './print-participants/print-participants.component';
+import { PrintWinnersComponent } from './print-winners/print-winners.component';
+import { NocformComponent } from './nocform/nocform.component';
 
 
 @NgModule({
@@ -50,7 +56,13 @@ import { TournamentIndexComponent } from './tournament-index/tournament-index.co
     TournamentVerificationListComponent,
     TournamentNonverifyListComponent,
     LoginNewComponent,
-    TournamentIndexComponent
+    TournamentIndexComponent,
+    ImportParticipantsComponent,
+    ImportWinnersComponent,
+    UploadformComponent,
+    PrintParticipantsComponent,
+    PrintWinnersComponent,
+    NocformComponent
   ],
   imports: [
     BrowserModule,

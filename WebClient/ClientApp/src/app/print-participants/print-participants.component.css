@@ -1,0 +1,27 @@
+.sidebar{
+    position:relative !important;
+    background-color: orange !important;
+    color:white !important;
+    width:350px !important;
+}
+.menu-item{
+    background-color: orange !important;
+}
+.menu-link{
+    background-color: orange !important;
+    color:white;
+}
+.menu{
+    background-color: orange !important;
+}
+.menu-submenu {
+    background-color: orange !important;
+    color:white !important;
+    font-weight: 400 !important;
+}
+.title{
+    background-color: orange;
+}
+.sidebar-header{
+    background-color: orange;
+}
