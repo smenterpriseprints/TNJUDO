@@ -3,3 +3,30 @@ span.arrow
 	margin-left:7px;
 	margin-right:7px;
 }
+.nav-link{
+	color:black !important;
+	font-size: 16px !important;
+    font-family: Lato !important;
+    font-weight: 500 !important;
+}
+.menu-link{
+	color:black !important;
+}
+.menu-submenu{
+	color:black;
+	background-color: orange !important; 
+}
+.menu-submenu.menu-link{
+	background-color: orange !important;
+}
+.topbar .menu-submenu .menu-link {
+	background-color: orange !important;
+	border:1;
+	border-color: orange !important;
+}
+.topbar .menu-sub-submenu .menu-link{
+	background-color: orange !important;
+}
+.menu-link .title {
+	line-height: 3 !important;
+}

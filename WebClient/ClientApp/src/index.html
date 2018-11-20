@@ -137,7 +137,58 @@
     <header class="topbar" style="height:0px !important; top:20px;">
                 <marquee id="newsslide" direction="left" > Upcoming Tournament scheduled on 29/11/2018.<a href="">Click Here To Register</a></marquee>	
     </header>
+<!--Main Slider
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:visible;visibility:visible;">
+        
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/img/banner/2.jpg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:visible;">
+            <div>
+                <img data-u="image" src="assets/img/banner/3.jpg" />
+                <div data-t="0" data-ts="preserve-3d" style="position:absolute;top:120px;left:75px;width:470px;height:220px;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;max-width:470px;" src="" />
+                    <div data-ts="preserve-3d" style="position:absolute;top:4px;left:45px;width:379px;height:213px;overflow:visible;">
+                        <img data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;max-width:379px;" src="assets/img/banner/2.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;max-width:379px;" src="assets/img/banner/2.jpg" />
+                    <img data-t="3" style="position:absolute;top:476px;left:454px;width:63px;height:77px;max-width:63px;" src="assets/img/banner/2.jpg" />
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/banner/2.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="assets/img/banner/2.jpg" />
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:130px;font-family:'Roboto Condensed',sans-serif;font-size:40px;color:#000000;line-height:1.5;padding:5px 5px 5px 5px;box-sizing:border-box;background-color:rgba(255,188,5,0.8);background-clip:padding-box">TOUCH SWIPE
+<br />
+                    RESPONSIVE SLIDER
+                </div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:130px;font-family:'Roboto Condensed',sans-serif;font-size:30px;color:#000000;line-height:1.27;padding:5px 5px 5px 5px;box-sizing:border-box;background-color:rgba(255,188,5,0.8);background-clip:padding-box">Build your slider with anything, includes image, svg, text, html, photo, picture content</div>
+            </div>
+        </div>
+        
+        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div> -->
 
+     <!--End of Main Slider-->
     <!-- Topbar -->
    
     <header class="topbar topbar-expand-lg" style="margin-top:45px;">
@@ -166,8 +217,8 @@
                                 <a class="menu-link" href="#">
                                     <span class="title">Club</span>
                                 </a>
-                                <ul class="menu-sub-submenu" style="z-index:999;width:500px">
-                                    <li class="menu-item" style="float:left;">                                            
+                                <ul class="menu-sub-submenu" style="z-index:999;width:500px ">
+                                    <li class="menu-item" style="float:left; border:none;">                                            
                                         <a [router-link]="['/Club']" class="menu-link" style="display:inline-block">
                                             <span class="title">Ariyalur</span>
                                         </a>
@@ -335,7 +386,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" [routerLink]="['Student']" style="background: linear-gradient(#EC1711, orange) !important;">
+                                <a class="menu-link" [routerLink]="['Student']">
                                     <span class="title">Student</span>
                                 </a>
                                 <ul class="menu-sub-submenu" style="z-index:999;width:500px">
@@ -873,11 +924,11 @@
     <footer class="site-footer pt-50 pb-20">
         <div class="row gap-y">
             <div class="col-lg-5">
-                <h5 class="text-uppercase fs-14 ls-1">About TNJA</h5>
+                <h5 class="text-uppercase fs-14 ls-1" style="color:black">About TNJA</h5>
                 <p class="text-justify" style="color:white;">TNJA  has close to practitioners ,across the state ,  bringing several laurels to the state at  national levels .  TNJA  has produced  32 black belts and 8 Sports Authority Of India certified coaches , who  lay the path to propagate the art to newer heights within the next  two years  , with the help of the  SDAT , government  of Tamilnadu , the schools ,  colleges  and the corporate  world’s  support .Judo , being a recognized Olympic Discipline , has enabled its practitioners to get student cash awards ranging between rs. 10000 to 200,000 through CM trophy, rds bds games , cbse , and khelo india games . The Students also are given a opportunity to get free quota seats in Medical, Engineering, Arts and Science collage’s  . Judo  also enables the player   to  get  Central and state government  Jobs as well  as private Sector Jobs too.The manifest section of this portal shall testify the individual players enhancement through Judo in their life .</p>
             </div>
-            <div class="col-6 col-md-4 col-lg-2 text-left1 text-lg-center1">
-                <h5 class="text-uppercase fs-14 ls-1">Company</h5>
+            <div class="col-6 col-md-4 col-lg-2 text-left1 text-lg-center1" style="color:black">
+                <h5 class="text-uppercase fs-14 ls-1" style="color:white">Company</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="#">About JUDO</a>
@@ -897,7 +948,7 @@
                 </ul>
             </div>
             <div class="col-6 col-md-4 col-lg-2 text-left1 text-lg-center1">
-                <h5 class="text-uppercase fs-14 ls-1">Support</h5>
+                <h5 class="text-uppercase fs-14 ls-1" style="color:white">Support</h5>
                 <ul class="nav flex-column">
 
                     <li class="nav-item">
@@ -915,13 +966,13 @@
                 </ul>
             </div>
             <div class="col-md-4 col-lg-3 text-left1 text-lg-center1">
-                <h5 class="text-uppercase fs-14 ls-1">Newsletter</h5>
-                <p><strong>Subscribe</strong> to our newsletter to receive news, updates, and special offers:</p>
+                <h5 class="text-uppercase fs-14 ls-1" style="color:black">Newsletter</h5>
+                <p style="color:white"><strong>Subscribe</strong> to our newsletter to receive news, updates, and special offers:</p>
                 <br>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter your email address">
                 </div>
-                <button class="btn btn-primary btn-block" type="button"><i class="fa fa-paper-plane"></i> Subscribe</button>
+                <button class="btn btn-primary btn-block" type="button" style="background-color: orange; border:0 !important"><i class="fa fa-paper-plane"></i> Subscribe</button>
             </div>
         </div>
         <hr>
