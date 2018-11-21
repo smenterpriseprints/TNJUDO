@@ -20,6 +20,8 @@ import {UploadformComponent} from './uploadform/uploadform.component';
 import {PrintParticipantsComponent} from './print-participants/print-participants.component';
 import {PrintWinnersComponent} from './print-winners/print-winners.component';
 import {NocformComponent} from './nocform/nocform.component';
+import {TournamentStudentComponent} from './tournament-student/tournament-student.component';
+import {DistrictContactComponent} from './district-contact/district-contact.component';
 
 
 const appRoutes: Routes = [
@@ -46,7 +48,9 @@ const appRoutes: Routes = [
     { path: 'uploadform',component:UploadformComponent},
     { path: 'print-participants',component:PrintParticipantsComponent},
     { path: 'print-winners',component:PrintWinnersComponent},
-    { path: 'nocform',component:NocformComponent}
+    { path: 'nocform',component:NocformComponent},
+    { path: 'tournament-student',component:TournamentStudentComponent},
+    { path: 'district-contact',component:DistrictContactComponent}
 
 
 ];

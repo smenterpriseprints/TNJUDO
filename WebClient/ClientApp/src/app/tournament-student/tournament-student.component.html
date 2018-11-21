@@ -1,0 +1,446 @@
+<!-- Student Tournament Registration form and payment-->
+<div class="main-content">
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Form
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="col-lg-12">
+        <div class="card">
+          <h4 class="card-title"><strong>Tournament Registration</strong></h4>
+
+          <div class="card-body">
+            <form data-provide="wizard">
+              <ul class="nav nav-process nav-process-circle">
+                <li class="nav-item">
+                  <span class="nav-title">Calendar Event</span>
+                  <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
+                </li>
+
+                <li class="nav-item">
+                  <span class="nav-title">Registeration Form</span>
+                  <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                </li>
+
+                <li class="nav-item">
+                  <span class="nav-title">Verification and Payment</span>
+                  <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-title">confirmation</span>
+                  <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
+                </li>
+              </ul>
+
+              <div class="tab-pane fade show active" id="wizard-form-1">
+                <br><br>
+                <header class="header header-inverse bg-img" style="background-image: url(assets/img/gallery/1.jpg)" data-overlay="7">
+                  <div class="header-info">
+                    <div class="left">
+                <br>
+                      <h1 class="header-title">Calendar</h1>
+                    </div>
+              
+                    <div class="right flex-middle">
+                <br>
+                      <form class="lookup lookup-lg lookup-circle lookup-right">
+                        <input type="text" name="s">
+                      </form>
+                    </div>
+                  </div>
+              
+                  <div class="header-action">
+                    <div class="flexbox align-items-center gap-items-4">
+                      <a class="text-white" href="#" data-calendar="prev"><i class="ti-angle-left"></i></a>
+                      <span class="text-white fs-16" id="calendar-title"></span>
+                      <a class="text-white" href="#" data-calendar="next"><i class="ti-angle-right"></i></a>
+                    </div>
+              
+                    <nav class="nav">
+                      <a class="nav-link" href="#" data-calendar="today">Today</a>
+                      <a class="nav-link active" href="#" data-calendar-view="month">Month</a>
+                      <a class="nav-link" href="#" data-calendar-view="basicWeek">Week</a>
+                      <a class="nav-link" href="#" data-calendar-view="basicDay">Day</a>
+                      <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="#" data-calendar-view="agendaWeek">Agenda week</a>
+                          <a class="dropdown-item" href="#" data-calendar-view="agendaDay">Agenda day</a>
+                          <a class="dropdown-item" href="#" data-calendar-view="listYear">List year</a>
+                          <a class="dropdown-item" href="#" data-calendar-view="listMonth">List month</a>
+                          <a class="dropdown-item" href="#" data-calendar-view="listWeek">List week</a>
+                          <a class="dropdown-item" href="#" data-calendar-view="listDay">List day</a>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </header>
+              
+                <div class="main-content">
+                  <div class="card card-body">
+                    <div id="calendar" data-provide="fullcalendar"></div>
+                  </div>
+               
+                </div>
+                    
+               </div>  
+
+              <div class="tab-content">
+                <div class="tab-pane fade" id="wizard-form-2">
+                  <br><br>
+                  <p class="text-center fs-35 text-muted">Tournament <strong class="text-primary">Registeration</strong></p>
+                  <p class="text-center text-gray">Please fill the mandatory detials</p>
+                  <hr class="w-100px">
+                  
+    
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Form row
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+              <div class="form-row">
+                <div class="col-12">
+                  <div class="card" style="background-color: orange" >
+                    <h4 class="card-title"><strong>Tournament</strong> Registration</h4>
+      
+                    <div class="card-body" style="background-color: orange">
+                      <div class="row">
+              
+                        <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Full Name</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="24">
+                          </div>
+                        </div>
+                
+                        <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Date Of Birth</label>
+                            <input type="date" class="form-control" id="input-required" style="width:200px">
+                          </div>
+                        </div>
+                
+                 <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Aadhaar Number</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="12">
+                          </div>
+                        </div>
+                
+                 <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Birth Place</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                
+                 <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Age</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="2" style="width:200px"placeholder="as on 2018">
+                          </div>
+                        </div>
+                
+                <div class="col-md-2">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Height (cm)</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="3" style="width:100px">
+                          </div>
+                        </div>
+                
+                 <div class="col-md-2">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Weight (kg)</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="3"style="width:100px">
+                          </div>
+                        </div>
+                
+                <div class="col-md-8">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Permanent Residential Address</label>
+                            <input type="text" class="form-control" id="input-required" style="height:100px" placeholder="As in Aadhaar">
+                          </div>
+                </div>
+                <div class="col-md-4">
+                   <br/>
+                </div>
+       
+                <div class="col-md-8">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Current Residential Address</label>
+                            <input type="text" class="form-control" id="input-required" style="height:100px">
+                          </div>
+                </div>
+                <div class="col-md-4">
+                  <br/>
+                </div>
+                
+                        <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Mobile No</label>
+                            <input type="tel" class="form-control" id="input-required" style="width:200px"pattern="[0-9]{5}-[0-9]{5}" maxlength="10">
+                  </div>
+                        </div>
+                
+                
+                
+                        <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Email Id</label>
+                            <input type="email" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <br/>
+                        </div>
+                
+                 <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Playing for District </label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Club Name</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Coach Name</label>
+                            <input type="text" class="form-control" id="input-required" Maxlength="24">
+                          </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Current Standard Level </label>
+                  <select id="input-required" class="form-control">
+                  <option>School</option>
+                  <option>Arts & Science College</option>
+                  <option>Engineering College</option>
+                  <option>Medical College</option>
+                  </select>
+                            </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Educational Institution Name</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                </div>
+                </div>
+                
+                
+                <div class="card" style="background-color: orange" >
+                    <h4 class="card-title"><strong>Family</strong> Details</h4>
+      
+                    <div class="card-body" style="background-color: orange">
+                      <div class="row">
+              
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Father Name</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="24">
+                          </div>
+                        </div>
+                <div class="col-md-2">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Father Age</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="2" style="width:100px">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Qualification</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Occupation</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Mother Name</label>
+                            <input type="text" class="form-control" id="input-required" maxlength="24">
+                          </div>
+                        </div>
+               
+                        <div class="col-md-2">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Qualification</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Occupation</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                           <div class="form-group">
+                           <label class="require" for="input-required">No.of.Siblings</label>
+                           <input type="text" class="form-control" id="input-required">
+                         </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Economic Status </label>
+                            <select id="input-required" class="form-control"> 
+                  <option>BPL (Below Provery Line) </option>
+                  <option> APL (Above Proverty Line) </option>
+                  </select> 
+                          </div>
+                        </div>
+                 
+                 </div>
+                 </div>
+                   </div>
+                
+                <div class="card" style="background-color: orange" >
+                    <h4 class="card-title"><strong>Health</strong> Condition</h4>
+      
+                    <div class="card-body" style="background-color: orange"> 
+                      <div class="row">
+                
+                <div class="col-md-3">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Blood Group</label>
+                            <input type="text" class="form-control" id="input-required"style="width:150px">
+                          </div>
+                        </div>
+                      
+                 <div class="col-md-5">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Health changelles If any</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                <div class="col-md-4">
+                                  <div class="form-group">
+                            <label class="require" for="input-required">Visible Mark</label>
+                            <input type="text" class="form-control" id="input-required">
+                          </div>
+                        </div>
+                 </div>
+                 </div>
+                   </div>
+                    
+                <div class="card" style="background-color: orange">
+                    <h4 class="card-title"><strong>Documents</strong> To Be Uploaded
+              
+              </h4>
+      
+      
+                    <div class="card-body" style="background-color: orange">
+                      <div class="row">
+                <div class="col-md-4">
+                      <p>Passport Size Photo</p>
+                      <div class="input-group file-group">
+                        <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+                        <input type="file" multiple>
+                        <span class="input-group-append">
+                          <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+                        </span>
+                      </div>
+                    </div>
+              
+              <div class="col-md-4">
+                      <p>Aadhaar card</p>
+                      <div class="input-group file-group">
+                        <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+                        <input type="file" multiple>
+                        <span class="input-group-append">
+                          <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+                        </span>
+                      </div>
+                    </div>
+              
+                  <div class="col-md-4">
+                      <p><span>Any document &nbsp; </span><span style="font-size:10px">(Birth Certificate, Class X certificate)</span></p>
+                      <div class="input-group file-group">
+                        <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+                        <input type="file" multiple>
+                        <span class="input-group-append">
+                          <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+                        </span>
+                      </div>
+                    </div>
+                  <div class="col-md-4">
+                      <p>Income Certificate (Father / Mother )</p>
+                      <div class="input-group file-group">
+                        <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
+                        <input type="file" multiple>
+                        <span class="input-group-append">
+                          <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
+                        </span>
+                      </div>
+                    </div>
+                 </div>
+                 </div>
+                   </div>
+             
+                </div>
+                 </div>
+                   </div>
+              </div>
+              </div>
+              
+    
+                <div class="tab-pane fade" id="wizard-form-3">
+     <div class="row">
+  <div class="form-group col-md-12">
+  <label for="tournamentFee" class="col-form-label">Tournament Total-Fees</label>
+  <input type="text" class="form-control" id="tournamentFee" placeholder="Tournament Fee">
+  </div>
+          <div class="col-lg-3">
+            <div class="card card-inverse card-purple text-center p-50">
+              <div class="card-body">
+                <h5 class="text-uppercase text-muted">TNJA Registration Fee</h5>
+                <br>
+                <input type="text" class="form-control" id="registrationFee" placeholder="Registration Fee ">
+            </div>
+          </div>
+    </div>
+
+          <div class="col-lg-3">
+            <div class="card card-inverse card-primary text-center p-50">
+              <div class="card-body">
+                <h5 class="text-uppercase text-muted">TNJA Entry Fee</h5>
+                <br>
+      <input type="text" class="form-control" id="inscriptionFee" placeholder="Inscription Fee ">
+                </div>
+            </div>
+          </div>
+    
+    <div class="col-lg-3">
+            <div class="card card-inverse card-info text-center p-50">
+              <div class="card-body">
+                <h5 class="text-uppercase text-muted">Other Fee for tournament </h5>
+                <br>
+      <input type="text" class="form-control" id="otherFee" placeholder="Other Fee ">
+              </div>
+            </div>
+          </div>
+         </div>
+
+   </div>
+              <hr>
+              <div class="flexbox">
+                <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
+                <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Finish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div><!--/.main-content -->
