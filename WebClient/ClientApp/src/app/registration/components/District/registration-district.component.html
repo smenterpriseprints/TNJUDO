@@ -54,56 +54,58 @@
                                 <div class="form-group col-md-6">
                                     <label for="presidentName" class="col-form-label">President Name</label>
                                     <custom-textbox [group]="registrationForm" name="PresidentName" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                        [max]="100" placeHolder="Name"></custom-textbox>
+                                        [max]="100" placeHolder="Name" width="450px"></custom-textbox>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-md-3">
                                     <label>President Phone Number</label>
                                     <small class="phoneNumber">E.g. +91 123-456-7890</small>
                                     <custom-textbox [group]="registrationForm" name="PhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="15"></custom-textbox>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="presidentAddress" class="col-form-label">President Address</label>
-                                    <custom-textbox [group]="registrationForm" name="PresidentAddress" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                        [max]="100" placeHolder="Address"></custom-textbox>
-
-                                </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <p>President Photo</p>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
                                         <input type="file" (change)="onSelectPhoto($event,'PresidentPhoto')" multiple>
                                     </div>
                                 </div>
+                                <div class="form-group col-md-12">
+                                    <label for="presidentAddress" class="col-form-label">President Address</label>
+                                    <custom-textbox [group]="registrationForm" name="PresidentAddress" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                        [max]="100" placeHolder="Address"></custom-textbox>
+
+                                </div>
+                                
                                 <div class="form-group col-md-6">
                                     <label for="secretaryName" class="col-form-label">Secretary Name</label>
                                     <custom-textbox [group]="registrationForm" name="SecretaryName" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                         [max]="100" placeHolder="Name"></custom-textbox>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-md-3" >
                                     <label>Secretary Phone Number</label>
                                     <small class="sidetitle">E.g. +91 123-456-7890</small>
                                     <custom-textbox [group]="registrationForm" name="SecretaryPhoneNumber" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="15" placeHolder="Name"></custom-textbox>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
-                                    <custom-textbox [group]="registrationForm" name="SecretaryAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
-                                        [max]="100" placeHolder="Name"></custom-textbox>
-                                </div>
-                                <div class="col-md-6">
+								<div class="col-md-3">
                                     <p>Secretary Photo</p>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
                                         <input type="file" (change)="onSelectPhoto($event,'SecretaryPhoto')" multiple>
                                     </div>
                                 </div>
+                                <div class="form-group col-md-12">
+                                    <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
+                                    <custom-textbox [group]="registrationForm" name="SecretaryAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
+                                        [max]="100" placeHolder="Name"></custom-textbox>
+                                </div>
+                                
                                 <div class="form-group col-md-6">
                                     <label for="coachName" class="col-form-label">Coach Name</label>
                                     <custom-textbox [group]="registrationForm" name="CoachName" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
                                         [max]="100" placeHolder="Name"></custom-textbox>
                                 </div>
-                                <div class="col-md-6 col-xl-4">
+                                <div class="col-md-3 col-xl-4">
                                     <hr>
                                     <div class="form-group">
                                         <label>Coach Phone Number</label>
@@ -112,25 +114,26 @@
                                             [isValid]="isValid" [max]="15"></custom-textbox>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="coachAddress" class="col-form-label">Coach Address</label>
-                                    <custom-textbox [group]="registrationForm" name="CoachAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
-                                        [max]="100" placeHolder="Address"></custom-textbox>
-                                </div>
-                                <div class="col-md-6">
+								<div class="col-md-3">
                                     <p>Coach Photo</p>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
                                         <input type="file" (change)="onSelectPhoto($event,'CoachPhoto')" multiple>
                                     </div>
                                 </div>
+                                <div class="form-group col-md-12">
+                                    <label for="coachAddress" class="col-form-label">Coach Address</label>
+                                    <custom-textbox [group]="registrationForm" name="CoachAddress" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
+                                        [max]="100" placeHolder="Address"></custom-textbox>
+                                </div>
+                                
                                 <div class="form-group col-md-6">
-                                    <label for="districtPhoneNumber" class="col-form-label">District Phone Number</label>
+                                    <label for="districtPhoneNumber" class="col-form-label">District Office Phone Number</label>
                                     <custom-textbox [group]="registrationForm" name="DistrictPhoneNumber" [pattern]="'[0-9]+'" [required]="false" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="15" placeHolder="Phone No"></custom-textbox>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="districtEmail" class="col-form-label">District Email</label>
+                                    <label for="districtEmail" class="col-form-label">District Office Email</label>
                                     <custom-textbox [group]="registrationForm" name="DistrictEmail" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
                                         [max]="100" placeHolder="Email"></custom-textbox>
                                 </div>
@@ -140,14 +143,14 @@
                                         [max]="100" placeHolder="Password"></custom-textbox>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="districtAddress1" class="col-form-label">Address</label>
+                                <div class="form-group col-md-12">
+                                    <label for="districtAddress1" class="col-form-label">Office Address</label>
                                     <custom-textbox [group]="registrationForm" name="DistrictAddress1" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
                                         [max]="100" placeHolder="1234 Main St"></custom-textbox>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="districtAddress2" class="col-form-label">Address 2</label>
+                                <div class="form-group col-md-12">
+                                    <label for="districtAddress2" class="col-form-label">Office Address 2</label>
                                     <custom-textbox [group]="registrationForm" name="DistrictAddress2" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                         [max]="100" placeHolder="Apartment, studio, or floor"></custom-textbox>
                                 </div>
@@ -168,7 +171,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                            </div>
                     </div>
 
                     <hr>

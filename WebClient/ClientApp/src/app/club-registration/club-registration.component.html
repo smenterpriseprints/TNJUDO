@@ -12,16 +12,18 @@
 
             <div class="card-body" style="background-color:orange;">
               <form data-provide="wizard">
+                      
                 <ul class="nav nav-process nav-process-circle">
-                  <li class="nav-item">
-                    <span class="nav-title">Map</span>
-                    <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
-                  </li>
-
+      
                   <li class="nav-item">
                     <span class="nav-title">Sign Up form</span>
                     <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                   </li>
+
+                  <li class="nav-item">
+                      <span class="nav-title">Map</span>
+                      <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                    </li>
 
                   <li class="nav-item">
                     <span class="nav-title">Payment </span>
@@ -37,7 +39,7 @@
 
                 <div class="tab-content">
                   <div class="tab-pane fade active show" id="wizard-form-1">
-                    <br><br>
+                    <br>
                     <p class="text-center fs-35 text-muted">Club  <strong class="text-primary">Registeration</strong></p>
                     <p class="text-center text-gray">Please complete the following 4 steps</p>
                     <hr class="w-100px">
@@ -66,7 +68,7 @@
               </div>
        <div class="form-group col-md-6">
                           <label for="presidentAddress" class="col-form-label">President Address</label>
-                  <input type="text" class="form-control" id="presidentAddress" placeholder="Address">
+                  <input type="text" class="form-control" id="presidentAddress" placeholder="Address" style="height: 80px">
                 </div>
          <div class="col-md-4">
               <label>President Photo</label>
@@ -86,7 +88,7 @@
               </div>
        <div class="form-group col-md-6">
                           <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
-                  <input type="text" class="form-control" id="secretaryAddress" placeholder="Address">
+                  <input type="text" class="form-control" id="secretaryAddress" placeholder="Address" style="height:80px">
                 </div>
         <div class="col-md-4">
               <label>Secretary Photo</label>
@@ -107,7 +109,7 @@
             
        <div class="form-group col-md-6">
           <label for="coachAddress" class="col-form-label">Coach Address</label>
-                  <input type="text" class="form-control" id="coachAddress" placeholder="Address">
+                  <input type="text" class="form-control" id="coachAddress" placeholder="Address" style="height:80px">
                 </div>
         <div class="form-group col-md-4">
               <label>Coach Photo</label>
@@ -132,21 +134,18 @@
            
               <div class="form-group col-md-3">
                 <label for="clubAddress" class="col-form-label">Address  Of Club Headquaters</label>
-                <input type="text" class="form-control" id="clubAddress" placeholder="Address Line 1">
+                <input type="text" class="form-control" id="clubAddress" placeholder="Address Line 1" style="height:60px">
               </div>
 
               <div class="form-group col-md-3">
                 <label for="clubAddress2" class="col-form-label">Address 2</label>
-                <input type="text" class="form-control" id="clubAddress2" placeholder="Address Line 2">
+                <input type="text" class="form-control" id="clubAddress2" placeholder="Address Line 2" style="height:60px">
               </div>
       <div class="form-group col-md-2">
                   <label for="city" class="col-form-label">City</label>
                   <input type="text" class="form-control" id="city" placeholder="City">
                 </div>
-                <div class="form-group col-md-2">
-                  <label for="inputState" class="col-form-label">State</label>
-        <input type="text" class="form-control" id="state" placeholder="State">
-                </div>
+                
                 <div class="form-group col-md-2">
                   <label for="pincode" class="col-form-label">Pincode</label>
                   <input type="text" class="form-control" id="pincode" placeholder="Pincode">
@@ -179,7 +178,7 @@
               <div class="form-group">
                 <div class="custom-control custom-checkbox mr-3">
                   <input type="checkbox" class="custom-control-input">
-                  <label class="custom-control-label">I agree to terms and conditions.</label>
+                  <label class="custom-control-label">I agree to terms and conditions of TNJA.</label>
                 </div>
               </div>
             
@@ -211,7 +210,7 @@
                 <div class="card-body">
                   <h5 class="text-uppercase text-muted">Platinum</h5>
                   <br>
-                  <h3 class="fw-100 fs-70">$25</h3>
+                  <h3 class="fw-100 fs-70">Rs.5000</h3>
                   <small>Full Year</small>
 
                   <hr>
@@ -235,7 +234,7 @@
                 <div class="card-body">
                   <h5 class="text-uppercase text-muted">Diamond</h5>
                   <br>
-                  <h3 class="fw-100 fs-70">$15</h3>
+                  <h3 class="fw-100 fs-70">Rs.2500</h3>
                   <small>Half Year</small>
 
                   <hr>
@@ -257,7 +256,7 @@
                 <div class="card-body">
                   <h5 class="text-uppercase text-muted">Gold</h5>
                   <br>
-                  <h3 class="fw-100 fs-70">$10</h3>
+                  <h3 class="fw-100 fs-70">Rs.1500</h3>
                   <small>Quarterly</small>
 
                   <hr>
@@ -277,7 +276,7 @@
                 <div class="card-body">
                   <h5 class="text-uppercase text-muted">Silver</h5>
                   <br>
-                  <h3 class="fw-100 fs-70">$5</h3>
+                  <h3 class="fw-100 fs-70">Rs.500</h3>
                   <small>Monthly</small>
 
                   <hr>
@@ -332,9 +331,9 @@
                 <hr>
 
                 <div class="flexbox">
-                  <button class="btn btn-secondary" data-wizard="prev" type="button">Back</button>
-                  <button class="btn btn-secondary" data-wizard="next" type="button">Next</button>
-                  <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Submit</button>
+                  <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                  <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
+                  <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Submit</button>
                 </div>
               </form>
             </div>

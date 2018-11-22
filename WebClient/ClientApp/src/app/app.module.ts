@@ -46,6 +46,9 @@ import { HalloffameComponent } from './halloffame/halloffame.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.component';
+import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
+import { NationalNewsComponent } from './national-news/national-news.component';
 
 
 @NgModule({
@@ -84,7 +87,10 @@ import { TimelineComponent } from './timeline/timeline.component';
     HalloffameComponent,
     StudentRegistrationComponent,
     TestimonialsComponent,
-    TimelineComponent
+    TimelineComponent,
+    PaymentMonthlyComponent,
+    PaymentAffiliationComponent,
+    NationalNewsComponent
   ],
   imports: [
     BrowserModule,

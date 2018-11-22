@@ -31,6 +31,9 @@ import {TestimonialsComponent} from './testimonials/testimonials.component';
 import {TimelineComponent} from './timeline/timeline.component';
 import {EcommerceComponent} from './ecommerce/ecommerce.component';
 import {StudentRegistrationComponent} from './student-registration/student-registration.component';
+import {PaymentMonthlyComponent} from './payment-monthly/payment-monthly.component';
+import {PaymentAffiliationComponent} from './payment-affiliation/payment-affiliation.component';
+import {NationalNewsComponent} from './national-news/national-news.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -63,12 +66,15 @@ const appRoutes: Routes = [
     { path: 'club-registration', component:ClubRegistrationComponent},
     { path: 'club-contact', component:ClubContactComponent},
     { path: 'club-news', component:ClubNewsComponent},
-    { path: 'district-news', component:ClubNewsComponent},
+    { path: 'district-news', component:DistrictNewsComponent},
     { path: 'halloffame', component:HalloffameComponent},
     { path: 'testimonials', component:TestimonialsComponent},
     { path: 'timeline', component:TimelineComponent},
     { path: 'ecommerce', component:EcommerceComponent},
-    { path: '.student-registration', component:StudentRegistrationComponent}
+    { path: 'student-registration', component:StudentRegistrationComponent},
+    { path: 'payment-monthly', component:PaymentMonthlyComponent},
+    { path: 'payment-affiliation', component:PaymentAffiliationComponent},
+    { path: 'national-news', component:NationalNewsComponent}
 
 
 ];
