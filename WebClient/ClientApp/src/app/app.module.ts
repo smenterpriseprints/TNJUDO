@@ -37,6 +37,15 @@ import { PrintWinnersComponent } from './print-winners/print-winners.component';
 import { NocformComponent } from './nocform/nocform.component';
 import { TournamentStudentComponent } from './tournament-student/tournament-student.component';
 import { DistrictContactComponent } from './district-contact/district-contact.component';
+import { ClubRegistrationComponent } from './club-registration/club-registration.component';
+import { ClubContactComponent } from './club-contact/club-contact.component';
+import { ClubNewsComponent } from './club-news/club-news.component';
+import { DistrictNewsComponent } from './district-news/district-news.component';
+import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { HalloffameComponent } from './halloffame/halloffame.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 @NgModule({
@@ -66,7 +75,16 @@ import { DistrictContactComponent } from './district-contact/district-contact.co
     PrintWinnersComponent,
     NocformComponent,
     TournamentStudentComponent,
-    DistrictContactComponent
+    DistrictContactComponent,
+    ClubRegistrationComponent,
+    ClubContactComponent,
+    ClubNewsComponent,
+    DistrictNewsComponent,
+    EcommerceComponent,
+    HalloffameComponent,
+    StudentRegistrationComponent,
+    TestimonialsComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,29 @@
-<div class="main-content" style="margin-top:128px">
+<div class="main-content">
 
     <div class="col-lg-12">
-        <div class="card">
+        <div class="card" style="background-color: orange" >
             <h4 class="card-title">
-                <strong>Form</strong>
+                <strong>District Association Registration Form</strong>
             </h4>
 
 
-            <div class="card-body">
+            <div class="card-body" style="background-color: orange">
                 <form [formGroup]="registrationForm" (ngSubmit)="onDistrictRegistration()" data-provide="wizard">
                     <ul class="nav nav-process nav-process-circle">
                         <li class="nav-item">
-                            <span class="nav-title">Map</span>
+                            <span class="nav-title" style="color:black">Map</span>
 
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                         </li>
 
                         <li class="nav-item">
-                            <span class="nav-title">Sign Up Form</span>
+                            <span class="nav-title" style="color:black">Sign Up Form</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <span class="nav-title" style="color:black">Confirmation & Payment</span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
                         </li>
 
                     </ul>
@@ -29,10 +34,9 @@
 
                         <div class="tab-pane fade active show" id="wizard-form-1">
                             <br>
-                            <br>
                             <p class="text-center fs-35 text-muted">Enter Your
-                                <strong class="text-primary">Club </strong> Details</p>
-                            <p class="text-center text-gray">Plot the address of the club and details</p>
+                                <strong class="text-primary">District Office </strong> Details</p>
+                            <p class="text-center text-gray">Plot the address of the association office details</p>
                             <hr class="w-100px">
                             <br> Map and Form ( Based on the logic) {{mapLatLng}}
                             <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
@@ -41,18 +45,12 @@
                         <!-- Map Ends-->
 
                         <div class="tab-pane fade" id="wizard-form-2">
-                            <br>
-                            <br>
                             <p class="text-center fs-35 text-muted">District
-                                <strong class="text-primary">Registeration</strong>
+                                <strong class="text-primary">Registration</strong>
                             </p>
                             <!-- <p class="text-center text-gray">Please complete the following 4 steps</p> -->
                             <hr class="w-100px">
-
-
-
-
-                            <div class="form-row">
+                            <div class="form-row" style="background-color: orange">
                                 <div class="form-group col-md-6">
                                     <label for="presidentName" class="col-form-label">President Name</label>
                                     <custom-textbox [group]="registrationForm" name="PresidentName" [required]="true" [editMode]="isEditMode" [isValid]="isValid"
@@ -156,30 +154,16 @@
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="districtCity" class="col-form-label">City</label>
-                                        <custom-textbox [group]="registrationForm" name="DistrictCity" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
-                                            [max]="100" placeHolder="City"></custom-textbox>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="districtState" class="col-form-label">State</label>
-                                        <!-- <select id="districtState" formControlName="DistrictState" class="form-control">
-                                            <option>California</option>
-                                            <option>New Mexico</option>
-                                            <option>New York</option>
-                                            <option>Texas</option>
-                                        </select> -->
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="districtZip" class="col-form-label">Zip</label>
-                                        <custom-textbox [group]="registrationForm" name="DistrictZip" [pattern]="'[0-9]+'" [required]="true" [editMode]="isEditMode"
-                                            [isValid]="isValid" [max]="6" placeHolder="Zip Code"></custom-textbox>
+                                        <label for="districtCity" class="col-form-label">PinCode</label>
+                                        <custom-textbox [group]="registrationForm" name="DistrictPincode" [required]="false" [editMode]="isEditMode" [isValid]="isValid"
+                                            [max]="100" placeHolder="PinCode"></custom-textbox>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox mr-3">
                                         <input type="checkbox" class="custom-control-input">
-                                        <label class="custom-control-label">I agree to terms and conditions.</label>
+                                        <label class="custom-control-label">I agree to terms and conditions of Tamil Nadu Judo Association.</label>
                                     </div>
                                 </div>
 
@@ -190,9 +174,9 @@
                     <hr>
 
                     <div class="flexbox">
-                        <button class="btn btn-secondary" data-wizard="prev" type="button">Back</button>
-                        <button class="btn btn-secondary" data-wizard="next" type="button">Next</button>
-                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Finish</button>
+                        <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                        <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
+                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit"style="background-color: orange">Finish</button>
                     </div>
 
 

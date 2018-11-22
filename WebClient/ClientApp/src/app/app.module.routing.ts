@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./home/components/home.component";
 import { LoginComponent } from './login/components/login.component';
@@ -22,7 +22,15 @@ import {PrintWinnersComponent} from './print-winners/print-winners.component';
 import {NocformComponent} from './nocform/nocform.component';
 import {TournamentStudentComponent} from './tournament-student/tournament-student.component';
 import {DistrictContactComponent} from './district-contact/district-contact.component';
-
+import {ClubRegistrationComponent} from './club-registration/club-registration.component';
+import {ClubContactComponent} from './club-contact/club-contact.component';
+import {ClubNewsComponent} from './club-news/club-news.component';
+import {DistrictNewsComponent} from './district-news/district-news.component';
+import {HalloffameComponent} from './halloffame/halloffame.component';
+import {TestimonialsComponent} from './testimonials/testimonials.component';
+import {TimelineComponent} from './timeline/timeline.component';
+import {EcommerceComponent} from './ecommerce/ecommerce.component';
+import {StudentRegistrationComponent} from './student-registration/student-registration.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -50,7 +58,17 @@ const appRoutes: Routes = [
     { path: 'print-winners',component:PrintWinnersComponent},
     { path: 'nocform',component:NocformComponent},
     { path: 'tournament-student',component:TournamentStudentComponent},
-    { path: 'district-contact',component:DistrictContactComponent}
+    { path: 'district-contact',component:DistrictContactComponent},
+    { path: 'tournament-student',component:TournamentStudentComponent},
+    { path: 'club-registration', component:ClubRegistrationComponent},
+    { path: 'club-contact', component:ClubContactComponent},
+    { path: 'club-news', component:ClubNewsComponent},
+    { path: 'district-news', component:ClubNewsComponent},
+    { path: 'halloffame', component:HalloffameComponent},
+    { path: 'testimonials', component:TestimonialsComponent},
+    { path: 'timeline', component:TimelineComponent},
+    { path: 'ecommerce', component:EcommerceComponent},
+    { path: '.student-registration', component:StudentRegistrationComponent}
 
 
 ];
