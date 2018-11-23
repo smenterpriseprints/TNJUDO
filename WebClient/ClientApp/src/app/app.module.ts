@@ -35,6 +35,7 @@ import { UploadformComponent } from './uploadform/uploadform.component';
 import { PrintParticipantsComponent } from './print-participants/print-participants.component';
 import { PrintWinnersComponent } from './print-winners/print-winners.component';
 import { NocformComponent } from './nocform/nocform.component';
+import { CertificateComponent } from './registration/components/certificate/certificate.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { NocformComponent } from './nocform/nocform.component';
     UploadformComponent,
     PrintParticipantsComponent,
     PrintWinnersComponent,
-    NocformComponent
+    NocformComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

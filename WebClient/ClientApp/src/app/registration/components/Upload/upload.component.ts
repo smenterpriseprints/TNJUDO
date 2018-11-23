@@ -31,10 +31,7 @@ export class UploadComponent extends HttpHelper {
         }
 
     }
-    DownloadForm(event) {
-        debugger;
-        window.location.href = this.appServiceEndpoint +  "/api/Tournament/GetTournamentForm";
-    }
+
     onTournamentFormUpload() {
         let data = this.tournamentRegistrationForm.value;
         data.tournamentForm = this.tournamentForm;
@@ -50,5 +47,10 @@ export class UploadComponent extends HttpHelper {
 
             }
         )
+    }
+
+    DownloadForm(event) {
+        debugger;
+        window.location.href = this.appServiceEndpoint + "/api/Tournament/GetTournamentForm";
     }
 }
