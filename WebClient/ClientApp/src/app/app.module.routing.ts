@@ -14,14 +14,7 @@ import { TournamentListGridComponent } from './registration/components/tournamen
 import { TournamentVerificationListComponent } from './registration/components/tournament-verification-list/tournament-verification-list.component';
 import { AuthGuard } from './_guard/auth.guard';
 import { UploadComponent } from './registration/components/Upload/upload.component';
-import { ImportParticipantsComponent } from './import-participants/import-participants.component';
-import { ImportWinnersComponent } from './import-winners/import-winners.component';
-import { UploadformComponent } from './uploadform/uploadform.component';
-import { PrintParticipantsComponent } from './print-participants/print-participants.component';
-import { PrintWinnersComponent } from './print-winners/print-winners.component';
-import { NocformComponent } from './nocform/nocform.component';
 import { CertificateComponent } from './registration/components/certificate/certificate.component';
-
 import { ImportParticipantsComponent } from './import-participants/import-participants.component';
 import { ImportWinnersComponent } from './import-winners/import-winners.component';
 import { UploadformComponent } from './uploadform/uploadform.component';

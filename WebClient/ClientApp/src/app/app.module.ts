@@ -36,13 +36,6 @@ import { PrintParticipantsComponent } from './print-participants/print-participa
 import { PrintWinnersComponent } from './print-winners/print-winners.component';
 import { NocformComponent } from './nocform/nocform.component';
 import { CertificateComponent } from './registration/components/certificate/certificate.component';
-import { TournamentIndexComponent } from './tournament-index/tournament-index.component';
-import { ImportParticipantsComponent } from './import-participants/import-participants.component';
-import { ImportWinnersComponent } from './import-winners/import-winners.component';
-import { UploadformComponent } from './uploadform/uploadform.component';
-import { PrintParticipantsComponent } from './print-participants/print-participants.component';
-import { PrintWinnersComponent } from './print-winners/print-winners.component';
-import { NocformComponent } from './nocform/nocform.component';
 import { TournamentStudentComponent } from './tournament-student/tournament-student.component';
 import { DistrictContactComponent } from './district-contact/district-contact.component';
 import { ClubRegistrationComponent } from './club-registration/club-registration.component';
@@ -85,7 +78,7 @@ import { NationalNewsComponent } from './national-news/national-news.component';
     PrintParticipantsComponent,
     PrintWinnersComponent,
     NocformComponent,
-    CertificateComponent
+    CertificateComponent,
     TournamentStudentComponent,
     DistrictContactComponent,
     ClubRegistrationComponent,
