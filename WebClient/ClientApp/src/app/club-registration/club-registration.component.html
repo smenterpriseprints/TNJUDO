@@ -1,0 +1,345 @@
+<div>
+  <div class="main-content">
+	  
+    <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Form
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <div class="col-lg-12" style="background-color:orange;">
+          <div class="card" style="background-color:orange;">
+            <h4 class="card-title"><strong> Club Registration Form</strong></h4>
+
+            <div class="card-body" style="background-color:orange;">
+              <form data-provide="wizard">
+                      
+                <ul class="nav nav-process nav-process-circle">
+      
+                  <li class="nav-item">
+                    <span class="nav-title">Sign Up form</span>
+                    <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
+                  </li>
+
+                  <li class="nav-item">
+                      <span class="nav-title">Map</span>
+                      <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                    </li>
+
+                  <li class="nav-item">
+                    <span class="nav-title">Payment </span>
+                    <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <span class="nav-title">Confirmation</span>
+                    <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
+                  </li>
+                </ul>
+
+
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="wizard-form-1">
+                    <br>
+                    <p class="text-center fs-35 text-muted">Club  <strong class="text-primary">Registeration</strong></p>
+                    <p class="text-center text-gray">Please complete the following 4 steps</p>
+                    <hr class="w-100px">
+                    
+      
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Form row
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+              <div class="form-row" style="background-color:orange;">
+      <div class="form-group col-md-8">
+                          <label for="clubName" class="col-form-label">Name Of the CLub</label>
+                  <input type="text" class="form-control" id="clubName" placeholder="Name Of the CLub">
+                </div>
+        
+      <div class="form-group col-md-6">
+                          <label for="presidentName" class="col-form-label">President Name</label>
+                  <input type="text" class="form-control" id="presidentName" placeholder="Name">
+                </div>
+       <div class="form-group">
+                <label>President Phone Number</label>
+                <small class="sidetitle">E.g. +91 123-456-7890</small>
+                <input type="text" class="form-control">
+              </div>
+       <div class="form-group col-md-6">
+                          <label for="presidentAddress" class="col-form-label">President Address</label>
+                  <input type="text" class="form-control" id="presidentAddress" placeholder="Address" style="height: 80px">
+                </div>
+         <div class="col-md-4">
+              <label>President Photo</label>
+              <div class="form-group file-group">
+                <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                <input type="file" multiple>
+              </div>
+            </div>
+                <div class="form-group col-md-6">
+                          <label for="secretaryName" class="col-form-label">Secretary Name</label>
+                  <input type="text" class="form-control" id="secretaryName" placeholder="Name">
+                </div>
+      <div class="form-group">
+                <label>Secretary Phone Number</label>
+                <small class="sidetitle">E.g. +91 123-456-7890</small>
+                <input type="text" class="form-control">
+              </div>
+       <div class="form-group col-md-6">
+                          <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
+                  <input type="text" class="form-control" id="secretaryAddress" placeholder="Address" style="height:80px">
+                </div>
+        <div class="col-md-4">
+              <label>Secretary Photo</label>
+              <div class="form-group file-group">
+                <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                <input type="file" multiple>
+              </div>
+            </div>
+                <div class="form-group col-md-6">
+                          <label for="coachName" class="col-form-label">Coach Name</label>
+                  <input type="text" class="form-control" id="coachName" placeholder="Name">
+                </div>
+              <div class="form-group">
+                <label>Coach Phone Number</label>
+                <small class="sidetitle">E.g. +91 123-456-7890</small>
+                <input type="text" class="form-control">
+              </div>
+            
+       <div class="form-group col-md-6">
+          <label for="coachAddress" class="col-form-label">Coach Address</label>
+                  <input type="text" class="form-control" id="coachAddress" placeholder="Address" style="height:80px">
+                </div>
+        <div class="form-group col-md-4">
+              <label>Coach Photo</label>
+              <div class="form-group file-group">
+                <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
+                <input type="file" multiple>
+              </div>
+            </div>
+         <div class="form-group col-md-4">
+                            <label>District Phone Number</label>
+                  <small class="sidetitle">E.g. +91 123-456-7890</small>
+                <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="districtEmail" class="col-form-label">District Email</label>
+                  <input type="email" class="form-control" id="districtEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="districtPassword" class="col-form-label">District Password</label>
+                  <input type="password" class="form-control" id="districtPassword" placeholder="Password">
+                </div>
+           
+              <div class="form-group col-md-3">
+                <label for="clubAddress" class="col-form-label">Address  Of Club Headquaters</label>
+                <input type="text" class="form-control" id="clubAddress" placeholder="Address Line 1" style="height:60px">
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="clubAddress2" class="col-form-label">Address 2</label>
+                <input type="text" class="form-control" id="clubAddress2" placeholder="Address Line 2" style="height:60px">
+              </div>
+      <div class="form-group col-md-2">
+                  <label for="city" class="col-form-label">City</label>
+                  <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                
+                <div class="form-group col-md-2">
+                  <label for="pincode" class="col-form-label">Pincode</label>
+                  <input type="text" class="form-control" id="pincode" placeholder="Pincode">
+                </div>
+      
+              <div class="form-group col-md-5">
+                <label for="affliationNo" class="col-form-label">District Affliation No</label>
+                <input type="text" class="form-control" id="affliationNo" placeholder="District Affliation No">
+              </div>
+
+              <div class="form-group col-md-2">
+                <label for="inputAddress2" class="col-form-label">No Of Students</label>
+                <input type="text" class="form-control" id="male" placeholder="Male">
+        <input style="margin-top:10px;" type="text" class="form-control" id="female" placeholder="Female">
+              </div>
+      
+      <div class="form-group col-md-3">
+                <label for="inputAddress2" class="col-form-label">No Of Students - Categorywise</label>
+                <input type="text" class="form-control" id="junior" placeholder="Junior">
+        <input style="margin-top:5px;" type="text" class="form-control" id="subjunior" placeholder="Sub Junior">
+        <input style="margin-top:5px;" type="text" class="form-control" id="senior" placeholder="Senior">
+              </div>
+      
+              
+      
+              <div class="form-row">
+                
+              </div>
+      </div>
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mr-3">
+                  <input type="checkbox" class="custom-control-input">
+                  <label class="custom-control-label">I agree to terms and conditions of TNJA.</label>
+                </div>
+              </div>
+            
+
+      
+      
+                  </div>
+        
+                           <div class="tab-pane fade" id="wizard-form-2">
+                    <br><br>
+                    <p class="text-center fs-35 text-muted">Enter Your
+                      <strong class="text-primary">Club </strong> Details</p>
+                  <p class="text-center text-gray">Plot the address of the club and details</p>
+                    <hr class="w-100px">
+                    <br> Map and Form ( Based on the logic)
+                    {{mapLatLng}}
+                 <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
+      
+                  </div>
+
+
+
+ <div class="tab-pane fade" id="wizard-form-3">
+   <div class="tab-pane" id="pricing-2" role="tabpanel">
+          <div class="row">
+
+            <div class="col-lg-3">
+              <div class="card card-inverse card-purple text-center p-50">
+                <div class="card-body">
+                  <h5 class="text-uppercase text-muted">Platinum</h5>
+                  <br>
+                  <h3 class="fw-100 fs-70">Rs.5000</h3>
+                  <small>Full Year</small>
+
+                  <hr>
+
+                  <p><strong>Discount Seminar</strong></p>
+                  <p><strong>24x7</strong> Support</p>
+                  <p><strong>5</strong> Projects</p>
+
+                  <br><br>
+                  <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-3">
+              <div class="card card-inverse card-primary text-center p-50">
+                <div class="card-body">
+                  <h5 class="text-uppercase text-muted">Diamond</h5>
+                  <br>
+                  <h3 class="fw-100 fs-70">Rs.2500</h3>
+                  <small>Half Year</small>
+
+                  <hr>
+
+                  <p><strong>Free Seminar</strong></p>
+                  <p><strong>24x7</strong> Support</p>
+                  <p><strong>50</strong> Projects</p>
+
+                  <br><br>
+                  <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-3">
+              <div class="card card-inverse card-info text-center p-50">
+                <div class="card-body">
+                  <h5 class="text-uppercase text-muted">Gold</h5>
+                  <br>
+                  <h3 class="fw-100 fs-70">Rs.1500</h3>
+                  <small>Quarterly</small>
+
+                  <hr>
+
+                  <p><strong>Online</strong></p>
+                  <p><strong>24x7</strong> Support</p>
+                  <p><strong>Unlimited</strong> Projects</p>
+
+                  <br><br>
+                  <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                </div>
+              </div>
+            </div>
+      
+      <div class="col-lg-3">
+              <div class="card card-inverse card-info text-center p-50">
+                <div class="card-body">
+                  <h5 class="text-uppercase text-muted">Silver</h5>
+                  <br>
+                  <h3 class="fw-100 fs-70">Rs.500</h3>
+                  <small>Monthly</small>
+
+                  <hr>
+
+                  <p><strong>Unlimited</strong> Storage</p>
+                  <p><strong>24x7</strong> Support</p>
+                  <p><strong>Unlimited</strong> Projects</p>
+
+                  <br><br>
+                  <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select plan</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+  
+
+                  </div>
+
+
+
+                  <div class="tab-pane fade" id="wizard-form-4">
+                    <br><br>
+                    <p class="text-center fs-35 text-muted">Ready to go?</p>
+                    <p class="text-center text-gray">Rapidiously facilitate web-enabled products through innovative collaboration.</p>
+                    <hr class="w-100px">
+                    <br>
+
+                    <div class="px-20">
+                      <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Username</label>
+                        <div class="form-control-plaintext col-sm-8">TheAdmin</div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Email</label>
+                        <div class="form-control-plaintext col-sm-8">support@theadmin.io</div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-form-label col-sm-4">Card number</label>
+                        <div class="form-control-plaintext col-sm-8">xxxx-xxxx-xxxx-3648</div>
+                      </div>
+                    </div>
+
+                  </div>
+        
+                </div>
+
+                <hr>
+
+                <div class="flexbox">
+                  <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                  <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
+                  <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </div><!--/.main-content -->
+
+</div>

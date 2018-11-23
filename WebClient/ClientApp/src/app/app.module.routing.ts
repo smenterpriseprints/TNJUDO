@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./home/components/home.component";
 import { LoginComponent } from './login/components/login.component';
@@ -22,6 +22,26 @@ import { PrintWinnersComponent } from './print-winners/print-winners.component';
 import { NocformComponent } from './nocform/nocform.component';
 import { CertificateComponent } from './registration/components/certificate/certificate.component';
 
+import { ImportParticipantsComponent } from './import-participants/import-participants.component';
+import { ImportWinnersComponent } from './import-winners/import-winners.component';
+import { UploadformComponent } from './uploadform/uploadform.component';
+import { PrintParticipantsComponent } from './print-participants/print-participants.component';
+import { PrintWinnersComponent } from './print-winners/print-winners.component';
+import { NocformComponent } from './nocform/nocform.component';
+import { TournamentStudentComponent } from './tournament-student/tournament-student.component';
+import { DistrictContactComponent } from './district-contact/district-contact.component';
+import { ClubRegistrationComponent } from './club-registration/club-registration.component';
+import { ClubContactComponent } from './club-contact/club-contact.component';
+import { ClubNewsComponent } from './club-news/club-news.component';
+import { DistrictNewsComponent } from './district-news/district-news.component';
+import { HalloffameComponent } from './halloffame/halloffame.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.component';
+import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
+import { NationalNewsComponent } from './national-news/national-news.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -49,6 +69,28 @@ const appRoutes: Routes = [
     { path: 'print-winners', component: PrintWinnersComponent },
     { path: 'nocform', component: NocformComponent },
     { path: 'certificate', component: CertificateComponent },
+    { path: 'tournament-index', component: TournamentIndexComponent },
+    { path: 'import-participants', component: ImportParticipantsComponent },
+    { path: 'import-winners', component: ImportWinnersComponent },
+    { path: 'uploadform', component: UploadformComponent },
+    { path: 'print-participants', component: PrintParticipantsComponent },
+    { path: 'print-winners', component: PrintWinnersComponent },
+    { path: 'nocform', component: NocformComponent },
+    { path: 'tournament-student', component: TournamentStudentComponent },
+    { path: 'district-contact', component: DistrictContactComponent },
+    { path: 'tournament-student', component: TournamentStudentComponent },
+    { path: 'club-registration', component: ClubRegistrationComponent },
+    { path: 'club-contact', component: ClubContactComponent },
+    { path: 'club-news', component: ClubNewsComponent },
+    { path: 'district-news', component: DistrictNewsComponent },
+    { path: 'halloffame', component: HalloffameComponent },
+    { path: 'testimonials', component: TestimonialsComponent },
+    { path: 'timeline', component: TimelineComponent },
+    { path: 'ecommerce', component: EcommerceComponent },
+    { path: 'student-registration', component: StudentRegistrationComponent },
+    { path: 'payment-monthly', component: PaymentMonthlyComponent },
+    { path: 'payment-affiliation', component: PaymentAffiliationComponent },
+    { path: 'national-news', component: NationalNewsComponent }
 
 
 ];

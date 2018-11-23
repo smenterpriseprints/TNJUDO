@@ -36,6 +36,27 @@ import { PrintParticipantsComponent } from './print-participants/print-participa
 import { PrintWinnersComponent } from './print-winners/print-winners.component';
 import { NocformComponent } from './nocform/nocform.component';
 import { CertificateComponent } from './registration/components/certificate/certificate.component';
+import { TournamentIndexComponent } from './tournament-index/tournament-index.component';
+import { ImportParticipantsComponent } from './import-participants/import-participants.component';
+import { ImportWinnersComponent } from './import-winners/import-winners.component';
+import { UploadformComponent } from './uploadform/uploadform.component';
+import { PrintParticipantsComponent } from './print-participants/print-participants.component';
+import { PrintWinnersComponent } from './print-winners/print-winners.component';
+import { NocformComponent } from './nocform/nocform.component';
+import { TournamentStudentComponent } from './tournament-student/tournament-student.component';
+import { DistrictContactComponent } from './district-contact/district-contact.component';
+import { ClubRegistrationComponent } from './club-registration/club-registration.component';
+import { ClubContactComponent } from './club-contact/club-contact.component';
+import { ClubNewsComponent } from './club-news/club-news.component';
+import { DistrictNewsComponent } from './district-news/district-news.component';
+import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { HalloffameComponent } from './halloffame/halloffame.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.component';
+import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
+import { NationalNewsComponent } from './national-news/national-news.component';
 
 
 @NgModule({
@@ -65,6 +86,20 @@ import { CertificateComponent } from './registration/components/certificate/cert
     PrintWinnersComponent,
     NocformComponent,
     CertificateComponent
+    TournamentStudentComponent,
+    DistrictContactComponent,
+    ClubRegistrationComponent,
+    ClubContactComponent,
+    ClubNewsComponent,
+    DistrictNewsComponent,
+    EcommerceComponent,
+    HalloffameComponent,
+    StudentRegistrationComponent,
+    TestimonialsComponent,
+    TimelineComponent,
+    PaymentMonthlyComponent,
+    PaymentAffiliationComponent,
+    NationalNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -78,6 +113,6 @@ import { CertificateComponent } from './registration/components/certificate/cert
   ],
   providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster],
   bootstrap: [AppComponent]
-  
+
 })
 export class AppModule { }
