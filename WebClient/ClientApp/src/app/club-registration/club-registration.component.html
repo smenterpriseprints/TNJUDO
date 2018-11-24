@@ -1,4 +1,3 @@
-<div>
     <div class="main-content">
 
         <!--
@@ -11,7 +10,7 @@
                 <h4 class="card-title"><strong> Club Registration Form</strong></h4>
 
                 <div class="card-body" style="background-color:orange;">
-                    <form data-provide="wizard">
+                    <form data-provide="wizard" [formGroup]="clubregistration" (ngSubmit)="onClubSubmiit()">
 
                         <ul class="nav nav-process nav-process-circle">
 
@@ -21,18 +20,13 @@
                             </li>
 
                             <li class="nav-item">
-                                <span class="nav-title">Map</span>
+                                <span class="nav-title">Payment </span>
                                 <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
                             </li>
 
                             <li class="nav-item">
-                                <span class="nav-title">Payment </span>
-                                <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
-                            </li>
-
-                            <li class="nav-item">
                                 <span class="nav-title">Confirmation</span>
-                                <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
+                                <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
                             </li>
                         </ul>
 
@@ -52,24 +46,34 @@
         |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
         !-->
                                 <div class="form-row" style="background-color:orange;">
+
+                                    <div class="form-group col-md-8">
+                                        <label for="clubarea" class="col-form-label">Enter your Area</label>
+                                        <custom-textbox [group]="clubregistration" name="clubarea" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" placeHolder="Area">
+                                    </custom-textbox>
+
                                     <div class="form-group col-md-8">
                                         <label for="clubName" class="col-form-label">Name Of the CLub</label>
-                                        <input type="text" class="form-control" id="clubName" placeholder="Name Of the CLub">
+                                        <custom-textbox [group]="clubregistration" name="clubname" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" placeHolder="Name of the club"></custom-textbox>
                                     </div>
 
                                     <div class="form-group col-md-6">
                                         <label for="presidentName" class="col-form-label">President Name</label>
-                                        <input type="text" class="form-control" id="presidentName" placeholder="Name">
+                                        <custom-textbox [group]="clubregistration" name="presidentName" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
                                     </div>
                                     <div class="form-group">
                                         <label>President Phone Number</label>
                                         <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <input type="text" class="form-control">
+                                        <custom-textbox [group]="clubregistration" name="presidentphone" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="10"></custom-textbox>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="presidentAddress" class="col-form-label">President Address</label>
-                                        <input type="text" class="form-control" id="presidentAddress" placeholder="Address"
-                                            style="height: 80px">
+                                        <custom-textbox [group]="clubregistration" name="presidentaddress" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar"  [style]="height: 80px"></custom-textbox>
                                     </div>
                                     <div class="col-md-4">
                                         <label>President Photo</label>
@@ -81,18 +85,20 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="secretaryName" class="col-form-label">Secretary Name</label>
-                                        <input type="text" class="form-control" id="secretaryName" placeholder="Name">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="secretaryname" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox> 
+                                        </div>
                                     <div class="form-group">
                                         <label>Secretary Phone Number</label>
                                         <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <input type="text" class="form-control">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="secretaryphone" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                        </div>
                                     <div class="form-group col-md-6">
                                         <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
-                                        <input type="text" class="form-control" id="secretaryAddress" placeholder="Address"
-                                            style="height:80px">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="secretaryaddress" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar" [style]="height:80px"></custom-textbox>
+                                        </div>
                                     <div class="col-md-4">
                                         <label>Secretary Photo</label>
                                         <div class="form-group file-group">
@@ -103,19 +109,21 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="coachName" class="col-form-label">Coach Name</label>
-                                        <input type="text" class="form-control" id="coachName" placeholder="Name">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="coachname" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" placeHolder="Name" ></custom-textbox>
+                                        </div>
                                     <div class="form-group">
                                         <label>Coach Phone Number</label>
                                         <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <input type="text" class="form-control">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="coachphone" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="10" pattern="number" ></custom-textbox>
+                                          </div>
 
                                     <div class="form-group col-md-6">
                                         <label for="coachAddress" class="col-form-label">Coach Address</label>
-                                        <input type="text" class="form-control" id="coachAddress" placeholder="Address"
-                                            style="height:80px">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="coachaddress" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar" [style]="height:80px"></custom-textbox>
+                                        </div>
                                     <div class="form-group col-md-4">
                                         <label>Coach Photo</label>
                                         <div class="form-group file-group">
@@ -125,39 +133,44 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label>District Phone Number</label>
+                                        <label>District Contact Number</label>
                                         <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <input type="text" class="form-control">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="districtphone" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                       </div>
                                     <div class="form-group col-md-6">
                                         <label for="districtEmail" class="col-form-label">District Email</label>
-                                        <input type="email" class="form-control" id="districtEmail" placeholder="Email">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="districtmail" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" pattern="email"></custom-textbox>
+                                        </div>
                                     <div class="form-group col-md-2">
                                         <label for="districtPassword" class="col-form-label">District Password</label>
-                                        <input type="password" class="form-control" id="districtPassword" placeholder="Password">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="districtpassword" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="100" ></custom-textbox>
+                                         </div>
 
                                     <div class="form-group col-md-3">
                                         <label for="clubAddress" class="col-form-label">Address Of Club Headquaters</label>
-                                        <input type="text" class="form-control" id="clubAddress" placeholder="Address Line 1"
-                                            style="height:60px">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="clubaddress1" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" [style]="height:60px"></custom-textbox>
+                                         </div>
 
                                     <div class="form-group col-md-3">
                                         <label for="clubAddress2" class="col-form-label">Address 2</label>
-                                        <input type="text" class="form-control" id="clubAddress2" placeholder="Address Line 2"
-                                            style="height:60px">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="clubaddress2" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" [style]="height:60px"></custom-textbox>
+                                         </div>
                                     <div class="form-group col-md-2">
-                                        <label for="city" class="col-form-label">City</label>
-                                        <input type="text" class="form-control" id="city" placeholder="City">
-                                    </div>
+                                        <label for="city" class="col-form-label">Landmark</label>
+                                        <custom-textbox [group]="clubregistration" name="clublandmark" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="200" placeHolder="Nearby"></custom-textbox>
+                                         </div>
 
                                     <div class="form-group col-md-2">
                                         <label for="pincode" class="col-form-label">Pincode</label>
-                                        <input type="text" class="form-control" id="pincode" placeholder="Pincode">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="pincode" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="6" ></custom-textbox>
+                                         </div>
 
                                     <div class="form-group col-md-5">
                                         <label for="affliationNo" class="col-form-label">District Affliation No</label>
@@ -166,25 +179,23 @@
 
                                     <div class="form-group col-md-2">
                                         <label for="inputAddress2" class="col-form-label">No Of Students</label>
-                                        <input type="text" class="form-control" id="male" placeholder="Male">
-                                        <input style="margin-top:10px;" type="text" class="form-control" id="female"
-                                            placeholder="Female">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="studentmale" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3" placeHolder="Male"></custom-textbox>
+                                        <custom-textbox [group]="clubregistration" name="studentfemale" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3" placeHolder="Female"></custom-textbox>
+                                         </div>
 
                                     <div class="form-group col-md-3">
                                         <label for="inputAddress2" class="col-form-label">No Of Students - Categorywise</label>
-                                        <input type="text" class="form-control" id="junior" placeholder="Junior">
-                                        <input style="margin-top:5px;" type="text" class="form-control" id="subjunior"
-                                            placeholder="Sub Junior">
-                                        <input style="margin-top:5px;" type="text" class="form-control" id="senior"
-                                            placeholder="Senior">
-                                    </div>
+                                        <custom-textbox [group]="clubregistration" name="studentjunior" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3" placeHolder="Sub-Junior"></custom-textbox>
+                                        <custom-textbox [group]="clubregistration" name="studentsubjunior" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3" placeHolder="Junior"></custom-textbox>
+                                        <custom-textbox [group]="clubregistration" name="studentsenior" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3" placeHolder="Senior"></custom-textbox>
+                                        </div>
 
 
-
-                                    <div class="form-row">
-
-                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox mr-3">
@@ -192,119 +203,14 @@
                                         <label class="custom-control-label">I agree to terms and conditions of TNJA.</label>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
 
+                            <!--Payment-->
                             <div class="tab-pane fade" id="wizard-form-2">
-                                <br><br>
-                                <p class="text-center fs-35 text-muted">Enter Your
-                                    <strong class="text-primary">Club </strong> Details</p>
-                                <p class="text-center text-gray">Plot the address of the club and details</p>
-                                <hr class="w-100px">
-                                <br> Map and Form ( Based on the logic)
-                                {{mapLatLng}}
-                                <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
-
-                            </div>
-
-
-
-                            <div class="tab-pane fade" id="wizard-form-3">
                                 <div class="tab-pane" id="pricing-2" role="tabpanel">
                                     <div class="row">
 
-                                        <div class="col-lg-3">
-                                            <div class="card card-inverse card-purple text-center p-50">
-                                                <div class="card-body">
-                                                    <h5 class="text-uppercase text-muted">Platinum</h5>
-                                                    <br>
-                                                    <h3 class="fw-100 fs-70">Rs.5000</h3>
-                                                    <small>Full Year</small>
-
-                                                    <hr>
-
-                                                    <p><strong>Discount Seminar</strong></p>
-                                                    <p><strong>24x7</strong> Support</p>
-                                                    <p><strong>5</strong> Projects</p>
-
-                                                    <br><br>
-                                                    <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select
-                                                        plan</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                        <div class="col-lg-3">
-                                            <div class="card card-inverse card-primary text-center p-50">
-                                                <div class="card-body">
-                                                    <h5 class="text-uppercase text-muted">Diamond</h5>
-                                                    <br>
-                                                    <h3 class="fw-100 fs-70">Rs.2500</h3>
-                                                    <small>Half Year</small>
-
-                                                    <hr>
-
-                                                    <p><strong>Free Seminar</strong></p>
-                                                    <p><strong>24x7</strong> Support</p>
-                                                    <p><strong>50</strong> Projects</p>
-
-                                                    <br><br>
-                                                    <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select
-                                                        plan</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="col-lg-3">
-                                            <div class="card card-inverse card-info text-center p-50">
-                                                <div class="card-body">
-                                                    <h5 class="text-uppercase text-muted">Gold</h5>
-                                                    <br>
-                                                    <h3 class="fw-100 fs-70">Rs.1500</h3>
-                                                    <small>Quarterly</small>
-
-                                                    <hr>
-
-                                                    <p><strong>Online</strong></p>
-                                                    <p><strong>24x7</strong> Support</p>
-                                                    <p><strong>Unlimited</strong> Projects</p>
-
-                                                    <br><br>
-                                                    <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select
-                                                        plan</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="card card-inverse card-info text-center p-50">
-                                                <div class="card-body">
-                                                    <h5 class="text-uppercase text-muted">Silver</h5>
-                                                    <br>
-                                                    <h3 class="fw-100 fs-70">Rs.500</h3>
-                                                    <small>Monthly</small>
-
-                                                    <hr>
-
-                                                    <p><strong>Unlimited</strong> Storage</p>
-                                                    <p><strong>24x7</strong> Support</p>
-                                                    <p><strong>Unlimited</strong> Projects</p>
-
-                                                    <br><br>
-                                                    <a class="btn btn-bold btn-block btn-outline btn-light" href="#">Select
-                                                        plan</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                            <p class="text-center fs-35 text-muted" style="color:black; font-size:20px">Confirm & Pay</p> 
 
 
                                     </div>
@@ -315,11 +221,10 @@
 
 
 
-                            <div class="tab-pane fade" id="wizard-form-4">
+                            <div class="tab-pane fade" id="wizard-form-3">
                                 <br><br>
-                                <p class="text-center fs-35 text-muted">Ready to go?</p>
-                                <p class="text-center text-gray">Rapidiously facilitate web-enabled products through
-                                    innovative collaboration.</p>
+                                <p class="text-center fs-35 text-muted">Registration Completed</p>
+                                
                                 <hr class="w-100px">
                                 <br>
 
@@ -351,6 +256,7 @@
                             <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
                             <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Submit</button>
                         </div>
+                  </div>
                     </form>
                 </div>
             </div>
@@ -358,5 +264,3 @@
 
     </div>
     <!--/.main-content -->
-
-</div>
