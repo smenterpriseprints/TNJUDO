@@ -24,14 +24,14 @@ span.arrow
 	border:1;
 	border-color: orange !important;
 }
-.topbar .menu-sub-submenu .menu-link{
+.topbar .menu-sub-submenu .menu-link,.menu-sub-submenu{
 	background-color: orange !important;
 }
 .menu-link .title {
 	line-height: 3 !important;
+	/*jssor slider loading skin spin css*/
 }
- /*jssor slider loading skin spin css*/
- .jssorl-009-spin img {
+.jssorl-009-spin img {
 	animation-name: jssorl-009-spin;
 	animation-duration: 1.6s;
 	animation-iteration-count: infinite;
