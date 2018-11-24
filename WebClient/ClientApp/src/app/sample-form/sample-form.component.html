@@ -1,0 +1,12 @@
+<form [formGroup]="sampleregistrationform" (ngSubmit)="onSampleSubmit()">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="samplename" class="col-form-label">Sample Name</label>
+      <custom-textbox [group]="sampleregistrationform" name="samplename" [required]="true" [editMode]="isEditMode"
+        [isValid]="isValid" [max]="100" placeHolder="Sample Name">
+      </custom-textbox>
+    </div>
+  </div>
+  <button class="btn btn-w-md btn-info" type="submit">Submit</button>
+</form>

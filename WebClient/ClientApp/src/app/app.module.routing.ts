@@ -35,6 +35,7 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
 import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.component';
 import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
 import { NationalNewsComponent } from './national-news/national-news.component';
+import { SampleFormComponent } from './sample-form/sample-form.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -83,7 +84,8 @@ const appRoutes: Routes = [
     { path: 'student-registration', component: StudentRegistrationComponent },
     { path: 'payment-monthly', component: PaymentMonthlyComponent },
     { path: 'payment-affiliation', component: PaymentAffiliationComponent },
-    { path: 'national-news', component: NationalNewsComponent }
+    { path: 'national-news', component: NationalNewsComponent },
+    { path: 'sample-form', component: SampleFormComponent },
 
 
 ];
