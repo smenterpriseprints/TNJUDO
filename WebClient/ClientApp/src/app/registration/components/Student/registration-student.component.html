@@ -47,7 +47,7 @@
                             <br>
                             <br>
                             <p class="text-center fs-35 text-muted">Student
-                                <strong class="text-primary">Registeration</strong>
+                                <strong class="text-primary">Registration</strong>
                             </p>
                             <!-- <p class="text-center text-gray">Please complete the following 4 steps</p> -->
                             <hr class="w-100px">
@@ -70,7 +70,7 @@
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="dob" class="col-form-label">Date of Biirth</label>
-                                                    <custom-textbox [group]="registrationForm" name="fatherName"
+                                                    <custom-textbox [group]="registrationForm" name="dob"
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="100" placeHolder="DD/MM/YYYY"></custom-textbox>
                                                 </div>
@@ -122,7 +122,7 @@
                                                 <div class="form-group col-md-4">
                                                     <label for="mobile" class="col-form-label">Mobile Number</label>
                                                     <small class="phoneNumber">E.g. +91 123-456-7890</small>
-                                                    <c<dustom-textbox [group]="registrationForm" name="studentPhone"
+                                                    <custom-textbox [group]="registrationForm" name="studentPhone"
                                                         [pattern]="number" [required]="true" [editMode]="isEditMode"
                                                         [isValid]="isValid" [max]="10">
                                                         </custom-textbox>
@@ -133,23 +133,36 @@
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="150" pattern="email"></custom-textbox>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label for="previoussport" class="col-form-label">Previous Sports If Any</label>
-                                                    <custom-textbox [group]="registrationForm" name="previoussport" [required]="true"
-                                                        [editMode]="isEditMode" [isValid]="isValid" [max]="150" pattern="email"></custom-textbox>
+                                                    <label for="previoussport" class="col-form-label">Previous Sports
+                                                        If Any</label>
+                                                    <custom-textbox [group]="registrationForm" name="previoussport"
+                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                        [max]="150"></custom-textbox>
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                        <label for="previousmartial" class="col-form-label">Previous Martial Arts If Any</label>
-                                                        <custom-textbox [group]="registrationForm" name="previousmartial" [required]="true"
-                                                            [editMode]="isEditMode" [isValid]="isValid" [max]="150" pattern="email"></custom-textbox>
-                                                    </div>
-                                                    <div class="form-group col-md-4">
-                                                            <label for="achievement" class="col-form-label">Achievements If Any</label>
-                                                            <custom-textbox [group]="registrationForm" name="achievement" [required]="true"
-                                                                [editMode]="isEditMode" [isValid]="isValid" [max]="150" pattern="email"></custom-textbox>
-                                                        </div>
-
-
-
+                                                    <label for="previousmartial" class="col-form-label">Previous
+                                                        Martial Arts If Any</label>
+                                                    <custom-textbox [group]="registrationForm" name="previousmartial"
+                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                        [max]="150"></custom-textbox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="achievement" class="col-form-label">Achievements If Any</label>
+                                                    <custom-textbox [group]="registrationForm" name="achievement"
+                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                        [max]="150"></custom-textbox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="reason" class="col-form-label">Reason to Join Judo</label>
+                                                    <custom-textbox [group]="registrationForm" name="reason" [required]="true"
+                                                        [editMode]="isEditMode" [isValid]="isValid" [max]="150"></custom-textbox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="ambitiion" class="col-form-label">Ambition in Judo</label>
+                                                    <custom-textbox [group]="registrationForm" name="ambition"
+                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                        [max]="150"></custom-textbox>
+                                                </div>
 
                                             </div>
 
@@ -168,153 +181,170 @@
                                                             [max]="100" placeHolder="Name"></custom-textbox>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                            <label for="fatherAge" class="col-form-label">Father Age
-                                                            </label>
-                                                            <custom-textbox [group]="registrationForm" name="fatherAge"
-                                                                [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                [max]="2"></custom-textbox>
-                                                        </div>
-                                                        <div class="form-group col-md-4">
-                                                                <label for="fatherqualification" class="col-form-label">Qualification
-                                                                </label>
-                                                                <custom-textbox [group]="registrationForm" name="fatherqualification"
-                                                                    [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                    [max]="10"></custom-textbox>
-                                                            </div>
-                                                            <div class="form-group col-md-4">
-                                                                    <label for="fatheroccupation" class="col-form-label">Occupation
-                                                                    </label>
-                                                                    <custom-textbox [group]="registrationForm" name="fatheroccupation"
-                                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                        [max]="100"></custom-textbox>
-                                                                </div>
-                                                                <div class="form-group col-md-4">
-                                                                        <label for="motherName" class="col-form-label">Mother Name
-                                                                        </label>
-                                                                        <custom-textbox [group]="registrationForm" name="motherName"
-                                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                            [max]="100" placeHolder="Name"></custom-textbox>
-                                                                    </div>
-                                                                    <div class="form-group col-md-4">
-                                                                            <label for="motherAge" class="col-form-label">Mother Age
-                                                                            </label>
-                                                                            <custom-textbox [group]="registrationForm" name="motherAge"
-                                                                                [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                                [max]="2"></custom-textbox>
-                                                                        </div>
-                                                                        <div class="form-group col-md-4">
-                                                                                <label for="motherqualification" class="col-form-label">Qualification
-                                                                                </label>
-                                                                                <custom-textbox [group]="registrationForm" name="motherqualification"
-                                                                                    [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                                    [max]="10"></custom-textbox>
-                                                                            </div>
-                                                                            <div class="form-group col-md-4">
-                                                                                    <label for="motheroccupation" class="col-form-label">Occupation
-                                                                                    </label>
-                                                                                    <custom-textbox [group]="registrationForm" name="motheroccupation"
-                                                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                                        [max]="100"></custom-textbox>
-                                                                                </div>
-                                                                                <div class="form-group col-md-4">
-                                                                                        <label for="siblings" class="col-form-label">No.of.Siblings
-                                                                                        </label>
-                                                                                        <custom-textbox [group]="registrationForm" name="siblings"
-                                                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                                            [max]="10"></custom-textbox>
-                                                                                    </div>
-                                                                                    <div class="form-group col-md-4">
-                                                                                            <label for="economical" class="col-form-label">Economical Status
-                                                                                            </label>
-                                                                                            <custom-textbox [group]="registrationForm" name="economic"
-                                                                                                [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                                                [max]="50"></custom-textbox>
-                                                                                        </div>
+                                                        <label for="fatherAge" class="col-form-label">Father Age
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="fatherAge"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="2"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="fatherqualification" class="col-form-label">Qualification
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="fatherqualification"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="10"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="fatheroccupation" class="col-form-label">Occupation
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="fatheroccupation"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="100"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="motherName" class="col-form-label">Mother Name
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="motherName"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="100" placeHolder="Name"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="motherAge" class="col-form-label">Mother Age
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="motherAge"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="2"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="motherqualification" class="col-form-label">Qualification
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="motherqualification"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="10"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="motheroccupation" class="col-form-label">Occupation
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="motheroccupation"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="100"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="siblings" class="col-form-label">No.of.Siblings
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="siblings"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="10"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="income" class="col-form-label">Annual Income
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="income"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="10"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="economical" class="col-form-label">Economical
+                                                            Status
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="economic"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="50"></custom-textbox>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card" style="background-color: orange" >
-                                                <h4 class="card-title"><strong>Health</strong> Condition</h4>
-                                  
-                                                <div class="card-body" style="background-color: orange"> 
-                                                  <div class="row">
-                                                        <div class="form-group col-md-4">
-                                                                <label for="blood" class="col-form-label">Blood Group
-                                                                </label>
-                                                                <custom-textbox [group]="registrationForm" name="blood"
-                                                                    [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                    [max]="10"></custom-textbox>
-                                                            </div>
-                                                            <div class="form-group col-md-4">
-                                                                    <label for="health" class="col-form-label">Health Condition
-                                                                    </label>
-                                                                    <custom-textbox [group]="registrationForm" name="health"
-                                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                        [max]="100"></custom-textbox>
-                                                                </div>
-                                                                <div class="form-group col-md-4">
-                                                                        <label for="mark" class="col-form-label">Visible Mark
-                                                                        </label>
-                                                                        <custom-textbox [group]="registrationForm" name="visiblemark"
-                                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                                            [max]="100"></custom-textbox>
-                                                                    </div>
+                                        <div class="card" style="background-color: orange">
+                                            <h4 class="card-title"><strong>Health</strong> Condition</h4>
 
-                                                            </div>
+                                            <div class="card-body" style="background-color: orange">
+                                                <div class="row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="blood" class="col-form-label">Blood Group
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="blood"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="10"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="health" class="col-form-label">Health Condition
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="health"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="100"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="mark" class="col-form-label">Visible Mark
+                                                        </label>
+                                                        <custom-textbox [group]="registrationForm" name="visiblemark"
+                                                            [required]="true" [editMode]="isEditMode" [isValid]="isValid"
+                                                            [max]="100"></custom-textbox>
                                                     </div>
 
-                                                  </div>
+                                                </div>
+                                            </div>
 
-                                                  <div class="card" style="background-color: orange">
-                                                        <h4 class="card-title"><strong>Documents</strong> To Be Uploaded</h4>
-                                                        <div class="card-body" style="background-color: orange">
-                                                          <div class="row">
+                                        </div>
 
-                                                                <div class="form-group col-md-4">
-                                                                        <p>Passport Size Photo</p>
-                                                                            <div class="input-group file-group">
-                                                                            <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
-                                                                            <input type="file" multiple>
-                                                                            <span class="input-group-append">
-                                                                                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
-                                                                            </span>
-                                                                            </div>
-                                                                </div>
+                                        <div class="card" style="background-color: orange">
+                                            <h4 class="card-title"><strong>Documents</strong> To Be Uploaded</h4>
+                                            <div class="card-body" style="background-color: orange">
+                                                <div class="row">
 
-                                                                <div class="form-group col-md-4">
-                                                                        <p>Aadhaar card</p>
-                                                                        <div class="input-group file-group">
-                                                                        <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
-                                                                        <input type="file" multiple>
-                                                                        <span class="input-group-append">
-                                                                            <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
-                                                                        </span>
-                                                                        </div>
-                                                                </div>
-
-                                                                <div class="form-group col-md-4">
-                                                                        <p><span>Any document &nbsp; </span><span style="font-size:10px">(Birth Certificate, Class X certificate)</span></p>
-                                                                            <div class="input-group file-group">
-                                                                            <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
-                                                                            <input type="file" multiple>
-                                                                            <span class="input-group-append">
-                                                                                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
-                                                                            </span>
-                                                                            </div>
-                                                                </div>
-                                                                <div class="form-group col-md-4">
-                                                                        <p>Income Certificate (Father / Mother )</p>
-                                                                            <div class="input-group file-group">
-                                                                            <input type="text" class="form-control file-value" placeholder="Choose file..." readonly>
-                                                                            <input type="file" multiple>
-                                                                            <span class="input-group-append">
-                                                                                <button class="btn btn-light file-browser" type="button"><i class="fa fa-upload"></i></button>
-                                                                            </span>
-                                                                            </div>
-                                                                </div>
-                                                            </div>
+                                                    <div class="form-group col-md-4">
+                                                        <p>Passport Size Photo</p>
+                                                        <div class="input-group file-group">
+                                                            <input type="text" class="form-control file-value"
+                                                                placeholder="Choose file..." readonly>
+                                                            <input type="file" multiple>
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-light file-browser" type="button"><i
+                                                                        class="fa fa-upload"></i></button>
+                                                            </span>
                                                         </div>
-                                                  </div>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+                                                        <p>Aadhaar card</p>
+                                                        <div class="input-group file-group">
+                                                            <input type="text" class="form-control file-value"
+                                                                placeholder="Choose file..." readonly>
+                                                            <input type="file" multiple>
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-light file-browser" type="button"><i
+                                                                        class="fa fa-upload"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+                                                        <p><span>Any document &nbsp; </span><span style="font-size:10px">(Birth
+                                                                Certificate, Class X certificate)</span></p>
+                                                        <div class="input-group file-group">
+                                                            <input type="text" class="form-control file-value"
+                                                                placeholder="Choose file..." readonly>
+                                                            <input type="file" multiple>
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-light file-browser" type="button"><i
+                                                                        class="fa fa-upload"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <p>Income Certificate (Father / Mother )</p>
+                                                        <div class="input-group file-group">
+                                                            <input type="text" class="form-control file-value"
+                                                                placeholder="Choose file..." readonly>
+                                                            <input type="file" multiple>
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-light file-browser" type="button"><i
+                                                                        class="fa fa-upload"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
                                         <div class="form-group">
@@ -324,11 +354,6 @@
                                                     conditions.</label>
                                             </div>
                                         </div>
-
-
-
-
-
 
                                     </div>
                                 </div>
@@ -340,7 +365,7 @@
 
 
 
-                        <div class="tab-pane fade" id="wizard-form-3">
+                        <div class="tab-pane fade" id="wizard-form-2">
 
 
                             <div class="tab-pane" id="pricing-2" role="tabpanel">
@@ -351,7 +376,7 @@
                                             <div class="card-body">
                                                 <h5 class="text-uppercase text-muted">Platinum</h5>
                                                 <br>
-                                                <h3 class="fw-100 fs-70">$25</h3>
+                                                <h3 class="fw-100 fs-70">Rs.5000</h3>
                                                 <small>Full Year</small>
 
                                                 <hr>
@@ -381,7 +406,7 @@
                                             <div class="card-body">
                                                 <h5 class="text-uppercase text-muted">Diamond</h5>
                                                 <br>
-                                                <h3 class="fw-100 fs-70">$15</h3>
+                                                <h3 class="fw-100 fs-70">Rs.2500</h3>
                                                 <small>Half Year</small>
 
                                                 <hr>
@@ -409,7 +434,7 @@
                                             <div class="card-body">
                                                 <h5 class="text-uppercase text-muted">Gold</h5>
                                                 <br>
-                                                <h3 class="fw-100 fs-70">$10</h3>
+                                                <h3 class="fw-100 fs-70">Rs.1500</h3>
                                                 <small>Quarterly</small>
 
                                                 <hr>
@@ -435,7 +460,7 @@
                                             <div class="card-body">
                                                 <h5 class="text-uppercase text-muted">Silver</h5>
                                                 <br>
-                                                <h3 class="fw-100 fs-70">$5</h3>
+                                                <h3 class="fw-100 fs-70">Rs.500</h3>
                                                 <small>Monthly</small>
 
                                                 <hr>
@@ -464,12 +489,11 @@
 
 
 
-                        <div class="tab-pane fade" id="wizard-form-4">
+                        <div class="tab-pane fade" id="wizard-form-3">
                             <br>
                             <br>
-                            <p class="text-center fs-35 text-muted">Ready to go?</p>
-                            <p class="text-center text-gray">Rapidiously facilitate web-enabled products through
-                                innovative collaboration.</p>
+                            <p class="text-center fs-35 text-muted">Registration Success</p>
+                            <p class="text-center text-gray">User ID with Welcome kit shared with your registered mail ID</p>
                             <hr class="w-100px">
                             <br>
 
