@@ -5,7 +5,7 @@ span.arrow
 }
 .nav-link{
 	color:black !important;
-	font-size: 16px !important;
+	font-size: 20px !important;
     font-family: Lato !important;
     font-weight: 500 !important;
 }
@@ -29,6 +29,7 @@ span.arrow
 }
 .menu-link .title {
 	line-height: 3 !important;
+	font-size: 20px !important;
 	/*jssor slider loading skin spin css*/
 }
 .jssorl-009-spin img {
