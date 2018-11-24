@@ -50,6 +50,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.component';
 import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
 import { NationalNewsComponent } from './national-news/national-news.component';
+import { SampleFormComponent } from './sample-form/sample-form.component';
 
 
 @NgModule({
@@ -92,7 +93,8 @@ import { NationalNewsComponent } from './national-news/national-news.component';
     TimelineComponent,
     PaymentMonthlyComponent,
     PaymentAffiliationComponent,
-    NationalNewsComponent
+    NationalNewsComponent,
+    SampleFormComponent
   ],
   imports: [
     BrowserModule,
