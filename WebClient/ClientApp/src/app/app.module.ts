@@ -51,6 +51,7 @@ import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.compo
 import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
 import { NationalNewsComponent } from './national-news/national-news.component';
 import { SampleFormComponent } from './sample-form/sample-form.component';
+import { ClubService } from './registration/Service/registration-club.service';
 
 
 @NgModule({
@@ -106,7 +107,7 @@ import { SampleFormComponent } from './sample-form/sample-form.component';
     AppModuleRouting,
     BrowserAnimationsModule,
   ],
-  providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster],
+  providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster, ClubService],
   bootstrap: [AppComponent]
 
 })

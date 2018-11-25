@@ -1,266 +1,250 @@
-    <div class="main-content">
+<div class="main-content">
+    <div class="col-lg-12" style="background-color:orange;">
+        <div class="card" style="background-color:orange;">
+            <div class="card-body" style="background-color:orange;">
+                <form data-provide="wizard" [formGroup]="clubregistration" (ngSubmit)="onClubSubmiit()">
+                    <ul class="nav nav-process nav-process-circle">
+                        <li class="nav-item">
+                            <span class="nav-title">Sign Up form</span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-title">Payment </span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-title">Confirmation</span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="wizard-form-1">
+                            <br>
+                            <p class="text-center fs-35 text-primary">Club <strong class="text-muted">Registeration</strong></p>
+                            <!-- <p class="text-center text-gray">Please complete the following 3 steps</p> -->
+                            <hr class="w-100px">
+                            <div class="form-row" style="background-color:orange;">
 
-        <!--
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        | Form
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        !-->
-        <div class="col-lg-12" style="background-color:orange;">
-            <div class="card" style="background-color:orange;">
-                <h4 class="card-title"><strong> Club Registration Form</strong></h4>
-
-                <div class="card-body" style="background-color:orange;">
-                    <form data-provide="wizard" [formGroup]="clubregistration" (ngSubmit)="onClubSubmiit()">
-
-                        <ul class="nav nav-process nav-process-circle">
-
-                            <li class="nav-item">
-                                <span class="nav-title">Sign Up form</span>
-                                <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <span class="nav-title">Payment </span>
-                                <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <span class="nav-title">Confirmation</span>
-                                <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
-                            </li>
-                        </ul>
-
-
-                        <div class="tab-content">
-                            <div class="tab-pane fade active show" id="wizard-form-1">
-                                <br>
-                                <p class="text-center fs-35 text-muted">Club <strong class="text-primary">Registeration</strong></p>
-                                <p class="text-center text-gray">Please complete the following 4 steps</p>
-                                <hr class="w-100px">
-
-
-
-                                <!--
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        | Form row
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        !-->
-                                <div class="form-row" style="background-color:orange;">
-
-                                    <div class="form-group col-md-8">
-                                        <label for="clubarea" class="col-form-label">Enter your Area</label>
-                                        <custom-textbox [group]="clubregistration" name="clubarea" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" placeHolder="Area">
+                                <div class="form-group col-md-8">
+                                    <label for="ClubArea" class="col-form-label">Enter your Area</label>
+                                    <custom-textbox [group]="clubregistration" name="ClubArea" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Area">
                                     </custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-8">
-                                        <label for="clubName" class="col-form-label">Name Of the CLub</label>
-                                        <custom-textbox [group]="clubregistration" name="clubname" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" placeHolder="Name of the club"></custom-textbox>
-                                    </div>
+                                <div class="form-group col-md-8">
+                                    <label for="ClubName" class="col-form-label">Name Of the CLub</label>
+                                    <custom-textbox [group]="clubregistration" name="ClubName" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name of the club"></custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-6">
-                                        <label for="presidentName" class="col-form-label">President Name</label>
-                                        <custom-textbox [group]="clubregistration" name="presidentName" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>President Phone Number</label>
-                                        <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <custom-textbox [group]="clubregistration" name="presidentphone" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="10"></custom-textbox>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="presidentAddress" class="col-form-label">President Address</label>
-                                        <custom-textbox [group]="clubregistration" name="presidentaddress" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar"  [style]="height: 80px"></custom-textbox>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label>President Photo</label>
-                                        <div class="form-group file-group">
-                                            <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
-                                                readonly>
-                                            <input type="file" multiple>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="secretaryName" class="col-form-label">Secretary Name</label>
-                                        <custom-textbox [group]="clubregistration" name="secretaryname" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox> 
-                                        </div>
-                                    <div class="form-group">
-                                        <label>Secretary Phone Number</label>
-                                        <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <custom-textbox [group]="clubregistration" name="secretaryphone" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
-                                        </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="secretaryAddress" class="col-form-label">Secretary Address</label>
-                                        <custom-textbox [group]="clubregistration" name="secretaryaddress" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar" [style]="height:80px"></custom-textbox>
-                                        </div>
-                                    <div class="col-md-4">
-                                        <label>Secretary Photo</label>
-                                        <div class="form-group file-group">
-                                            <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
-                                                readonly>
-                                            <input type="file" multiple>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="coachName" class="col-form-label">Coach Name</label>
-                                        <custom-textbox [group]="clubregistration" name="coachname" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" placeHolder="Name" ></custom-textbox>
-                                        </div>
-                                    <div class="form-group">
-                                        <label>Coach Phone Number</label>
-                                        <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <custom-textbox [group]="clubregistration" name="coachphone" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="10" pattern="number" ></custom-textbox>
-                                          </div>
+                                <div class="form-group col-md-6">
+                                    <label for="PresidentName" class="col-form-label">President Name</label>
+                                    <custom-textbox [group]="clubregistration" name="PresidentName" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
+                                </div>
+                                <div class="form-group">
+                                    <label>President Phone Number</label>
+                                    <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="clubregistration" name="PresidentPhone" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10"></custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-6">
-                                        <label for="coachAddress" class="col-form-label">Coach Address</label>
-                                        <custom-textbox [group]="clubregistration" name="coachaddress" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar" [style]="height:80px"></custom-textbox>
-                                        </div>
-                                    <div class="form-group col-md-4">
-                                        <label>Coach Photo</label>
-                                        <div class="form-group file-group">
-                                            <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
-                                                readonly>
-                                            <input type="file" multiple>
-                                        </div>
+                                <div class="form-group">
+                                    <label for="PresidentAddress">President Address</label>
+                                    <custom-textbox [group]="clubregistration" name="PresidentAddress" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar">
+                                    </custom-textbox>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p>President Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
+                                            readonly>
+                                        <input type="file" (change)="onSelectPhoto($event,'PresidentPhoto')" multiple>
                                     </div>
-                                    <div class="form-group col-md-4">
-                                        <label>District Contact Number</label>
-                                        <small class="sidetitle">E.g. +91 123-456-7890</small>
-                                        <custom-textbox [group]="clubregistration" name="districtphone" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
-                                       </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="districtEmail" class="col-form-label">District Email</label>
-                                        <custom-textbox [group]="clubregistration" name="districtmail" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" pattern="email"></custom-textbox>
-                                        </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="districtPassword" class="col-form-label">District Password</label>
-                                        <custom-textbox [group]="clubregistration" name="districtpassword" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="100" ></custom-textbox>
-                                         </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="SecretaryName" class="col-form-label">Secretary Name</label>
+                                    <custom-textbox [group]="clubregistration" name="SecretaryName" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-3">
-                                        <label for="clubAddress" class="col-form-label">Address Of Club Headquaters</label>
-                                        <custom-textbox [group]="clubregistration" name="clubaddress1" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="200" [style]="height:60px"></custom-textbox>
-                                         </div>
+                                <div class="form-group">
+                                    <label>Secretary Phone Number</label>
+                                    <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="clubregistration" name="SecretaryPhone" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-3">
-                                        <label for="clubAddress2" class="col-form-label">Address 2</label>
-                                        <custom-textbox [group]="clubregistration" name="clubaddress2" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="200" [style]="height:60px"></custom-textbox>
-                                         </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="city" class="col-form-label">Landmark</label>
-                                        <custom-textbox [group]="clubregistration" name="clublandmark" [required]="true" [editMode]="isEditMode"
+                                <div class="form-group col-md-6">
+                                    <label for="SecretaryAddress" class="col-form-label">Secretary Address</label>
+                                    <custom-textbox [group]="clubregistration" name="SecretaryAddress" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar"></custom-textbox>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p>Secretary Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
+                                            readonly>
+                                        <input type="file" (change)="onSelectPhoto($event,'SecretaryPhoto')" multiple>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <label for="CoachName" class="col-form-label">Coach Name</label>
+                                    <custom-textbox [group]="clubregistration" name="CoachName" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Name"></custom-textbox>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Coach Phone Number</label>
+                                    <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="clubregistration" name="CoachPhone" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="CoachAddrerss" class="col-form-label">Coach Address</label>
+                                    <custom-textbox [group]="clubregistration" name="CoachAddrerss" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar"></custom-textbox>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p>Coach Photo</p>
+                                    <div class="form-group file-group">
+                                        <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
+                                            readonly>
+                                        <input type="file" (change)="onSelectPhoto($event,'CoachPhoto')" multiple>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label>District Contact Number</label>
+                                    <small class="sidetitle">E.g. +91 123-456-7890</small>
+                                    <custom-textbox [group]="clubregistration" name="DistrictPhone" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="DistrictEmail" class="col-form-label">District Email</label>
+                                    <custom-textbox [group]="clubregistration" name="DistrictEmail" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" pattern="email"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="DistrictPassword" class="col-form-label">District Password</label>
+                                    <custom-textbox [group]="clubregistration" name="DistrictPassword" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="ClubAddress" class="col-form-label">Address Of Club Headquaters</label>
+                                    <custom-textbox [group]="clubregistration" name="ClubAddress" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="ClubAddress2" class="col-form-label">Address 2</label>
+                                    <custom-textbox [group]="clubregistration" name="ClubAddress2" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="City" class="col-form-label">Landmark</label>
+                                    <custom-textbox [group]="clubregistration" name="City" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="200" placeHolder="Nearby"></custom-textbox>
-                                         </div>
+                                </div>
 
-                                    <div class="form-group col-md-2">
-                                        <label for="pincode" class="col-form-label">Pincode</label>
-                                        <custom-textbox [group]="clubregistration" name="pincode" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="6" ></custom-textbox>
-                                         </div>
+                                <div class="form-group col-md-2">
+                                    <label for="Pincode" class="col-form-label">Pincode</label>
+                                    <custom-textbox [group]="clubregistration" name="Pincode" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="6"></custom-textbox>
+                                </div>
 
-                                    <div class="form-group col-md-5">
-                                        <label for="affliationNo" class="col-form-label">District Affliation No</label>
-                                        <input type="text" class="form-control" id="affliationNo" placeholder="District Affliation No">
-                                    </div>
 
-                                    <div class="form-group col-md-2">
-                                        <label for="inputAddress2" class="col-form-label">No Of Students</label>
-                                        <custom-textbox [group]="clubregistration" name="studentmale" [required]="true" [editMode]="isEditMode"
+                                <div class="form-group col-md-5">
+                                    <label for="AffliationNo" class="col-form-label">District Affliation No</label>
+                                    <custom-textbox [group]="clubregistration" name="AffliationNo" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="6"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="inputAddress2" class="col-form-label">No Of Male Students</label>
+                                    <custom-textbox [group]="clubregistration" name="Male" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="3" placeHolder="Male"></custom-textbox>
-                                        <custom-textbox [group]="clubregistration" name="studentfemale" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="3" placeHolder="Female"></custom-textbox>
-                                         </div>
-
-                                    <div class="form-group col-md-3">
-                                        <label for="inputAddress2" class="col-form-label">No Of Students - Categorywise</label>
-                                        <custom-textbox [group]="clubregistration" name="studentjunior" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="3" placeHolder="Sub-Junior"></custom-textbox>
-                                        <custom-textbox [group]="clubregistration" name="studentsubjunior" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="3" placeHolder="Junior"></custom-textbox>
-                                        <custom-textbox [group]="clubregistration" name="studentsenior" [required]="true" [editMode]="isEditMode"
-                                        [isValid]="isValid" [max]="3" placeHolder="Senior"></custom-textbox>
-                                        </div>
-
-
+                                </div>
+                                <div>
+                                    <label for="inputAddress2" class="col-form-label">No Of Female Students</label>
+                                    <custom-textbox [group]="clubregistration" name="Female" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Female"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputAddress2" class="col-form-label">No Of Students -
+                                        Categorywise</label>
+                                    <custom-textbox [group]="clubregistration" name="Junior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Sub-Junior"></custom-textbox>
+                                    <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Junior"></custom-textbox>
+                                    <custom-textbox [group]="clubregistration" name="Senior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Senior"></custom-textbox>
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox mr-3">
                                         <input type="checkbox" class="custom-control-input">
-                                        <label class="custom-control-label">I agree to terms and conditions of TNJA.</label>
+                                        <label class="custom-control-label">I agree to terms and conditions of
+                                            TNJA.</label>
                                     </div>
                                 </div>
                             </div>
-
-                            <!--Payment-->
-                            <div class="tab-pane fade" id="wizard-form-2">
-                                <div class="tab-pane" id="pricing-2" role="tabpanel">
-                                    <div class="row">
-
-                                            <p class="text-center fs-35 text-muted" style="color:black; font-size:20px">Confirm & Pay</p> 
-
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-
-
-                            <div class="tab-pane fade" id="wizard-form-3">
-                                <br><br>
-                                <p class="text-center fs-35 text-muted">Registration Completed</p>
-                                
-                                <hr class="w-100px">
-                                <br>
-
-                                <div class="px-20">
-                                    <div class="form-group row">
-                                        <label class="col-form-label col-sm-4">Username</label>
-                                        <div class="form-control-plaintext col-sm-8">TheAdmin</div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-form-label col-sm-4">Email</label>
-                                        <div class="form-control-plaintext col-sm-8">support@theadmin.io</div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-form-label col-sm-4">Card number</label>
-                                        <div class="form-control-plaintext col-sm-8">xxxx-xxxx-xxxx-3648</div>
-                                    </div>
-                                </div>
-
-                            </div>
-
                         </div>
 
-                        <hr>
-
-                        <div class="flexbox">
-                            <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
-                            <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
-                            <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Submit</button>
+                        <!--Payment-->
+                        <div class="tab-pane fade" id="wizard-form-2">
+                            <div class="tab-pane" id="pricing-2" role="tabpanel">
+                                <div class="row">
+                                    <p class="text-center fs-35 text-muted" style="color:black; font-size:20px">Confirm
+                                        & Pay</p>
+                                </div>
+                            </div>
                         </div>
-                  </div>
-                    </form>
-                </div>
+
+                        <div class="tab-pane fade" id="wizard-form-3">
+                            <br><br>
+                            <p class="text-center fs-35 text-muted">Registration Completed</p>
+
+                            <hr class="w-100px">
+                            <br>
+
+                            <div class="px-20">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-4">Username</label>
+                                    <div class="form-control-plaintext col-sm-8">{{this.clubregistration.value.ClubName}}</div>
+                                </div>
+
+                                <!-- <div class="form-group row">
+                                    <label class="col-form-label col-sm-4">Email</label>
+                                    <div class="form-control-plaintext col-sm-8">support@theadmin.io</div>
+                                </div> -->
+
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-4">Card number</label>
+                                    <div class="form-control-plaintext col-sm-8">xxxx-xxxx-xxxx-3648</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+
+                    <div class="flexbox">
+                        <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                        <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
+                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Finish</button>
+                    </div>
+                </form>
             </div>
         </div>
-
     </div>
-    <!--/.main-content -->
+</div>
