@@ -36,6 +36,10 @@ import { PaymentMonthlyComponent } from './payment-monthly/payment-monthly.compo
 import { PaymentAffiliationComponent } from './payment-affiliation/payment-affiliation.component';
 import { NationalNewsComponent } from './national-news/national-news.component';
 import { SampleFormComponent } from './sample-form/sample-form.component';
+import {EventComponent} from './event/event.component';
+import {StateContactComponent} from './state-contact/state-contact.component';
+import {CareerComponent} from './career/career.component';
+import {CouncilingComponent} from './counciling/counciling.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -86,6 +90,11 @@ const appRoutes: Routes = [
     { path: 'payment-affiliation', component: PaymentAffiliationComponent },
     { path: 'national-news', component: NationalNewsComponent },
     { path: 'sample-form', component: SampleFormComponent },
+    { path: 'events', component:EventComponent },
+    { path: 'state-contact', component:StateContactComponent},
+    { path: 'career', component:CareerComponent},
+    { path: 'counciling', component:CouncilingComponent},
+    
 
 
 ];

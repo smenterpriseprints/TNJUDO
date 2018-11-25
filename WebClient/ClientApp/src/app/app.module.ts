@@ -52,6 +52,10 @@ import { PaymentAffiliationComponent } from './payment-affiliation/payment-affil
 import { NationalNewsComponent } from './national-news/national-news.component';
 import { SampleFormComponent } from './sample-form/sample-form.component';
 import { ClubService } from './registration/Service/registration-club.service';
+import { EventComponent } from './event/event.component';
+import { StateContactComponent } from './state-contact/state-contact.component';
+import { CareerComponent } from './career/career.component';
+import { CouncilingComponent } from './counciling/counciling.component';
 
 
 @NgModule({
@@ -95,7 +99,11 @@ import { ClubService } from './registration/Service/registration-club.service';
     PaymentMonthlyComponent,
     PaymentAffiliationComponent,
     NationalNewsComponent,
-    SampleFormComponent
+    SampleFormComponent,
+    EventComponent,
+    StateContactComponent,
+    CareerComponent,
+    CouncilingComponent
   ],
   imports: [
     BrowserModule,
