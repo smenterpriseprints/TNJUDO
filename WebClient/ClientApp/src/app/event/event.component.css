@@ -1,6 +1,10 @@
 .title{
-    color:white !important;
+    color:red !important;
 }
 li{
     color:black !important;
+}
+time{
+    color:black !important;
+    font-size:16px;
 }
