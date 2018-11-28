@@ -70,9 +70,9 @@
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="dob" class="col-form-label">Date of Biirth</label>
-                                                    <custom-textbox [group]="registrationForm" name="dob"
-                                                        [required]="true" [editMode]="isEditMode" [isValid]="isValid"
-                                                        [max]="100" placeHolder="DD/MM/YYYY"></custom-textbox>
+                                                    <custom-textbox [group]="registrationForm" name="dob" [required]="true"
+                                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100"
+                                                        placeHolder="DD/MM/YYYY"></custom-textbox>
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="aadhaar" class="col-form-label">Aadhaar Number</label>
@@ -123,9 +123,9 @@
                                                     <label for="mobile" class="col-form-label">Mobile Number</label>
                                                     <small class="phoneNumber">E.g. +91 123-456-7890</small>
                                                     <custom-textbox [group]="registrationForm" name="studentPhone"
-                                                        [pattern]="number" [required]="true" [editMode]="isEditMode"
+                                                        pattern="number" [required]="true" [editMode]="isEditMode"
                                                         [isValid]="isValid" [max]="10">
-                                                        </custom-textbox>
+                                                    </custom-textbox>
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="email" class="col-form-label">E-Mail</label>
@@ -493,7 +493,8 @@
                             <br>
                             <br>
                             <p class="text-center fs-35 text-muted">Registration Success</p>
-                            <p class="text-center text-gray">User ID with Welcome kit shared with your registered mail ID</p>
+                            <p class="text-center text-gray">User ID with Welcome kit shared with your registered mail
+                                ID</p>
                             <hr class="w-100px">
                             <br>
 
