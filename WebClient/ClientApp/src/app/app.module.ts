@@ -21,6 +21,7 @@ import { RegistrationMapComponent } from './registration/components/Map/registra
 import { CustomTextBoxComponent } from './Shared/custom-textbox/custom-textbox.component'
 import { TournamentComponent } from './registration/components/tournament/tournament.component'
 import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid';
+import { jqxDropDownButtonComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownbutton';
 import { TournamentListGridComponent } from './registration/components/tournament-list-grid/tournament-list-grid.component'
 import { AuthGuard } from "./_guard/auth.guard";
 import { BrowserToaster } from "src/app/CommonModules/common";
@@ -71,6 +72,7 @@ import { CouncilingComponent } from './counciling/counciling.component';
     CustomTextBoxComponent,
     TournamentComponent,
     jqxGridComponent,
+    jqxDropDownButtonComponent,
     TournamentListGridComponent,
     TournamentVerificationListComponent,
     UploadComponent,

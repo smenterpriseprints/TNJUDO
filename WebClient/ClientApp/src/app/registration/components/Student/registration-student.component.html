@@ -1,5 +1,6 @@
 <div class="main-content" style="margin-top:128px">
 
+
     <div class="col-lg-12">
         <div class="card">
             <h4 class="card-title">
@@ -10,40 +11,53 @@
                     <ul class="nav nav-process nav-process-circle">
 
                         <li class="nav-item">
-                            <span class="nav-title">Sign Up Form</span>
+                            <span class="nav-title">Club Selection</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                         </li>
-
                         <li class="nav-item">
-                            <span class="nav-title">Subscribe</span>
+                            <span class="nav-title">Sign Up Form</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
                         </li>
 
                         <li class="nav-item">
-                            <span class="nav-title">Confirmation and Payment</span>
+                            <span class="nav-title">Subscribe</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <span class="nav-title">Confirmation and Payment</span>
+                            <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
                         </li>
                     </ul>
 
 
                     <div class="tab-content">
-                        <!-- Map starts-->
 
-                        <!-- <div class="tab-pane fade active show" id="wizard-form-1">
+                        <div class="tab-pane fade active show" id="wizard-form-1">
+                            <div class="row">
+                                <div class="form-group col-md-4" style="display:none">
+                                    <label for="weight" class="col-form-label">Area</label>
+                                    <custom-textbox [group]="registrationForm" name="Area" [required]="true" [editMode]="isEditMode"
+                                        [isValid]="isValid" [max]="3"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="areaName" class="col-form-label">Select Club Area</label>
+                                    <br>
+                                    <jqxDropDownButton #myDropDownButton [width]="150" [height]="25">
+                                        <jqxGrid #myGrid (onRowselect)="myGridOnRowSelect($event)" [width]="550"
+                                            [source]="dataAdapter" [columns]="columns" [ready]="ready" [pageable]="true"
+                                            [columnsresize]="true" [autoheight]="true">
+                                        </jqxGrid>
+                                    </jqxDropDownButton>
+                                    <br>
+                                </div>
                                 <br>
-                                <br>
-                                <p class="text-center fs-35 text-muted">Enter Your
-                                    <strong class="text-primary">Club </strong> Details</p>
-                                <p class="text-center text-gray">Plot the address of the club and details</p>
-                                <hr class="w-100px">
-                                <br> Map and Form ( Based on the logic)
-    {{mapLatLng}}
-                                <google-map (mapLatLangEvent)="receiveLatLng($event)"></google-map>
                             </div>
-     -->
-                        <!-- Map Ends-->
+                        </div>
 
-                        <div class="tab-pane fade" id="wizard-form-1">
+
+                        <div class="tab-pane fade" id="wizard-form-2">
                             <br>
                             <br>
                             <p class="text-center fs-35 text-muted">Student
@@ -123,7 +137,7 @@
                                                     <label for="mobile" class="col-form-label">Mobile Number</label>
                                                     <small class="phoneNumber">E.g. +91 123-456-7890</small>
                                                     <custom-textbox [group]="registrationForm" name="studentPhone"
-                                                        pattern="number" [required]="true" [editMode]="isEditMode"
+                                                        [pattern]="number" [required]="true" [editMode]="isEditMode"
                                                         [isValid]="isValid" [max]="10">
                                                     </custom-textbox>
                                                 </div>
@@ -365,7 +379,7 @@
 
 
 
-                        <div class="tab-pane fade" id="wizard-form-2">
+                        <div class="tab-pane fade" id="wizard-form-3">
 
 
                             <div class="tab-pane" id="pricing-2" role="tabpanel">
@@ -489,7 +503,7 @@
 
 
 
-                        <div class="tab-pane fade" id="wizard-form-3">
+                        <div class="tab-pane fade" id="wizard-form-4">
                             <br>
                             <br>
                             <p class="text-center fs-35 text-muted">Registration Success</p>
