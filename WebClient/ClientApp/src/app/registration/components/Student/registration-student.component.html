@@ -1,12 +1,13 @@
-<div class="main-content" style="margin-top:128px">
+<div class="main-content">
 
 
     <div class="col-lg-12">
-        <div class="card">
+        <div class="card" style="background-color: orange" >
             <h4 class="card-title">
-                <strong>Form</strong>
+                    <p class="text-center fs-35 text-muted" style="color:#1e2731 !important">Student 
+                            <strong class="text-primary" style="color:#335e8c !important">Registration</strong></p>
             </h4>
-            <div class="card-body">
+            <div class="card-body" style="background-color: orange">
                 <form [formGroup]="registrationForm" (ngSubmit)="onDistrictRegistration()" data-provide="wizard">
                     <ul class="nav nav-process nav-process-circle">
 
@@ -33,18 +34,40 @@
 
                     <div class="tab-content">
 
-                        <div class="tab-pane fade active show" id="wizard-form-1">
+                        <div class="tab-pane fade active show" id="wizard-form-1" >
                             <div class="row">
+                                <br>
+                               
+                                <div class="form-group col-md-4" style="display:none">
+                                        <label for="weight" class="col-form-label">District</label>
+                                        <custom-textbox [group]="registrationForm" name="Area" [required]="true" [editMode]="isEditMode"
+                                            [isValid]="isValid" [max]="3"></custom-textbox>
+                                    </div>
+    
+                                    <div class="form-group col-md-8">
+                                        <label for="areaName" class="col-form-label">Select your District </label>
+                                        <br>
+                                        <jqxDropDownButton #myDropDownButton [width]="175" [height]="30">
+                                            <jqxGrid #myGrid (onRowselect)="myGridOnRowSelect($event)" [width]="550"
+                                                [source]="dataAdapter" [columns]="columns" [ready]="ready" [pageable]="true"
+                                                [columnsresize]="true" [autoheight]="true">
+                                            </jqxGrid>
+                                        </jqxDropDownButton>
+                                        <br>
+                                        <br>
+                                    <br>
+                                    </div>
+                                    
                                 <div class="form-group col-md-4" style="display:none">
                                     <label for="weight" class="col-form-label">Area</label>
                                     <custom-textbox [group]="registrationForm" name="Area" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="3"></custom-textbox>
                                 </div>
 
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-8">
                                     <label for="areaName" class="col-form-label">Select Club Area</label>
                                     <br>
-                                    <jqxDropDownButton #myDropDownButton [width]="150" [height]="25">
+                                    <jqxDropDownButton #myDropDownButton [width]="175" [height]="30">
                                         <jqxGrid #myGrid (onRowselect)="myGridOnRowSelect($event)" [width]="550"
                                             [source]="dataAdapter" [columns]="columns" [ready]="ready" [pageable]="true"
                                             [columnsresize]="true" [autoheight]="true">

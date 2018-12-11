@@ -45,7 +45,7 @@ const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'District', component: RegistrationDistrictComponent, canActivate: [AuthGuard] },
-    { path: 'Student', component: RegistrationStudentComponent, canActivate: [AuthGuard] },
+    { path: 'student', component: RegistrationStudentComponent },
     { path: 'Club', component: RegistrationClubComponent, canActivate: [AuthGuard] },
     { path: 'event', component: EventRegistrationComponent, canActivate: [AuthGuard] },
     {
