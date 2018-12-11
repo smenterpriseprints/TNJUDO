@@ -70,7 +70,7 @@ export class PrintWinnersComponent extends HttpHelper {
     return `<html>
     <head>
        <style type='text/css' media='print'>  
-       body {background: rgb(204,204,204);}
+       body {background: url(./../../../assets/img/Certificate-outline.jpg);}
        page {background: white;display: block;}
        page[size='A4'] {width: 21cm;height: 29.7cm;}
        @page { size: auto;  margin: 0mm; } 
