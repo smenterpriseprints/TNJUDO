@@ -85,7 +85,6 @@ const appRoutes: Routes = [
     { path: 'testimonials', component: TestimonialsComponent },
     { path: 'timeline', component: TimelineComponent },
     { path: 'ecommerce', component: EcommerceComponent },
-    { path: 'student-registration', component: StudentRegistrationComponent },
     { path: 'payment-monthly', component: PaymentMonthlyComponent },
     { path: 'payment-affiliation', component: PaymentAffiliationComponent },
     { path: 'national-news', component: NationalNewsComponent },
