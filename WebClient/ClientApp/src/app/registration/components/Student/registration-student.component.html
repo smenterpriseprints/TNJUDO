@@ -1,4 +1,4 @@
-<div class="main-content">
+<div class="main-content" style="font-size:18px !important">
     <div class="col-lg-12">
         <div class="card" style="background-color: orange">
             <h4 class="card-title">
@@ -15,9 +15,9 @@
                         <li class="nav-item">
                             <span class="nav-title"style="color:black">Sign Up Form</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
-                        </li>
+                        </li>   
 
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <span class="nav-title" style="color:black">Subscribe</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
                         </li>
@@ -25,7 +25,7 @@
                         <li class="nav-item">
                             <span class="nav-title" style="color:black">Confirmation and Payment</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-4"></a>
-                        </li>
+                        </li>-->
                     </ul>
 
                     <div class="tab-content">
@@ -54,10 +54,6 @@
 
                         <div class="tab-pane fade" id="wizard-form-2">
                             <br>
-                            <br>
-                            <p class="text-center fs-35 text-muted">Student
-                                <strong class="text-primary">Registration</strong>
-                            </p>
                             <!-- <p class="text-center text-gray">Please complete the following 4 steps</p> -->
                             <hr class="w-100px">
                             <div class="form-row">
@@ -97,26 +93,26 @@
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="2"
                                                         placeHolder="As on 2018"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-2">
                                                     <label for="height" class="col-form-label">Height</label>
                                                     <custom-textbox [group]="registrationForm" name="height" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3"
                                                         placeHolder="in cm"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-2">
                                                     <label for="weight" class="col-form-label">Weight</label>
                                                     <custom-textbox [group]="registrationForm" name="weight" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3"
                                                         placeHolder="in Kg"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-10">
                                                     <label for="permanentaddress" class="col-form-label">Permanent
                                                         Residential Address</label>
                                                     <custom-textbox [group]="registrationForm" name="permanentaddress"
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="250" placeHolder="As in"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-10">
                                                     <label for="permanentaddress" class="col-form-label">Current
                                                         Residential Address</label>
                                                     <custom-textbox [group]="registrationForm" name="permanentaddress"
@@ -343,7 +339,7 @@
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox mr-3">
                                                 <input type="checkbox" class="custom-control-input">
-                                                <label class="custom-control-label">I agree to terms and
+                                                <label class="custom-control-label" style="color:black; font-size:18px">I agree to terms and
                                                     conditions.</label>
                                             </div>
                                         </div>
@@ -351,7 +347,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="wizard-form-3">
+                       <!-- <div class="tab-pane fade" id="wizard-form-3">
                             <div class="tab-pane" id="pricing-2" role="tabpanel">
                                 <div class="row">
                                     <div class="col-lg-3">
@@ -444,8 +440,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="wizard-form-4">
+                        </div>-->
+                        <!--<div class="tab-pane fade" id="wizard-form-4">
                             <br>
                             <br>
                             <p class="text-center fs-35 text-muted">Registration Success</p>
@@ -469,12 +465,12 @@
                                     <div class="form-control-plaintext col-sm-8">xxxx-xxxx-xxxx-3648</div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <hr>
                     <div class="flexbox">
-                        <button class="btn btn-secondary" data-wizard="prev" type="button">Back</button>
-                        <button class="btn btn-secondary" data-wizard="next" type="button">Next</button>
+                        <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
+                        <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
                         <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Finish</button>
                     </div>
                 </form>
