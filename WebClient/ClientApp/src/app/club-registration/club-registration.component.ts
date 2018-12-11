@@ -1,8 +1,11 @@
-import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core'
+import { Component, OnInit, Input, ChangeDetectorRef, ViewChild } from '@angular/core'
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { ClubService } from '../registration/Service/registration-club.service';
 import { Router } from '@angular/router';
-import { BrowserToaster } from "src/app/CommonModules/common"
+import { BrowserToaster } from "src/app/CommonModules/common";
+import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid';
+import { jqxDropDownButtonComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxdropdownbutton';
+import { APP_CONFIG } from 'src/environments/environment';
 
 @Component({
   selector: 'app-club-registration',
@@ -14,11 +17,45 @@ export class ClubRegistrationComponent implements OnInit {
   constructor(public form: FormBuilder, private router: Router, private regClubService: ClubService, private changeDetectorRef: ChangeDetectorRef, private displayMessage: BrowserToaster) {
   }
 
+  @ViewChild('districtdropdowngrid') districtdropdowngrid: jqxGridComponent;
+  @ViewChild('districtdropdown') districtdropdown: jqxDropDownButtonComponent;
+  source: any =
+    {
+      datatype: 'json',
+      datafields: [
+        { name: 'ID', type: 'string' },
+        { name: 'DistrictName', type: 'string' },
+      ],
+      id: 'ID',
+      url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllDistricts'
+    };
+  dataAdapter: any = new jqx.dataAdapter(this.source);
+
+  columns: any[] =
+    [
+      { text: 'Id', datafield: 'ID', width: 250 },
+      { text: 'District Name', datafield: 'DistrictName', width: 250 },
+    ];
+  ready = (): void => {
+    this.districtdropdowngrid.selectrow(-1);
+  }
+  districtdropdownselect(event: any): void {
+    debugger;
+    let args = event.args;
+    let row = this.districtdropdowngrid.getrowdata(args.rowindex);
+    let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
+    this.registrationTempData.district = row['DistrictName'];
+    this.districtdropdown.setContent(dropDownContent);
+  }
+  /////////////////////////////////
+
+
+
   isEditMode: boolean = true;
   isValid: boolean = false;
   distRegistration: any = {};
   public clubregistration: FormGroup = new FormGroup({});
-  public registrationPhoto: any = {};
+  public registrationTempData: any = {};
 
   ngOnInit() {
     this.changeDetectorRef.detectChanges();
@@ -32,11 +69,11 @@ export class ClubRegistrationComponent implements OnInit {
 
       reader.onload = (event) => { // called once readAsDataURL is completed
         if (modelName == "PresidentPhoto")
-          this.registrationPhoto.PresidentPhoto = reader.result;
+          this.registrationTempData.PresidentPhoto = reader.result;
         else if (modelName == "SecretaryPhoto")
-          this.registrationPhoto.SecretaryPhoto = reader.result;
+          this.registrationTempData.SecretaryPhoto = reader.result;
         else if (modelName == "CoachPhoto")
-          this.registrationPhoto.CoachPhoto = reader.result;
+          this.registrationTempData.CoachPhoto = reader.result;
       }
     }
   }
@@ -45,14 +82,15 @@ export class ClubRegistrationComponent implements OnInit {
     debugger;
     if (this.clubregistration.valid) {
       let clubRegistrationForm = this.clubregistration.value;
-      clubRegistrationForm.PresidentPhoto = this.registrationPhoto.PresidentPhoto;
-      clubRegistrationForm.SecretaryPhoto = this.registrationPhoto.SecretaryPhoto;
-      clubRegistrationForm.CoachPhoto = this.registrationPhoto.CoachPhoto;
+      clubRegistrationForm.ClubArea = this.registrationTempData.district;
+      clubRegistrationForm.PresidentPhoto = this.registrationTempData.PresidentPhoto;
+      clubRegistrationForm.SecretaryPhoto = this.registrationTempData.SecretaryPhoto;
+      clubRegistrationForm.CoachPhoto = this.registrationTempData.CoachPhoto;
 
       this.regClubService.postClubRegistration(clubRegistrationForm).subscribe(response => {
         let parsedData = JSON.parse(response._body);
         if (parsedData.Status == "Success") {
-          this.displayMessage.NotifyDomToasterMessage("Registered Successfully, please note down your reference id: " + parsedData.Message, parsedData.Status);
+          this.displayMessage.NotifyDomToasterMessage("Registered Successfully." + parsedData.Message, parsedData.Status);
           //this.router.navigate(['/Tournament']);
         }
         else if (parsedData.Status == "Warning") {

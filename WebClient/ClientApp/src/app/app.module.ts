@@ -53,6 +53,7 @@ import { PaymentAffiliationComponent } from './payment-affiliation/payment-affil
 import { NationalNewsComponent } from './national-news/national-news.component';
 import { SampleFormComponent } from './sample-form/sample-form.component';
 import { ClubService } from './registration/Service/registration-club.service';
+import { StudentRegistrationService } from './registration/Service/student-registration.service';
 import { EventComponent } from './event/event.component';
 import { StateContactComponent } from './state-contact/state-contact.component';
 import { CareerComponent } from './career/career.component';
@@ -117,7 +118,7 @@ import { CouncilingComponent } from './counciling/counciling.component';
     AppModuleRouting,
     BrowserAnimationsModule,
   ],
-  providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster, ClubService],
+  providers: [HttpHelper, RegistrationDistrictService, TournamentRegistrationService, AuthGuard, BrowserToaster, ClubService, StudentRegistrationService],
   bootstrap: [AppComponent]
 
 })
