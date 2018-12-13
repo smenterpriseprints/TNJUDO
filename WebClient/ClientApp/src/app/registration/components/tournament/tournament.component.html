@@ -1,13 +1,16 @@
-<div class="col-12">
+<div class="col-12" style="background-color: orange; font-size:17px">
   <form [formGroup]="tournamentRegistrationForm" (ngSubmit)="onTournamentRegistration()" data-provide="wizard">
-    <div class="card">
-      <h4 class="card-title"><strong>Tournament</strong> Registration</h4>
+    <div class="card" style="background-color: orange">
+      <h4 class="card-title">
+        <p class="text-center fs-35 text-muted" style="color:#1e2731 !important">Tournament
+            <strong class="text-primary" style="color:#335e8c !important">Registration</strong></p>
+    </h4>
 
 
-      <div class="card-body">
+      <div class="card-body" style="background-color: orange">
         <div class="row">
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="form-group">
               <label for="FullName" class="col-form-label">Full Name</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="FullName" [required]="true" [editMode]="isEditMode"
@@ -15,7 +18,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
               <label for="DateOfBirth" class="col-form-label">Date Of Birth</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="DateOfBirth" [required]="true" [editMode]="isEditMode"
@@ -23,11 +26,11 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
               <label for="AadhaarNumber" class="col-form-label">Aadhaar Number</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="AadhaarNumber" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="AadhaarNumber" pattern="aadharnumber"></custom-textbox>
+                [isValid]="isValid" [max]="12" placeHolder="AadhaarNumber" pattern="aadharnumber"></custom-textbox>
             </div>
           </div>
 
@@ -39,41 +42,41 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-2">
             <div class="form-group">
-              <label for="AgeAsPerLastBirthday" class="col-form-label">Age As Per Last Birthday</label>
+              <label for="AgeAsPerLastBirthday" class="col-form-label">Age</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="AgeAsPerLastBirthday" [required]="true"
-                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="AgeAsPerLastBirthday" pattern="number"></custom-textbox>
+                [editMode]="isEditMode" [isValid]="isValid" [max]="2" placeHolder="AgeAsPerLastBirthday" pattern="number"></custom-textbox>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
-              <label for="Height" class="col-form-label">Height (cm)</label>
+              <label for="Height" class="col-form-label">Height</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="Height" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="Height" pattern="fraction"></custom-textbox>
+                [isValid]="isValid" [max]="3" placeHolder="Height in cm" pattern="fraction"></custom-textbox>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="form-group">
-              <label for="Weight" class="col-form-label">Weight (kg)</label>
+              <label for="Weight" class="col-form-label">Weight</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="Weight" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="Weight" pattern="fraction"></custom-textbox>
+                [isValid]="isValid" [max]="3" placeHolder="Weight in Kg" pattern="fraction"></custom-textbox>
             </div>
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-md-10">
             <div class="form-group">
-              <label for="PermanentResidentialAddress" class="col-form-label">Permanent Residential Address</label>
+              <label for="PermanentResidentialAddress" class="col-form-label">Permanent Residential Address (As in Aadhaar)</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="PermanentResidentialAddress" [required]="true"
-                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="PermanentResidentialAddress"></custom-textbox>
+                [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="As in Aadhaar"></custom-textbox>
             </div>
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-md-10">
             <div class="form-group">
               <label for="CurrentResidentialAddress" class="col-form-label">Current Residential Address</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="CurrentResidentialAddress" [required]="true"
@@ -86,7 +89,7 @@
             <div class="form-group">
               <label for="MobileNo" class="col-form-label">Mobile No</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="MobileNo" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="MobileNo" pattern="number"></custom-textbox>
+                [isValid]="isValid" [max]="10" placeHolder="MobileNo" pattern="number"></custom-textbox>
             </div>
           </div>
 
@@ -99,7 +102,6 @@
                 [isValid]="isValid" [max]="100" placeHolder="EmailId" pattern="email"></custom-textbox>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="form-group">
               <label for="EducationalInstitutionName" class="col-form-label">Educational Institution Name</label>
@@ -143,10 +145,10 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card"  style="background-color: orange">
       <h4 class="card-title"><strong>Family</strong> Details</h4>
 
-      <div class="card-body">
+      <div class="card-body"  style="background-color: orange">
         <div class="row">
 
           <div class="col-md-4">
@@ -163,7 +165,7 @@
             <div class="form-group">
               <label for="FatherAge" class="col-form-label">Father Age</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="FatherAge" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="Father Age" pattern="number"></custom-textbox>
+                [isValid]="isValid" [max]="2" placeHolder="Father Age" pattern="number"></custom-textbox>
             </div>
           </div>
 
@@ -215,9 +217,9 @@
 
           <div class="col-md-4">
             <div class="form-group">
-              <label for="EconomicStatus" class="col-form-label">Economic Status</label>
+              <label for="EconomicStatus" class="col-form-label">Annual Income</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="EconomicStatus" [required]="true" [editMode]="isEditMode"
-                [isValid]="isValid" [max]="100" placeHolder="EconomicStatus"></custom-textbox>
+                [isValid]="isValid" [max]="8" placeHolder="EconomicStatus"></custom-textbox>
 
             </div>
           </div>
@@ -237,10 +239,10 @@
     </div>
 
 
-    <div class="card">
+    <div class="card"  style="background-color: orange">
       <h4 class="card-title"><strong>Health</strong> Condition</h4>
 
-      <div class="card-body">
+      <div class="card-body"  style="background-color: orange">
         <div class="row">
 
           <div class="col-md-4">
@@ -274,16 +276,16 @@
     </div>
 
 
-    <div class="card">
+    <div class="card"  style="background-color: orange">
       <h4 class="card-title"><strong>Documents</strong> To Be Uploaded
 
       </h4>
 
 
-      <div class="card-body">
+      <div class="card-body"  style="background-color: orange">
         <div class="row">
           <div class="col-md-4">
-            <p>Passport Size Photo</p>
+            <label class="col-form-label">Passport Size Photo</label>
             <div class="form-group file-group">
               <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
               <input (change)="onSelectPhoto($event,'PassportSize')" type="file" multiple>
@@ -292,7 +294,7 @@
 
 
           <div class="col-md-4">
-            <p>Aadhaar card</p>
+            <label class="col-form-label">Aadhaar card</label>
             <div class="form-group file-group">
               <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
               <input type="file" (change)="onSelectPhoto($event,'AadhaarCard')" multiple>
@@ -302,7 +304,7 @@
 
 
           <div class="col-md-4">
-            <p>Income Certificate (Father / Mother )</p>
+            <label class="col-form-label">Income Certificate (Father / Mother )</label>
             <div class="form-group file-group">
               <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
               <input type="file" (change)="onSelectPhoto($event,'IncomeCertificate')" multiple>
@@ -310,7 +312,7 @@
           </div>
 
           <div class="col-md-4">
-            <p>Any Document(Birth Certificate/Class X Cert.)</p>
+            <label class="col-form-label">Any Document(Birth Certificate/Class X Cert.)</label>
             <div class="form-group file-group">
               <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
               <input type="file" (change)="onSelectPhoto($event,'MiscDocument')" multiple>
@@ -323,7 +325,9 @@
     </div>
 
     <div class="col-md-4">
-      <button class="btn btn-w-md btn-info" type="submit">Submit</button>
+      <button class="btn btn-w-md btn-info" type="submit" style="background-color: orange">Submit</button>
     </div>
+    <br>
+    <br>
   </form>
 </div>

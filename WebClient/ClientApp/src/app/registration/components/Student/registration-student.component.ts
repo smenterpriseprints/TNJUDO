@@ -43,8 +43,7 @@ export class RegistrationStudentComponent implements OnInit {
 
   clubcolumns: any[] =
     [
-      { text: 'User Id', datafield: 'ID', width: 250 },
-      { text: 'Club Name', datafield: 'ClubName', width: 250 },
+      { text: 'Club Name', datafield: 'ClubName'},
       // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
     ];
   clubgridonselect(event: any): void {
@@ -70,8 +69,8 @@ export class RegistrationStudentComponent implements OnInit {
 
   districtcolumns: any[] =
     [
-      { text: 'Id', datafield: 'ID', width: 250 },
-      { text: 'District Name', datafield: 'DistrictName', width: 250 },
+     
+      { text: 'Area Name', datafield: 'DistrictName'},
     ];
 
   districtdropdownselect(event: any): void {

@@ -32,7 +32,7 @@
                         <div class="tab-pane fade active show" id="wizard-form-1">
                             <div class="row">
                                 <div class="form-group col-md-8">
-                                    <label class="col-form-label">Select your District </label>
+                                    <label class="col-form-label">Select your Area </label>
                                     <jqxDropDownButton #districtdropdown [width]="175" [height]="30">
                                         <jqxGrid #districtdropdowngrid (onRowselect)="districtdropdownselect($event)"
                                             [width]="550" [source]="districtdataAdapter" [columns]="districtcolumns"
@@ -41,7 +41,7 @@
                                     </jqxDropDownButton>
                                 </div>
                                 <div class="form-group col-md-8">
-                                    <label class="col-form-label">Select Club Area</label>
+                                    <label class="col-form-label">Choose your Club</label>
                                     <jqxDropDownButton #clubdropdown [height]="30">
                                         <jqxGrid #clubgrid (onRowselect)="clubgridonselect($event)" [source]="clubdataAdapter"
                                             [columns]="clubcolumns" [pageable]="true" [columnsresize]="true"
@@ -240,14 +240,14 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="10"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <!--<div class="form-group col-md-4">
                                                         <label for="economical" class="col-form-label">Economical
                                                             Status
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="economic"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="50"></custom-textbox>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </div>
                                         </div>
@@ -285,7 +285,7 @@
                                             <div class="card-body" style="background-color: orange">
                                                 <div class="row">
                                                     <div class="form-group col-md-4">
-                                                        <p>Passport Size Photo</p>
+                                                        <label class="col-form-label">Passport Size Photo</label>
                                                         <div class="input-group file-group">
                                                             <input type="text" class="form-control file-value"
                                                                 placeholder="Choose file..." readonly>
@@ -297,7 +297,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <p>Aadhaar card</p>
+                                                        <label class="col-form-label">Aadhaar card</label>
                                                         <div class="input-group file-group">
                                                             <input type="text" class="form-control file-value"
                                                                 placeholder="Choose file..." readonly>
@@ -309,8 +309,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <p><span>Any document &nbsp; </span><span style="font-size:10px">(Birth
-                                                                Certificate, Class X certificate)</span></p>
+                                                        <label class="col-form-label"><span>Any document &nbsp; </span><span style="font-size:10px">(Birth
+                                                                Certificate, Class X certificate)</span></label>
                                                         <div class="input-group file-group">
                                                             <input type="text" class="form-control file-value"
                                                                 placeholder="Choose file..." readonly>
@@ -322,7 +322,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <p>Income Certificate (Father / Mother )</p>
+                                                        <label class="col-form-label">Income Certificate (Father / Mother )</label>
                                                         <div class="input-group file-group">
                                                             <input type="text" class="form-control file-value"
                                                                 placeholder="Choose file..." readonly>
@@ -471,7 +471,7 @@
                     <div class="flexbox">
                         <button class="btn btn-secondary" data-wizard="prev" type="button" style="background-color: orange">Back</button>
                         <button class="btn btn-secondary" data-wizard="next" type="button" style="background-color: orange">Next</button>
-                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit">Finish</button>
+                        <button class="btn btn-primary d-none" data-wizard="finish" type="submit" style="background-color: orange">Finish</button>
                     </div>
                 </form>
             </div>

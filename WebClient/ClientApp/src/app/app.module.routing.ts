@@ -75,7 +75,7 @@ const appRoutes: Routes = [
     { path: 'print-winners', component: PrintWinnersComponent },
     { path: 'nocform', component: NocformComponent },
     { path: 'district-contact', component: DistrictContactComponent },
-    //{ path: 'tournament-student', component: TournamentComponent },
+    //{ path: 'tournament-student', component: TournamentStudentComponent },
     { path: 'club-registration', component: ClubRegistrationComponent },
     { path: 'club-contact', component: ClubContactComponent },
     { path: 'club-news', component: ClubNewsComponent },

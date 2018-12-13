@@ -1,11 +1,17 @@
+
 <div class="col-md-4">
-    <button class="btn btn-w-md btn-info" (click)="DownloadForm($event)">Download</button>
+    <br />
+    <br />
+    <label  style="font-size:18px"> Tournament Form </label>
+    <br />
+    <br />
+    <button class="btn btn-w-md btn-info" (click)="DownloadForm($event)" style="background-color: orange">Download</button>
 </div>
 <br />
 <br />
 <form (ngSubmit)="onTournamentFormUpload()" data-provide="wizard">
     <div class="col-md-4">
-        <p>Tournament Form-Upload</p>
+        <label  style="font-size:18px">Tournament Filled in -Upload</label>
         <div class="form-group file-group">
             <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
             <input type="file" (change)="onSelectForm($event,'TournamentForm')" multiple>
@@ -13,6 +19,6 @@
     </div>
 
     <div class="col-md-4">
-        <button class="btn btn-w-md btn-info" type="submit">upload</button>
+        <button class="btn btn-w-md btn-info" type="submit" style="background-color: orange">upload</button>
     </div>
 </form>
