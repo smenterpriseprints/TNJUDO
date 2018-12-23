@@ -32,9 +32,9 @@ export class ClubRegistrationComponent implements OnInit {
   dataAdapter: any = new jqx.dataAdapter(this.source);
 
   columns: any[] =
-    [
-      { text: 'Id', datafield: 'ID', width: 250 },
-      { text: 'District Name', datafield: 'DistrictName', width: 250 },
+    [ 
+
+      { text: 'Area Name', datafield: 'DistrictName', width: 500 },
     ];
   ready = (): void => {
     //this.districtdropdowngrid.selectrow(-1);

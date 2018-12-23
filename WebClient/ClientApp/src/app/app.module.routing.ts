@@ -77,6 +77,8 @@ const appRoutes: Routes = [
     { path: 'district-contact', component: DistrictContactComponent },
     //{ path: 'tournament-student', component: TournamentComponent },
     { path: 'Club', component: ClubRegistrationComponent },
+    //{ path: 'tournament-student', component: TournamentStudentComponent },
+    { path: 'club-registration', component: ClubRegistrationComponent },
     { path: 'club-contact', component: ClubContactComponent },
     { path: 'club-news', component: ClubNewsComponent },
     { path: 'district-news', component: DistrictNewsComponent },

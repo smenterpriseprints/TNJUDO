@@ -3,6 +3,10 @@ span.arrow
 	margin-left:7px;
 	margin-right:7px;
 }
+label{
+	display: unset !important;
+    margin-bottom: 0px !important;
+}
 .nav-link{
 	color:black !important;
 	font-size: 20px !important;
@@ -56,3 +60,4 @@ span.arrow
 .jssora051:hover {opacity:.8;}
 .jssora051.jssora051dn {opacity:.5;}
 .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+

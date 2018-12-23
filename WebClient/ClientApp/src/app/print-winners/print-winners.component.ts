@@ -70,7 +70,7 @@ export class PrintWinnersComponent extends HttpHelper {
     return `<html>
     <head>
        <style type='text/css' media='print'>  
-       body {background: rgb(204,204,204);}
+       body {background: url(./../../../assets/img/Certificate-outline.jpg);}
        page {background: white;display: block;}
        page[size='A4'] {width: 21cm;height: 29.7cm;}
        @page { size: auto;  margin: 0mm; } 
@@ -79,6 +79,9 @@ export class PrintWinnersComponent extends HttpHelper {
        <script>function step1(){setTimeout('step2()', 2);}function step2(){window.print();window.close()}</script>
     </head>
     <body onload='step1()'>
+    <div id="print-section">
+  <img size="A4" src="../../../../assets/img/Certificate-outline.jpg" alt="certificate">
+</div>
        <page size='A4'>
           <div style="width:21cm; height:29.7cm; text-align:center; border: 10px solid #787878">
                 <span style="font-size:50px; font-weight:bold">Winner Certificate</span>
