@@ -10,7 +10,7 @@ import { APP_CONFIG } from 'src/environments/environment';
 @Component({
   selector: 'app-club-registration',
   templateUrl: './club-registration.component.html',
-  styleUrls: ['./club-registration.component.css']
+  styleUrls: []
 })
 export class ClubRegistrationComponent implements OnInit {
 
@@ -37,14 +37,14 @@ export class ClubRegistrationComponent implements OnInit {
       { text: 'District Name', datafield: 'DistrictName', width: 250 },
     ];
   ready = (): void => {
-    this.districtdropdowngrid.selectrow(-1);
+    //this.districtdropdowngrid.selectrow(-1);
   }
   districtdropdownselect(event: any): void {
     debugger;
     let args = event.args;
     let row = this.districtdropdowngrid.getrowdata(args.rowindex);
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
-    this.registrationTempData.district = row['DistrictName'];
+    this.registrationTempData.district = row['ID'];
     this.districtdropdown.setContent(dropDownContent);
   }
   /////////////////////////////////
@@ -82,7 +82,7 @@ export class ClubRegistrationComponent implements OnInit {
     debugger;
     if (this.clubregistration.valid) {
       let clubRegistrationForm = this.clubregistration.value;
-      clubRegistrationForm.ClubArea = this.registrationTempData.district;
+      clubRegistrationForm.District = this.registrationTempData.district;
       clubRegistrationForm.PresidentPhoto = this.registrationTempData.PresidentPhoto;
       clubRegistrationForm.SecretaryPhoto = this.registrationTempData.SecretaryPhoto;
       clubRegistrationForm.CoachPhoto = this.registrationTempData.CoachPhoto;

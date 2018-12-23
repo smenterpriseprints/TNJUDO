@@ -46,7 +46,7 @@ const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'District', component: RegistrationDistrictComponent, canActivate: [AuthGuard] },
     { path: 'student', component: RegistrationStudentComponent },
-    { path: 'Club', component: RegistrationClubComponent, canActivate: [AuthGuard] },
+    //{ path: 'Club', component: RegistrationClubComponent, canActivate: [AuthGuard] },
     { path: 'event', component: EventRegistrationComponent, canActivate: [AuthGuard] },
     {
         path: 'home', component: HomeComponent,
@@ -76,7 +76,7 @@ const appRoutes: Routes = [
     { path: 'nocform', component: NocformComponent },
     { path: 'district-contact', component: DistrictContactComponent },
     //{ path: 'tournament-student', component: TournamentComponent },
-    { path: 'club-registration', component: ClubRegistrationComponent },
+    { path: 'Club', component: ClubRegistrationComponent },
     { path: 'club-contact', component: ClubContactComponent },
     { path: 'club-news', component: ClubNewsComponent },
     { path: 'district-news', component: DistrictNewsComponent },

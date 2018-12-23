@@ -28,33 +28,6 @@ export class RegistrationStudentComponent implements OnInit {
     this.changeDetectorRef.detectChanges();
   }
 
-  ///////////////////////Club Grid/////////////////////////////
-  @ViewChild('clubgrid') clubgrid: jqxGridComponent;
-  @ViewChild('clubdropdown') clubdropdown: jqxDropDownButtonComponent;
-  clubdataAdapter: any = new jqx.dataAdapter({
-    datatype: 'json',
-    datafields: [
-      { name: 'ID', type: 'string' },
-      { name: 'ClubName', type: 'string' }
-    ],
-    id: 'ID',
-    url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllClubs'
-  });
-
-  clubcolumns: any[] =
-    [
-      { text: 'User Id', datafield: 'ID', width: 250 },
-      { text: 'Club Name', datafield: 'ClubName', width: 250 },
-      // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
-    ];
-  clubgridonselect(event: any): void {
-    let args = event.args;
-    let row = this.clubgrid.getrowdata(args.rowindex);
-    let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['ClubName'] + '</div>';
-    this.registrationTempData.SelectedClubId = row['ID'];
-    this.clubdropdown.setContent(dropDownContent);
-  }
-
   ///////////////////////District Grid///////////////////////////
   @ViewChild('districtdropdowngrid') districtdropdowngrid: jqxGridComponent;
   @ViewChild('districtdropdown') districtdropdown: jqxDropDownButtonComponent;
@@ -81,9 +54,93 @@ export class RegistrationStudentComponent implements OnInit {
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
     this.registrationTempData.SelectedDistId = row['ID'];
     this.districtdropdown.setContent(dropDownContent);
+
+    //reload data
+    this.clubdataAdapter = new jqx.dataAdapter({
+      datatype: 'json',
+      datafields: [
+        { name: 'ID', type: 'string' },
+        { name: 'ClubArea', type: 'string' }
+      ],
+      id: 'ID',
+      url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllClubs?SelectedDistrictId=' + this.registrationTempData.SelectedDistId
+    });
+    this.clubdataAdapter.dataBind();
+    //this.clubgrid.updatebounddata();
   }
 
   //////////////////////////////////////////////////
+
+  ///////////////////////Club Grid/////////////////////////////
+  @ViewChild('clubgrid') clubgrid: jqxGridComponent;
+  @ViewChild('clubdropdown') clubdropdown: jqxDropDownButtonComponent;
+  clubdataAdapter: any = new jqx.dataAdapter({
+    datatype: 'json',
+    datafields: [
+      { name: 'ID', type: 'string' },
+      { name: 'ClubArea', type: 'string' }
+    ],
+    id: 'ID',
+    //url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllClubs?SelectedDistrictId=' + this.registrationTempData.SelectedDistId
+  });
+
+  clubcolumns: any[] =
+    [
+      { text: 'User Id', datafield: 'ID', width: 250 },
+      { text: 'Club Area', datafield: 'ClubArea', width: 250 },
+      // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
+    ];
+  clubgridonselect(event: any): void {
+    debugger;
+    let args = event.args;
+    let row = this.clubgrid.getrowdata(args.rowindex);
+    let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['ClubArea'] + '</div>';
+    this.registrationTempData.SelectedAreaName = row['ClubArea'];
+    this.clubdropdown.setContent(dropDownContent);
+
+    //reaload
+    this.clubnamedataAdapter = new jqx.dataAdapter({
+      datatype: 'json',
+      datafields: [
+        { name: 'ID', type: 'string' },
+        { name: 'ClubName', type: 'string' }
+      ],
+      id: 'ID',
+      url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllClubs?SelectedDistrictId=' + this.registrationTempData.SelectedDistId + '&ClubArea=' + this.registrationTempData.SelectedAreaName
+    });
+    this.clubnamedataAdapter.dataBind();
+  }
+
+
+  ///////////////////////Club name Grid/////////////////////////////
+  @ViewChild('clubnamegrid') clubnamegrid: jqxGridComponent;
+  @ViewChild('clubnamedropdown') clubnamedropdown: jqxDropDownButtonComponent;
+  clubnamedataAdapter: any = new jqx.dataAdapter({
+    datatype: 'json',
+    datafields: [
+      { name: 'ID', type: 'string' },
+      { name: 'ClubName', type: 'string' }
+    ],
+    id: 'ID',
+    //url: APP_CONFIG.appServiceEndpoint + 'api/District/GetAllClubs?SelectedDistrictId=' + this.registrationTempData.SelectedDistId + '&ClubArea=' + this.registrationTempData.SelectedAreaName
+  });
+
+  clubnamecolumns: any[] =
+    [
+      { text: 'User Id', datafield: 'ID', width: 250 },
+      { text: 'Club Name', datafield: 'ClubName', width: 250 },
+      // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
+    ];
+  clubnamegridonselect(event: any): void {
+    debugger;
+    let args = event.args;
+    let row = this.clubnamegrid.getrowdata(args.rowindex);
+    let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['ClubName'] + '</div>';
+    this.registrationTempData.SelectedClubId = row['ID'];
+    this.clubnamedropdown.setContent(dropDownContent);
+  }
+
+
 
   ready = (): void => {
     //this.clubgrid.selectrow(-1);
@@ -114,8 +171,8 @@ export class RegistrationStudentComponent implements OnInit {
     if (this.registrationForm.valid) {
       let studentRegistrationForm = this.registrationForm.value;
 
-      studentRegistrationForm.DistrictId = this.registrationTempData.SelectedClubId;
-      studentRegistrationForm.ClubId = this.registrationTempData.SelectedDistId;
+      studentRegistrationForm.DistrictId = null;
+      studentRegistrationForm.ClubId = this.registrationTempData.SelectedClubId;
 
       //studentRegistrationForm.PresidentPhoto = this.registrationTempData.PresidentPhoto;
       //studentRegistrationForm.SecretaryPhoto = this.registrationTempData.SecretaryPhoto;

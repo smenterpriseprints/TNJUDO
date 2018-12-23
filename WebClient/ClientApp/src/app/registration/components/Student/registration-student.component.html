@@ -13,7 +13,7 @@
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-title"style="color:black">Sign Up Form</span>
+                            <span class="nav-title" style="color:black">Sign Up Form</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
                         </li>
 
@@ -45,6 +45,16 @@
                                     <jqxDropDownButton #clubdropdown [height]="30">
                                         <jqxGrid #clubgrid (onRowselect)="clubgridonselect($event)" [source]="clubdataAdapter"
                                             [columns]="clubcolumns" [pageable]="true" [columnsresize]="true"
+                                            [autoheight]="true">
+                                        </jqxGrid>
+                                    </jqxDropDownButton>
+                                </div>
+
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label">Select Club Name</label>
+                                    <jqxDropDownButton #clubnamedropdown [height]="30">
+                                        <jqxGrid #clubnamegrid (onRowselect)="clubnamegridonselect($event)" [source]="clubnamedataAdapter"
+                                            [columns]="clubnamecolumns" [pageable]="true" [columnsresize]="true"
                                             [autoheight]="true">
                                         </jqxGrid>
                                     </jqxDropDownButton>
