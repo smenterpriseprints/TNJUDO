@@ -10,7 +10,7 @@ import { APP_CONFIG } from 'src/environments/environment';
 @Component({
   selector: 'app-club-registration',
   templateUrl: './club-registration.component.html',
-  styleUrls: []
+  styleUrls: ['./club-registration.component.css']
 })
 export class ClubRegistrationComponent implements OnInit {
 
@@ -90,7 +90,7 @@ export class ClubRegistrationComponent implements OnInit {
       this.regClubService.postClubRegistration(clubRegistrationForm).subscribe(response => {
         let parsedData = JSON.parse(response._body);
         if (parsedData.Status == "Success") {
-          this.displayMessage.NotifyDomToasterMessage("Registered Successfully." + parsedData.Message, parsedData.Status);
+          this.displayMessage.NotifyDomToasterMessage("Club Registered Successfully." + parsedData.Message, parsedData.Status);
           //this.router.navigate(['/Tournament']);
         }
         else if (parsedData.Status == "Warning") {

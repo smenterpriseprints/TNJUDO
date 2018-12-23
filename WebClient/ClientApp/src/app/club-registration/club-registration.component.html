@@ -1,11 +1,11 @@
 <div class="main-content">
     <div class="col-lg-12" style="background-color:orange;">
-        <div class="card" style="background-color:orange;">
+        <div class="card">
             <h4 class="card-title">
                 <p class="text-center fs-35 text-muted" style="color:#1e2731 !important">Club
                     <strong class="text-primary" style="color:#335e8c !important">Registration</strong></p>
             </h4>
-            <div class="card-body" style="background-color:orange;">
+            <div class="card-body">
                 <form data-provide="wizard" [formGroup]="clubregistration" (ngSubmit)="onClubSubmiit()">
                     <ul class="nav nav-process nav-process-circle">
 
@@ -30,7 +30,7 @@
 
                                 <div class="form-group col-md-6">
                                     <label for="District" class="col-form-label">Choose your District</label>
-                                    <jqxDropDownButton #districtdropdown [width]="175" [height]="30">
+                                    <jqxDropDownButton #districtdropdown [width]="190" [height]="35">
                                         <jqxGrid #districtdropdowngrid (onRowselect)="districtdropdownselect($event)"
                                             [width]="550" [source]="dataAdapter" [columns]="columns" [ready]="ready"
                                             [pageable]="true" [columnsresize]="true" [autoheight]="true">
@@ -41,7 +41,7 @@
                                 </div>
 
                                 <div class="form-group col-md-8">
-                                    <label for="ClubArea" class="col-form-label">CLub Area</label>
+                                    <label for="ClubArea" class="col-form-label">Enter CLub Area</label>
                                     <custom-textbox [group]="clubregistration" name="ClubArea" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Club Area"></custom-textbox>
                                 </div>
@@ -60,7 +60,6 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>President Phone Number</label>
-                                    <small class="sidetitle">E.g. +91 9999999999</small>
                                     <custom-textbox [group]="clubregistration" name="PresidentPhone" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="10"></custom-textbox>
                                 </div>
@@ -73,7 +72,7 @@
                                 </div>
 
                                 <div class="form-group col-md-3">
-                                    <label>President Photo</label>
+                                    <label>President's Photo</label>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
                                             readonly>
@@ -102,7 +101,7 @@
                                 </div>
 
                                 <div class="form-group col-md-3">
-                                    <label>Secretary Photo</label>
+                                    <label>Secretary's Photo</label>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
                                             readonly>
@@ -133,7 +132,7 @@
                                 </div>
 
                                 <div class="form-group col-md-3">
-                                    <label>Coach Photo</label>
+                                    <label>Coach's Photo</label>
                                     <div class="form-group file-group">
                                         <input type="text" class="form-control file-value file-browser" placeholder="Choose file..."
                                             readonly>
@@ -162,13 +161,13 @@
                                 </div>
 
                                 <div class="form-group col-md-10">
-                                    <label for="ClubAddress" class="col-form-label">Address Of Club Headquaters line1</label>
+                                    <label for="ClubAddress" class="col-form-label">Address Of Club Headquaters 1</label>
                                     <custom-textbox [group]="clubregistration" name="ClubAddress" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="200"></custom-textbox>
                                 </div>
 
                                 <div class="form-group col-md-10">
-                                    <label for="ClubAddress2" class="col-form-label">Address Of Club Headquaters line2</label>
+                                    <label for="ClubAddress2" class="col-form-label">Address Of Club Headquaters 2</label>
                                     <custom-textbox [group]="clubregistration" name="ClubAddress2" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="200"></custom-textbox>
                                 </div>
@@ -250,7 +249,7 @@
 
                                 <div class="form-group row">
                                     <label class="col-form-label col-sm-4">Email</label>
-                                    <div class="form-control-plaintext col-sm-8">support@theadmin.io</div>
+                                    <div class="form-control-plaintext col-sm-8">support@tnja.in</div>
                                 </div>
 
                                 <div class="form-group row">
