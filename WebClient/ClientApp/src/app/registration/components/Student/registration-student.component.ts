@@ -43,7 +43,6 @@ export class RegistrationStudentComponent implements OnInit {
 
   districtcolumns: any[] =
     [
-      { text: 'Id', datafield: 'ID', width: 250 },
       { text: 'District Name', datafield: 'DistrictName', width: 250 },
     ];
 
@@ -86,7 +85,6 @@ export class RegistrationStudentComponent implements OnInit {
 
   clubcolumns: any[] =
     [
-      { text: 'User Id', datafield: 'ID', width: 250 },
       { text: 'Club Area', datafield: 'ClubArea', width: 250 },
       // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
     ];
@@ -127,7 +125,6 @@ export class RegistrationStudentComponent implements OnInit {
 
   clubnamecolumns: any[] =
     [
-      { text: 'User Id', datafield: 'ID', width: 250 },
       { text: 'Club Name', datafield: 'ClubName', width: 250 },
       // { text: 'Club Address', datafield: 'ClubAddress', width: 250 }
     ];
