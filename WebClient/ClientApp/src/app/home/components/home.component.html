@@ -6,200 +6,9 @@
     color:white;
 }
 </style>
-<script type="text/javascript" src="/assets/js/jssor.slider.min.js"></script>
-<script src="/assets/js/jquery-3.3.1.min.js"></script>
-<script>
-
-   jQuery(document).ready(function ($) {
-       var options = {
-           $AutoPlay: 1,                                       //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
-           $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-           $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-           $Idle: 2000,                                        //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-           $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-           $ArrowKeyNavigation: 1,   			                //[Optional] Steps to go for each navigation request by pressing arrow key, default value is 1.
-           $SlideEasing: $Jease$.$OutQuint,                    //[Optional] Specifies easing for right to left animation, default value is $Jease$.$OutQuad
-           $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-           $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide, default value is 20
-           $SlideWidth: 1000,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-           $SlideHeight: 600,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-           $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-           $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-           $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-           $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
-
-           $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
-               $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
-               $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-               $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-           },
-
-           $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
-               $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
-               $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-               $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-               $SpacingX: 12,                                  //[Optional] Horizontal space between each item in pixel, default value is 0
-               $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-           }
-       };
-
-       var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-       //responsive code begin
-       //you can remove responsive code if you don't want the slider scales while window resizing
-       function ScaleSlider() {
-           var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
-           if (parentWidth) {
-               jssor_slider1.$ScaleWidth(parentWidth - 30);
-           }
-           else
-               window.setTimeout(ScaleSlider, 30);
-       }
-       ScaleSlider();
-
-       $(window).bind("load", ScaleSlider);
-       $(window).bind("resize", ScaleSlider);
-       $(window).bind("orientationchange", ScaleSlider);
-       //responsive code end
-   });
-</script>
-<style>
-
-       /* jssor slider loading skin spin css */
-       .jssorl-009-spin img {
-           animation-name: jssorl-009-spin;
-           animation-duration: 1.6s;
-           animation-iteration-count: infinite;
-           animation-timing-function: linear;
-       }
-
-       @keyframes jssorl-009-spin {
-           from {
-               transform: rotate(0deg);
-           }
-
-           to {
-               transform: rotate(360deg);
-           }
-       }
 
 
-.img-replace {
-/* replace text with an image */
-display: inline-block;
-overflow: hidden;
-text-indent: 100%; 
-color: transparent;
-white-space: nowrap;
-}
-.bts-popup {
-position: fixed;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-opacity: 0;
-visibility: hidden;
--webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
--moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-.bts-popup.is-visible {
-opacity: 1;
-visibility: visible;
--webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
--moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-transition: opacity 0.3s 0s, visibility 0s 0s;
-}
 
-.bts-popup-container {
-position: relative;
-width: 90%;
-max-width: 400px;
-margin: 4em auto;
-background: #a0cff1;
-border-radius: none; 
-text-align: center;
-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
--webkit-transform: translateY(-40px);
--moz-transform: translateY(-40px);
--ms-transform: translateY(-40px);
--o-transform: translateY(-40px);
-transform: translateY(-40px);
-/* Force Hardware Acceleration in WebKit */
--webkit-transition-property: -webkit-transform;
--moz-transition-property: -moz-transform;
-transition-property: transform;
--webkit-transition-duration: 0.3s;
--moz-transition-duration: 0.3s;
-transition-duration: 0.3s;
-}
-.bts-popup-container img {
-padding: 20px 0 0 0;
-}
-.bts-popup-container p {
-color: white;
-padding: 10px 40px;
-}
-.bts-popup-container .bts-popup-button {
-padding: 5px 25px;
-border: 2px solid white;
-display: inline-block;
-margin-bottom: 10px;
-}
-
-.bts-popup-container a {
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-}
-.bts-popup-container .bts-popup-close {
-position: absolute;
-top: 8px;
-right: 8px;
-width: 30px;
-height: 30px;
-}
-.bts-popup-container .bts-popup-close::before, .bts-popup-container .bts-popup-close::after {
-content: '';
-position: absolute;
-top: 12px;
-width: 16px;
-height: 3px;
-background-color: white;
-}
-.bts-popup-container .bts-popup-close::before {
--webkit-transform: rotate(45deg);
--moz-transform: rotate(45deg);
--ms-transform: rotate(45deg);
--o-transform: rotate(45deg);
-transform: rotate(45deg);
-left: 8px;
-}
-.bts-popup-container .bts-popup-close::after {
--webkit-transform: rotate(-45deg);
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--o-transform: rotate(-45deg);
-transform: rotate(-45deg);
-right: 6px;
-top: 13px;
-}
-.is-visible .bts-popup-container {
--webkit-transform: translateY(0);
--moz-transform: translateY(0);
--ms-transform: translateY(0);
--o-transform: translateY(0);
-transform: translateY(0);
-}
-@media only screen and (min-width: 1170px) {
-.bts-popup-container {
-margin: 8em auto;
-}
-}
-</style>
 <script>
 jQuery(document).ready(function($){
 
@@ -232,17 +41,20 @@ $(document).keyup(function(event){
 <div class="row">
 		
     <div class="col-md-12">
-            <div id="slider1_container" style="visibility: visible; position: relative; margin: 0 auto; width: 100%; height: 600px; overflow: hidden;">
+        
+            <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 980px; height: 600px; overflow: hidden;">
+   
                 <!-- Loading Screen -->
                 <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
                     <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="svg/loading/static-svg/spin.svg" />
                 </div>
     
+                <!-- <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;"></div> -->
                 <!-- Slides Container -->
-                <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 600px;
-                overflow: hidden;">
+                <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 980px; height: 600px;
+            overflow: hidden;">
                     <div>
-                        <img data-u="image" src="/assets/img/schoolgame1.jpg" style="width:100%" />
+                        <img data-u="image" src="/assets/img/schoolgame1.jpg"  />
                     </div>
                     <div>
                         <img data-u="image" src="/assets/img/gallery/thumb/2.jpg" />
@@ -268,7 +80,7 @@ $(document).keyup(function(event){
                 <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:40px;right:600px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
                     <div data-u="prototype" class="i" style="width:16px;height:16px;">
                         <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            <circle class="b" cx="4000" cy="4000" r="2500"></circle>
                         </svg>
                     </div>
                 </div>
@@ -385,31 +197,4 @@ $(document).keyup(function(event){
         </div>
 
 
-        <!--<div class="col-12 d-none d-md-block">
-            <div class="card">
-                <div class="row no-gutters">
-
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5><a class="hover-primary text-uppercase fs-14 fw-500 ls-1" href="../widget/blog.html">About Judo,JFI and TNJA</a></h5>
-                            <hr class="w-50px ml-0 bt-2 border-pink hr-sm">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <div class="flexbox flex-items-middle mt-30">
-                                <a href="../page/profile.html">
-                                    <img class="avatar avatar-sm" src="assets/img/gallery/thumb/1.jpg" alt="...">
-                                    <span class="text-default fw-400 ml-2">From the author</span>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-heart text-danger fs-11"></i>
-                                    <span class="fs-11 text-fade ml-1">128</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="col-4 bg-img" style="background-image: url(assets/img/gallery/thumb/1.jpg)" href="#"></a>
-                </div>
-            </div>
-        </div>-->
-
-    </div>
+      </div>
