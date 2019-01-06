@@ -53,7 +53,7 @@ export class ClubRegistrationComponent implements OnInit {
 
 
   isEditMode: boolean = true;
-  isValid: boolean = false;
+  isValid: boolean = true;
   distRegistration: any = {};
   public clubregistration: FormGroup = new FormGroup({});
   public registrationTempData: any = {};
@@ -105,6 +105,10 @@ export class ClubRegistrationComponent implements OnInit {
           debugger;
 
         });
+    }
+    else {
+      this.isValid = false;
+      this.displayMessage.NotifyDomToasterMessage("Please fill all the mandatory fields", "warning");
     }
   }
 
