@@ -2,4 +2,7 @@
     <input type="text" data-input-hint="right" maxlength={{max}} [formControlName]="name" class="form-control"
         placeholder={{placeHolder}} (keyup)="textValueChange($event.target.value)" [attr.disabled]="editMode ? null : ''"
         [ngClass]="{'alert-danger': (!isValid || group.get(name).dirty) && group.get(name).invalid }">
+    <div *ngIf="(!isValid || group.get(name).dirty) && group.get(name).invalid">
+        <span style="color:red;font-size: small"> {{name}} is required.</span>
+    </div>
 </form>

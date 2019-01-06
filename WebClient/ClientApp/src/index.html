@@ -38,7 +38,7 @@
         //     var jssor_slider1 = new $JssorSlider$(containerId, options);
         // };
     </script>
-    
+
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script>
@@ -97,8 +97,14 @@
             //responsive code end
         });
     </script>
-         
-<style>
+
+    <style>
+        .alert-danger{
+    color: #e70a33 !important;
+    background-color: #f3e6e6 !important;
+    border-color: red!important;
+    border-width: 2px !important;
+}
 
         /* jssor slider loading skin spin css */
         .jssorl-009-spin img {
@@ -344,7 +350,8 @@
     !-->
     <!-- News slide-->
     <header class="topbar" style="height:0px !important; top:20px;">
-        <marquee id="newsslide" direction="left"> Upcoming Tournament scheduled on 29/11/2018.<a href="student">Click Here To
+        <marquee id="newsslide" direction="left"> Upcoming Tournament scheduled on 29/11/2018.<a href="student">Click
+                Here To
                 Register</a></marquee>
     </header>
     <!--Main Slider
@@ -586,11 +593,11 @@
                                     </li>
                                 </ul>-->
                             </li>
-                           <li class="menu-item">
+                            <li class="menu-item">
                                 <a class="menu-link" [routerLink]="['Student']" href="student">
                                     <span class="title">Student</span>
                                 </a>
-                                
+
                             </li>
 
                             <li class="menu-item">
@@ -657,37 +664,37 @@
                                 <a class="menu-link" href="events">
                                     <span class="title">Events</span>
                                 </a>
-                            </li>   
+                            </li>
                             <li class="menu-item">
                                 <a class="menu-link" href="#">
                                     <span class="title">News</span>
                                 </a>
-                            <ul class="menu-sub-submenu" style="z-index:999;">
-                            <li class="menu-item">
-                                <a class="menu-link" href="national-news">
-                                    <span class="title">National</span>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a class="menu-link" href="#">
-                                    <span class="title">State</span>
-                                </a>
                                 <ul class="menu-sub-submenu" style="z-index:999;">
-
                                     <li class="menu-item">
-                                        <a class="menu-link" href="district-news">
-                                            <span class="title">District</span>
+                                        <a class="menu-link" href="national-news">
+                                            <span class="title">National</span>
                                         </a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a class="menu-link" href="club-news">
-                                            <span class="title">Clubs</span>
+                                    <li class="menu-item ">
+                                        <a class="menu-link" href="#">
+                                            <span class="title">State</span>
                                         </a>
-                                    </li>
+                                        <ul class="menu-sub-submenu" style="z-index:999;">
+
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="district-news">
+                                                    <span class="title">District</span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="club-news">
+                                                    <span class="title">Clubs</span>
+                                                </a>
+                                            </li>
 
 
+                                        </ul>
                                 </ul>
-                            </ul>
 
                             </li>
 
@@ -1077,7 +1084,7 @@
 -->
     <app-root></app-root>
 
-    
+
 
     <!-- Footer -->
     <footer class="site-footer pt-50 pb-20">
@@ -1179,8 +1186,8 @@
     <script type="text/javascript" src="assets/js/app.min.js"></script>
     <script type="text/javascript" src="assets/js/script.min.js"></script>
 
-    
-  
+
+
 
 </body>
 
