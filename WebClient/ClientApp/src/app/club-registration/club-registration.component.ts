@@ -32,7 +32,7 @@ export class ClubRegistrationComponent implements OnInit {
   dataAdapter: any = new jqx.dataAdapter(this.source);
 
   columns: any[] =
-    [ 
+    [
 
       { text: 'Area Name', datafield: 'DistrictName', width: 500 },
     ];
@@ -46,6 +46,7 @@ export class ClubRegistrationComponent implements OnInit {
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
     this.registrationTempData.district = row['ID'];
     this.districtdropdown.setContent(dropDownContent);
+    this.districtdropdown.close();
   }
   /////////////////////////////////
 

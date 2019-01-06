@@ -53,7 +53,7 @@ export class RegistrationStudentComponent implements OnInit {
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
     this.registrationTempData.SelectedDistId = row['ID'];
     this.districtdropdown.setContent(dropDownContent);
-
+    this.districtdropdown.close();
     //reload data
     this.clubdataAdapter = new jqx.dataAdapter({
       datatype: 'json',
@@ -95,7 +95,7 @@ export class RegistrationStudentComponent implements OnInit {
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['ClubArea'] + '</div>';
     this.registrationTempData.SelectedAreaName = row['ClubArea'];
     this.clubdropdown.setContent(dropDownContent);
-
+    this.clubdropdown.close();
     //reaload
     this.clubnamedataAdapter = new jqx.dataAdapter({
       datatype: 'json',
@@ -135,6 +135,7 @@ export class RegistrationStudentComponent implements OnInit {
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['ClubName'] + '</div>';
     this.registrationTempData.SelectedClubId = row['ID'];
     this.clubnamedropdown.setContent(dropDownContent);
+    this.clubnamedropdown.close();
   }
 
 
