@@ -143,23 +143,6 @@
                                     <br>
                                 </div>
 
-                                <div class="form-group col-md-3">
-                                    <label>Club Office Contact Number</label>
-                                    <custom-textbox [group]="clubregistration" name="DistrictPhone" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    <label for="DistrictEmail" class="col-form-label">Club Office Email</label>
-                                    <custom-textbox [group]="clubregistration" name="DistrictEmail" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" pattern="email"></custom-textbox>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="DistrictPassword" class="col-form-label">Club Login Password</label>
-                                    <custom-textbox [group]="clubregistration" name="DistrictPassword" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100"></custom-textbox>
-                                </div>
-
                                 <div class="form-group col-md-10">
                                     <label for="ClubAddress" class="col-form-label">Address Of Club Headquaters 1</label>
                                     <custom-textbox [group]="clubregistration" name="ClubAddress" [required]="true"
@@ -177,40 +160,72 @@
                                         [isValid]="isValid" [max]="200" placeHolder="Nearby"></custom-textbox>
                                 </div>
 
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-2">
                                     <label for="Pincode" class="col-form-label">Pincode</label>
                                     <custom-textbox [group]="clubregistration" name="Pincode" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="6"></custom-textbox>
                                 </div>
 
+                                <div class="form-group col-md-6">
+                                    <br>
+                                </div>
 
-                                <div class="form-group col-md-4">
-                                    <label for="AffliationNo" class="col-form-label">District Affliation No</label>
-                                    <custom-textbox [group]="clubregistration" name="AffliationNo" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="6"></custom-textbox>
+                                <div class="form-group col-md-3">
+                                    <label>Club Office Contact Number</label>
+                                    <custom-textbox [group]="clubregistration" name="DistrictPhone" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="10" pattern="number"></custom-textbox>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="DistrictEmail" class="col-form-label">Club Office Email</label>
+                                    <custom-textbox [group]="clubregistration" name="DistrictEmail" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100" pattern="email"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="DistrictPassword" class="col-form-label">Club Login Password</label>
+                                    <custom-textbox [group]="clubregistration" name="DistrictPassword" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="100"></custom-textbox>
                                 </div>
 
 
-                                <div class="form-group col-md-2">
+                                <div class="form-group col-md-4">
                                     <label for="inputAddress2" class="col-form-label">No Of Male Students</label>
                                     <custom-textbox [group]="clubregistration" name="Male" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="3" placeHolder="Male"></custom-textbox>
                                 </div>
-                                <div class="form-group col-md-2">
+                                <div class="form-group col-md-4">
                                     <label for="inputAddress2" class="col-form-label">No Of Female Students</label>
                                     <custom-textbox [group]="clubregistration" name="Female" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Female"></custom-textbox>
                                 </div>
+                                <div class="form-group col-md-8">
+                                    <br>
+                                </div>"
                                 <div class="form-group col-md-3">
                                     <label for="inputAddress2" class="col-form-label">No Of Students -
                                         Categorywise</label>
-                                    <custom-textbox [group]="clubregistration" name="Junior" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Sub-Junior"></custom-textbox>
-                                    <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Junior"></custom-textbox>
-                                    <custom-textbox [group]="clubregistration" name="Senior" [required]="true"
-                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Senior"></custom-textbox>
+                                    </div>
+                                <div class="form-group col-md-2">
+                                        <label for="subjunior" class="col-form-label">Sub Junior</label>
+                                        <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="MALE"></custom-textbox>
+                                        <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="FEMALE"></custom-textbox>
                                 </div>
+                                <div class="form-group col-md-2">
+                                        <label for="subjunior" class="col-form-label">Junior</label>
+                                        <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="MALE"></custom-textbox>
+                                        <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="FEMALE"></custom-textbox>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="subjunior" class="col-form-label">Senior</label>
+                                    <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                    [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="MALE"></custom-textbox>
+                                    <custom-textbox [group]="clubregistration" name="SubJunior" [required]="true"
+                                    [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="FEMALE"></custom-textbox>
+                            </div>
                                 <div class="form-group col-md-10">
                                     <br>
                                 </div>
