@@ -192,5 +192,9 @@ export class RegistrationStudentComponent implements OnInit {
         });
 
     }
+    else {
+      this.isValid = false;
+      this.displayMessage.NotifyDomToasterMessage("Please fill all the mandatory fields", "warning");
+    }
   }
 }

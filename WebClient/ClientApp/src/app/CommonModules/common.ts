@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class BrowserToaster {
     NotifyDomToasterMessage(message, className) {
         let toastr = window["toastr"];
-        alert(className +":" +message);
+        //alert(className +":" +message);
 
         toastr.options = {
             "closeButton": false,

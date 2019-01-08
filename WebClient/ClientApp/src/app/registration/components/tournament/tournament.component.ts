@@ -60,19 +60,19 @@ export class TournamentComponent implements OnInit {
           this.displayMessage.NotifyDomToasterMessage("Registered Successfully, please note down your reference id: " + parsedData.Message, parsedData.Status);
           //this.router.navigate(['/Tournament']);
         }
-        else if(parsedData.Status == "Warning")
-        {
+        else if (parsedData.Status == "Warning") {
           this.displayMessage.NotifyDomToasterMessage(parsedData.Message, parsedData.Status);
         }
       },
         err => {
-          this.displayMessage.NotifyDomToasterMessage("Error occurred on registraion.Please contact admin","error");
+          this.displayMessage.NotifyDomToasterMessage("Error occurred on registraion.Please contact admin", "error");
 
         });
 
     }
-    else{
-      this.displayMessage.NotifyDomToasterMessage("Please fill all the mandatory fields","warning");
+    else {
+      this.isValid = false;
+      this.displayMessage.NotifyDomToasterMessage("Please fill all the mandatory fields", "warning");
     }
   }
 
