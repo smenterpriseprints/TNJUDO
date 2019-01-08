@@ -34,7 +34,7 @@ export class ClubRegistrationComponent implements OnInit {
   columns: any[] =
     [
 
-      { text: 'District Name', datafield: 'DistrictName', width: 150 },
+      { text: 'District Name', datafield: 'DistrictName'},
     ];
   ready = (): void => {
     //this.districtdropdowngrid.selectrow(-1);

@@ -80,7 +80,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <br>
+                                    <label for="Presidentmail">President E-mail ID</label>
+                                    <custom-textbox [group]="clubregistration" name="Presidentmail" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar">
+                                    </custom-textbox>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="SecretaryName" class="col-form-label">Secretary Name</label>
@@ -109,7 +112,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <br>
+                                    <label for="Secretarymail">Secretary E-mail ID</label>
+                                    <custom-textbox [group]="clubregistration" name="Secretarymail" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar">
+                                    </custom-textbox>
                                 </div>
 
 
@@ -139,8 +145,11 @@
                                         <input type="file" (change)="onSelectPhoto($event,'CoachPhoto')" multiple>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-10">
-                                    <br>
+                                <div class="form-group col-md-6">
+                                    <label for="Coachmail">Coach E-mail ID </label>
+                                    <custom-textbox [group]="clubregistration" name="Coachmail" [required]="true"
+                                        [editMode]="isEditMode" [isValid]="isValid" [max]="200" placeHolder="As in Aadhaar">
+                                    </custom-textbox>
                                 </div>
 
                                 <div class="form-group col-md-10">
@@ -188,22 +197,25 @@
                                 </div>
 
 
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="inputAddress2" class="col-form-label">No Of Male Students</label>
                                     <custom-textbox [group]="clubregistration" name="Male" [required]="true" [editMode]="isEditMode"
                                         [isValid]="isValid" [max]="3" placeHolder="Male"></custom-textbox>
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="inputAddress2" class="col-form-label">No Of Female Students</label>
                                     <custom-textbox [group]="clubregistration" name="Female" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3" placeHolder="Female"></custom-textbox>
                                 </div>
-                                <div class="form-group col-md-8">
+                                <div class="form-group col-md-6">
                                     <br>
-                                </div>"
+                                </div>
                                 <div class="form-group col-md-3">
                                     <label for="inputAddress2" class="col-form-label">No Of Students -
                                         Categorywise</label>
+                                    </div>
+                                    <div class="form-group col-md-9">
+                                        <br>
                                     </div>
                                 <div class="form-group col-md-2">
                                         <label for="subjunior" class="col-form-label">Sub Junior</label>
