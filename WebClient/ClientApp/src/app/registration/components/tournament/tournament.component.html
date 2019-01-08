@@ -12,7 +12,7 @@
 
           <div class="col-md-6">
             <div class="form-group">
-              <label for="FullName" class="col-form-label">Full Name</label>
+              <label for="FullName" class="col-form-label">Applicant Full Name</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="FullName" [required]="true" [editMode]="isEditMode"
                 [isValid]="isValid" [max]="100" placeHolder="FullName"></custom-textbox>
             </div>
@@ -112,7 +112,7 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="CurrentStandardLevel" class="col-form-label">Current Standard Level</label>
+              <label for="CurrentStandardLevel" class="col-form-label">Current Educational Status</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="CurrentStandardLevel" [required]="true"
                 [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="CurrentStandardLevel"></custom-textbox>
             </div>
@@ -185,6 +185,10 @@
             </div>
           </div>
 
+          <div class="col-md-8">
+            <br>
+          </div>
+
 
           <div class="col-md-4">
             <div class="form-group">
@@ -217,7 +221,7 @@
 
           <div class="col-md-4">
             <div class="form-group">
-              <label for="EconomicStatus" class="col-form-label">Annual Income</label>
+              <label for="EconomicStatus" class="col-form-label">Annual Income(Father/Mother)</label>
               <custom-textbox [group]="tournamentRegistrationForm" name="EconomicStatus" [required]="true" [editMode]="isEditMode"
                 [isValid]="isValid" [max]="8" placeHolder="EconomicStatus"></custom-textbox>
 
@@ -240,7 +244,7 @@
 
 
     <div class="card"  style="background-color: orange">
-      <h4 class="card-title"><strong>Health</strong> Condition</h4>
+      <h4 class="card-title"><strong>Health</strong> Status</h4>
 
       <div class="card-body"  style="background-color: orange">
         <div class="row">
@@ -312,7 +316,9 @@
           </div>
 
           <div class="col-md-4">
-            <label class="col-form-label">Any Document(Birth Certificate/Class X Cert.)</label>
+            <label class="col-form-label"><span>Attach any one document  <br> </span>
+              <span style="font-size:12px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Birth
+              Certificate, Class X certificate)</span></label>
             <div class="form-group file-group">
               <input type="text" class="form-control file-value file-browser" placeholder="Choose file..." readonly>
               <input type="file" (change)="onSelectPhoto($event,'MiscDocument')" multiple>

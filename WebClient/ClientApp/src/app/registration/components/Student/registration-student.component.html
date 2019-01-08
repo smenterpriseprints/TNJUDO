@@ -74,7 +74,7 @@
                                             <div class="row">
                                                 <div class="form-group col-md-4">
                                                     <label for="studentName" class="col-form-label">Name Of the
-                                                        Application</label>
+                                                        Applicant</label>
                                                     <custom-textbox [group]="registrationForm" name="studentName"
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="100" placeHolder="Name"></custom-textbox>
@@ -208,6 +208,9 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100"></custom-textbox>
                                                     </div>
+                                                    <div class="form-group col-md-8">
+                                                        <br>
+                                                    </div>
                                                     <div class="form-group col-md-4">
                                                         <label for="motherName" class="col-form-label">Mother Name
                                                         </label>
@@ -235,6 +238,9 @@
                                                         <custom-textbox [group]="registrationForm" name="motheroccupation"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100"></custom-textbox>
+                                                    </div>
+                                                    <div class="form-group col-md-8">
+                                                        <br>
                                                     </div>
                                                     <div class="form-group col-md-4">
                                                         <label for="siblings" class="col-form-label">No.of.Siblings
@@ -274,7 +280,7 @@
                                                             [max]="10"></custom-textbox>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label for="health" class="col-form-label">Health Condition
+                                                        <label for="health" class="col-form-label">Health Status
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="health"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
@@ -319,7 +325,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label class="col-form-label"><span>Any document &nbsp; </span><span style="font-size:10px">(Birth
+                                                        <label class="col-form-label"><span>Attach any one document  &nbsp; </span><span style="font-size:10px">(Birth
                                                                 Certificate, Class X certificate)</span></label>
                                                         <div class="input-group file-group">
                                                             <input type="text" class="form-control file-value"

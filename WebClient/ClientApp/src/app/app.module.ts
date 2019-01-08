@@ -58,6 +58,7 @@ import { EventComponent } from './event/event.component';
 import { StateContactComponent } from './state-contact/state-contact.component';
 import { CareerComponent } from './career/career.component';
 import { CouncilingComponent } from './counciling/counciling.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { CouncilingComponent } from './counciling/counciling.component';
     EventComponent,
     StateContactComponent,
     CareerComponent,
-    CouncilingComponent
+    CouncilingComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

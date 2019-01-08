@@ -40,6 +40,7 @@ import { EventComponent } from './event/event.component';
 import { StateContactComponent } from './state-contact/state-contact.component';
 import { CareerComponent } from './career/career.component';
 import { CouncilingComponent } from './counciling/counciling.component';
+import { GalleryComponent} from './gallery/gallery.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -95,6 +96,7 @@ const appRoutes: Routes = [
     { path: 'state-contact', component: StateContactComponent },
     { path: 'career', component: CareerComponent },
     { path: 'counciling', component: CouncilingComponent },
+    { path: 'gallery', component: GalleryComponent },
 
 
 
