@@ -72,14 +72,14 @@
 
                                         <div class="card-body" style="background-color: orange">
                                             <div class="row">
-                                                <div class="form-group col-md-4">
-                                                    <label for="studentName" class="col-form-label">Name Of the
+                                                <div class="form-group col-md-6">
+                                                    <label for="studentName" class="col-form-label">Name of the
                                                         Applicant</label>
                                                     <custom-textbox [group]="registrationForm" name="studentName"
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="100" placeHolder="Name"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-2">
                                                     <label for="dob" class="col-form-label">Date of Birth</label>
                                                     <custom-textbox [group]="registrationForm" name="dob" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="10"
@@ -91,25 +91,25 @@
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="12" placeHolder="Aadhaar"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-3">
                                                     <label for="biirthplace" class="col-form-label">Birth Place</label>
                                                     <custom-textbox [group]="registrationForm" name="birthplace"
                                                         [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                         [max]="100"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-3">
                                                     <label for="aadhaar" class="col-form-label">Age</label>
                                                     <custom-textbox [group]="registrationForm" name="age" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="2"
                                                         placeHolder="As on 2018"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-2">
+                                                <div class="form-group col-md-3">
                                                     <label for="height" class="col-form-label">Height</label>
                                                     <custom-textbox [group]="registrationForm" name="height" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3"
                                                         placeHolder="in cm"></custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-2">
+                                                <div class="form-group col-md-3">
                                                     <label for="weight" class="col-form-label">Weight</label>
                                                     <custom-textbox [group]="registrationForm" name="weight" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="3"
@@ -138,10 +138,13 @@
                                                         [max]="10">
                                                     </custom-textbox>
                                                 </div>
-                                                <div class="form-group col-md-4">
+                                                <div class="form-group col-md-6">
                                                     <label for="Email" class="col-form-label">E-Mail</label>
                                                     <custom-textbox [group]="registrationForm" name="Email" [required]="true"
                                                         [editMode]="isEditMode" [isValid]="isValid" [max]="150" pattern="email"></custom-textbox>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <br>
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="previoussport" class="col-form-label">Previous Sports
@@ -187,14 +190,14 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100" placeHolder="Name"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
                                                         <label for="fatherAge" class="col-form-label">Father Age
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="fatherAge"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="2"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
                                                         <label for="fatherqualification" class="col-form-label">Qualification
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="fatherqualification"
@@ -208,9 +211,6 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-8">
-                                                        <br>
-                                                    </div>
                                                     <div class="form-group col-md-4">
                                                         <label for="motherName" class="col-form-label">Mother Name
                                                         </label>
@@ -218,14 +218,14 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100" placeHolder="Name"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
                                                         <label for="motherAge" class="col-form-label">Mother Age
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="motherAge"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="2"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
                                                         <label for="motherqualification" class="col-form-label">Qualification
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="motherqualification"
@@ -239,9 +239,6 @@
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-8">
-                                                        <br>
-                                                    </div>
                                                     <div class="form-group col-md-4">
                                                         <label for="siblings" class="col-form-label">No.of.Siblings
                                                         </label>
@@ -250,7 +247,7 @@
                                                             [max]="10"></custom-textbox>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label for="income" class="col-form-label">Annual Income
+                                                        <label for="income" class="col-form-label">Annual Income (Father/Mother)
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="income"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
@@ -268,11 +265,11 @@
                                             </div>
                                         </div>
                                         <div class="card" style="background-color: orange">
-                                            <h4 class="card-title"><strong>Health</strong> Condition</h4>
+                                            <h4 class="card-title"><strong>Health</strong> Status</h4>
 
                                             <div class="card-body" style="background-color: orange">
                                                 <div class="row">
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
                                                         <label for="blood" class="col-form-label">Blood Group
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="blood"
@@ -280,13 +277,13 @@
                                                             [max]="10"></custom-textbox>
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label for="health" class="col-form-label">Health Status
+                                                        <label for="health" class="col-form-label">Health Challenges (If any)
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="health"
                                                             [required]="true" [editMode]="isEditMode" [isValid]="isValid"
                                                             [max]="100"></custom-textbox>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-6">
                                                         <label for="mark" class="col-form-label">Visible Mark
                                                         </label>
                                                         <custom-textbox [group]="registrationForm" name="visiblemark"
@@ -355,8 +352,8 @@
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox mr-3">
                                                 <input type="checkbox" class="custom-control-input">
-                                                <label class="custom-control-label" style="color:black; font-size:18px">I agree to terms and
-                                                    conditions.</label>
+                                                <label class="custom-control-label" style="color:black; font-size:18px">I agree to TERMS and
+                                                    CONDITIONS of Tamil Nadu Judo Association.</label>
                                             </div>
                                         </div>
                                     </div>
