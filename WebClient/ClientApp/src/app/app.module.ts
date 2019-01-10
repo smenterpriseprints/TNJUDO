@@ -59,6 +59,13 @@ import { StateContactComponent } from './state-contact/state-contact.component';
 import { CareerComponent } from './career/career.component';
 import { CouncilingComponent } from './counciling/counciling.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ChennaiComponent } from './gallery/chennai/chennai.component';
+import { KancheepuramComponent } from './gallery/kancheepuram/kancheepuram.component';
+import { MaduraiComponent } from './gallery/madurai/madurai.component';
+import { TheniComponent } from './gallery/theni/theni.component';
+import { StateComponent } from './gallery/state/state.component';
+import { NationalComponent } from './gallery/national/national.component';
+import { ConstructionComponent } from './construction/construction.component';
 
 
 @NgModule({
@@ -108,7 +115,14 @@ import { GalleryComponent } from './gallery/gallery.component';
     StateContactComponent,
     CareerComponent,
     CouncilingComponent,
-    GalleryComponent
+    GalleryComponent,
+    ChennaiComponent,
+    KancheepuramComponent,
+    MaduraiComponent,
+    TheniComponent,
+    StateComponent,
+    NationalComponent,
+    ConstructionComponent
   ],
   imports: [
     BrowserModule,

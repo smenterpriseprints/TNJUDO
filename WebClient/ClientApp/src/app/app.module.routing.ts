@@ -41,6 +41,15 @@ import { StateContactComponent } from './state-contact/state-contact.component';
 import { CareerComponent } from './career/career.component';
 import { CouncilingComponent } from './counciling/counciling.component';
 import { GalleryComponent} from './gallery/gallery.component';
+import {ChennaiComponent} from './gallery/chennai/chennai.component';
+import {KancheepuramComponent} from './gallery/kancheepuram/kancheepuram.component';
+import {MaduraiComponent} from './gallery/madurai/madurai.component';
+import {TheniComponent} from './gallery/theni/theni.component';
+import {NationalComponent} from './gallery/national/national.component';
+import { StateComponent} from './gallery/state/state.component';
+import {ConstructionComponent} from './construction/construction.component';
+ 
+
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -97,6 +106,13 @@ const appRoutes: Routes = [
     { path: 'career', component: CareerComponent },
     { path: 'counciling', component: CouncilingComponent },
     { path: 'gallery', component: GalleryComponent },
+    { path: 'chennai', component:ChennaiComponent},
+    { path: 'kancheepuram',component:KancheepuramComponent},
+    { path: 'madurai',component:MaduraiComponent},
+    { path: 'theni',component:TheniComponent},
+    { path: 'national-gallery',component:NationalComponent},
+    { path: 'state-gallery', component:StateComponent},
+    { path: 'under-construction', component:ConstructionComponent},
 
 
 
