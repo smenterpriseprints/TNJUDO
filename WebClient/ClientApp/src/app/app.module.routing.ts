@@ -5,7 +5,6 @@ import { LoginComponent } from './login/components/login.component';
 import { LoginNewComponent } from './login-new/login-new.component';
 import { RegistrationDistrictComponent } from './registration/components/District/registration-district.component'
 import { RegistrationStudentComponent } from './registration/components/Student/registration-student.component'
-import { RegistrationClubComponent } from './registration/components/Club/registration-club.component'
 
 import { EventRegistrationComponent } from './event-registration/event-registration.component'
 import { TournamentComponent } from './registration/components/tournament/tournament.component';

@@ -10,7 +10,6 @@ import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup } from '@angul
 import { LoginComponent } from './login/components/login.component'
 import { RegistrationDistrictComponent } from './registration/components/District/registration-district.component'
 import { RegistrationStudentComponent } from './registration/components/Student/registration-student.component'
-import { RegistrationClubComponent } from './registration/components/Club/registration-club.component'
 
 import { HttpHelper } from './Shared/Services/http-helper.service'
 import { RegistrationDistrictService } from './registration/Service/registration-district.service'
@@ -75,7 +74,6 @@ import { ConstructionComponent } from './construction/construction.component';
     LoginComponent,
     RegistrationDistrictComponent,
     RegistrationStudentComponent,
-    RegistrationClubComponent,
     RegistrationMapComponent,
     EventRegistrationComponent,
     CustomTextBoxComponent,
