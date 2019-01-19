@@ -47,6 +47,16 @@ import {TheniComponent} from './gallery/theni/theni.component';
 import {NationalComponent} from './gallery/national/national.component';
 import { StateComponent} from './gallery/state/state.component';
 import {ConstructionComponent} from './construction/construction.component';
+import {ChennaiContactComponent} from './district-contact/chennai-contact/chennai-contact.component';
+import {DharmapuriContactComponent} from './district-contact/dharmapuri-contact/dharmapuri-contact.component';
+import {KancheepuramContactComponent} from './district-contact/kancheepuram-contact/kancheepuram-contact.component';
+import {MaduraiContactComponent} from './district-contact/madurai-contact/madurai-contact.component';
+import {NamakkalContactComponent} from './district-contact/namakkal-contact/namakkal-contact.component';
+import {RamanathapuramContactComponent} from './district-contact/ramanathapuram-contact/ramanathapuram-contact.component';
+import {TheniContactComponent} from './district-contact/theni-contact/theni-contact.component';
+import { TirunelveliContactComponent} from './district-contact/tirunelveli-contact/tirunelveli-contact.component';
+import { TrichyContactComponent} from './district-contact/trichy-contact/trichy-contact.component';
+ 
  
 
 
@@ -112,6 +122,17 @@ const appRoutes: Routes = [
     { path: 'national-gallery',component:NationalComponent},
     { path: 'state-gallery', component:StateComponent},
     { path: 'under-construction', component:ConstructionComponent},
+    { path: 'chennai-contact', component:ChennaiContactComponent},
+    { path: 'dharmapuri-contact', component:DharmapuriContactComponent},
+    { path: 'kancheepuram-contact', component:KancheepuramContactComponent},
+    { path: 'madurai-contact', component:MaduraiContactComponent},
+    { path: 'theni-contact',component:TheniContactComponent},
+    { path: 'ramanathapuram-contact',component:RamanathapuramContactComponent},
+    { path: 'theni-contact', component:TheniContactComponent},
+    { path: 'tirunelveli-contact', component:TirunelveliContactComponent},
+    { path: 'tirchy-contact', component:TrichyContactComponent},
+
+
 
 
 

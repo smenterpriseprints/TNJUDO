@@ -10,4 +10,15 @@ time{
 .card-title{
     color:black !important;
     font-size:18px !important;
+    font-weight: 500 !important;
+}
+h5{
+   margin-top:30px !important;
+    font-size:15px !important;
+    color: black !important;
+}
+.label1{
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
 }

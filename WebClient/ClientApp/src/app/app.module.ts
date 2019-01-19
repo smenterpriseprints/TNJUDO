@@ -65,6 +65,15 @@ import { TheniComponent } from './gallery/theni/theni.component';
 import { StateComponent } from './gallery/state/state.component';
 import { NationalComponent } from './gallery/national/national.component';
 import { ConstructionComponent } from './construction/construction.component';
+import { ChennaiContactComponent } from './district-contact/chennai-contact/chennai-contact.component';
+import { KancheepuramContactComponent } from './district-contact/kancheepuram-contact/kancheepuram-contact.component';
+import { MaduraiContactComponent } from './district-contact/madurai-contact/madurai-contact.component';
+import { TheniContactComponent } from './district-contact/theni-contact/theni-contact.component';
+import { TrichyContactComponent } from './district-contact/trichy-contact/trichy-contact.component';
+import { TirunelveliContactComponent } from './district-contact/tirunelveli-contact/tirunelveli-contact.component';
+import { DharmapuriContactComponent } from './district-contact/dharmapuri-contact/dharmapuri-contact.component';
+import { NamakkalContactComponent } from './district-contact/namakkal-contact/namakkal-contact.component';
+import { RamanathapuramContactComponent } from './district-contact/ramanathapuram-contact/ramanathapuram-contact.component';
 
 
 @NgModule({
@@ -120,7 +129,16 @@ import { ConstructionComponent } from './construction/construction.component';
     TheniComponent,
     StateComponent,
     NationalComponent,
-    ConstructionComponent
+    ConstructionComponent,
+    ChennaiContactComponent,
+    KancheepuramContactComponent,
+    MaduraiContactComponent,
+    TheniContactComponent,
+    TrichyContactComponent,
+    TirunelveliContactComponent,
+    DharmapuriContactComponent,
+    NamakkalContactComponent,
+    RamanathapuramContactComponent
   ],
   imports: [
     BrowserModule,

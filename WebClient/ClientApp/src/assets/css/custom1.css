@@ -3,6 +3,9 @@ span.arrow
 	margin-left:7px;
 	margin-right:7px;
 }
+.menu-item {
+	background: none !important;
+}
 label{
 	display: unset !important;
     margin-bottom: 0px !important;
@@ -22,6 +25,10 @@ label{
 }
 .menu-submenu.menu-link{
 	background-color: orange !important;
+	
+}
+.menu-sub-sub-submenu.menu-link{
+	background-color: orange !important;
 }
 .topbar .menu-submenu .menu-link {
 	background-color: orange !important;
@@ -30,6 +37,10 @@ label{
 .topbar .menu-sub-submenu .menu-link,.menu-sub-submenu{
 	background-color: orange !important;
 }
+.topbar .menu-sub-sub-submenu .menu-link,.menu-sub-submenu{
+	background-color: orange !important;
+}
+
 .menu-link .title {
 	font-size: 20px !important;
 	/*jssor slider loading skin spin css*/

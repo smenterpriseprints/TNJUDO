@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./district-news.component.css']
 })
 export class DistrictNewsComponent implements OnInit {
+  
 
   constructor() { }
 
