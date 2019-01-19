@@ -130,7 +130,7 @@ const appRoutes: Routes = [
     { path: 'ramanathapuram-contact',component:RamanathapuramContactComponent},
     { path: 'theni-contact', component:TheniContactComponent},
     { path: 'tirunelveli-contact', component:TirunelveliContactComponent},
-    { path: 'tirchy-contact', component:TrichyContactComponent},
+    { path: 'trichy-contact', component:TrichyContactComponent},
 
 
 
