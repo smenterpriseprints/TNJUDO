@@ -1,0 +1,10 @@
+.page-title{
+    font-size: 26px !important;
+    color: black !important;
+    font-weight: 500 !important;
+}
+img{
+    margin: 15px 15px 15px 15px !important;
+    max-width: 95% !important;   
+    height: 500px !important;
+}

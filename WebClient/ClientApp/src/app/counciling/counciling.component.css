@@ -1,8 +1,13 @@
-h5{
+.title{
+    font-size:22px !important;
     color:black !important;
-    font-size:20px !important;
 }
-h6{
-    color:black !important;
-    font-size:20px !important;
+.card-title{
+    font-size: 34px !important;
+    font-weight:500 !important;
+    color:#335e8c !important;
+    text-align:center !important;
+}
+img{
+height:350px !important;
 }
