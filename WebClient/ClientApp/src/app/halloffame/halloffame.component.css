@@ -1,0 +1,14 @@
+.card{
+    background-color: orange !important;
+}
+.card-body{
+    background-color: orange !important;
+}
+img{
+    border-radius: 50% !important;
+    height:340px !important;
+}
+.teaser {
+    background-color: orange !important;
+    width:80% !important;
+}
