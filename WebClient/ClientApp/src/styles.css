@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~jqwidgets-scripts/jqwidgets/styles/jqx.base.css"; 
+@import "assets/css/core.min.css";
+@import "assets/css/app.min.css";
+@import "assets/css/style.min.css";
+@import "assets/css/custom1.css";
+@import "assets/leaflet/leaflet.css";
+@import "assets/css/toastr.css";

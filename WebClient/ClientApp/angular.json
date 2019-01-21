@@ -23,14 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/leaflet/leaflet.css",
-              "src/assets/css/toastr.css"
-              
+              "src/styles.css"
             ],
             "scripts": [
-              "src/assets/leaflet/leaflet.js",
-              "src/assets/js/toastr.js"        
+              "src/assets/js/toastr.js"
             ]
           },
           "configurations": {
