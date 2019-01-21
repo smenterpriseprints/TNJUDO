@@ -56,6 +56,7 @@ import {RamanathapuramContactComponent} from './district-contact/ramanathapuram-
 import {TheniContactComponent} from './district-contact/theni-contact/theni-contact.component';
 import { TirunelveliContactComponent} from './district-contact/tirunelveli-contact/tirunelveli-contact.component';
 import { TrichyContactComponent} from './district-contact/trichy-contact/trichy-contact.component';
+import {ThanjavurComponent} from './gallery/thanjavur/thanjavur.component';
  
  
 
@@ -128,9 +129,10 @@ const appRoutes: Routes = [
     { path: 'madurai-contact', component:MaduraiContactComponent},
     { path: 'theni-contact',component:TheniContactComponent},
     { path: 'ramanathapuram-contact',component:RamanathapuramContactComponent},
-    { path: 'theni-contact', component:TheniContactComponent},
+    { path: 'namakkal-contact',component:NamakkalContactComponent},
     { path: 'tirunelveli-contact', component:TirunelveliContactComponent},
     { path: 'trichy-contact', component:TrichyContactComponent},
+    { path: 'thanjavur-gallery', component:ThanjavurComponent},
 
 
 

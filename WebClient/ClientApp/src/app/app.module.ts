@@ -74,6 +74,7 @@ import { TirunelveliContactComponent } from './district-contact/tirunelveli-cont
 import { DharmapuriContactComponent } from './district-contact/dharmapuri-contact/dharmapuri-contact.component';
 import { NamakkalContactComponent } from './district-contact/namakkal-contact/namakkal-contact.component';
 import { RamanathapuramContactComponent } from './district-contact/ramanathapuram-contact/ramanathapuram-contact.component';
+import { ThanjavurComponent } from './gallery/thanjavur/thanjavur.component';
 
 
 @NgModule({
@@ -138,7 +139,8 @@ import { RamanathapuramContactComponent } from './district-contact/ramanathapura
     TirunelveliContactComponent,
     DharmapuriContactComponent,
     NamakkalContactComponent,
-    RamanathapuramContactComponent
+    RamanathapuramContactComponent,
+    ThanjavurComponent
   ],
   imports: [
     BrowserModule,
