@@ -21,3 +21,16 @@ h5{
      font-size:15px !important;
      color: black !important;
  }
+ @media only screen and (max-width: 500px) {
+    img{
+        max-width: 100% !important;
+    }   
+    #vid{
+        max-width: 103% !important;
+    }
+    #ivideo{
+        height:100% !important;
+        width:100% !important;
+    }
+
+}

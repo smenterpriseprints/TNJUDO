@@ -14,3 +14,13 @@ img{
     height:500px !important;
     width:100% !important;
 }
+@media only screen and (max-width: 500px) {
+    img{
+        max-width: 100% !important;
+    }   
+    #ivideo{
+        height:100% !important;
+        width: 145% !important;
+    }
+
+}

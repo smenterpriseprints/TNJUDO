@@ -53,3 +53,21 @@
     color:black !important;
     font-weight:500 !important;
 }
+#disdetails{
+    height:400px;
+     margin-left:150px;
+      margin-right:150px;
+}
+@media only screen and (max-width: 500px){
+    .middle-sec{
+        margin-left:70px !important;
+    }
+    .top-sec{
+        margin-top:20px !important;
+    }
+    #disdetails{
+        text-align: center !important;
+        margin-left:0px !important;
+        margin-right: 0px !important;
+    }
+}
