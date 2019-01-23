@@ -71,7 +71,7 @@ const appRoutes: Routes = [
     //{ path: 'Club', component: RegistrationClubComponent, canActivate: [AuthGuard] },
     { path: 'event', component: EventRegistrationComponent, canActivate: [AuthGuard] },
     {
-        path: 'home', component: LaunchComponent,
+        path: 'home', component: HomeComponent,
         //     children: [           
         //         { path: 'registration-district', component: './registration/registration-district.module#RegistrationDistrictModule' },
         // ]
