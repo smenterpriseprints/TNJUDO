@@ -77,6 +77,12 @@ import { RamanathapuramContactComponent } from './district-contact/ramanathapura
 import { ThanjavurComponent } from './gallery/thanjavur/thanjavur.component';
 import { RamanathapuramGalleryComponent } from './gallery/ramanathapuram-gallery/ramanathapuram-gallery.component';
 import { LaunchComponent } from './launch/launch.component';
+import { KarurComponent } from './gallery/karur/karur.component';
+import { News1Component } from './district-news/news1/news1.component';
+import { News2Component } from './district-news/news2/news2.component';
+import { News3Component } from './district-news/news3/news3.component';
+import { News4Component } from './district-news/news4/news4.component';
+import { VillupuramComponent } from './gallery/villupuram/villupuram.component';
 
 
 @NgModule({
@@ -144,7 +150,13 @@ import { LaunchComponent } from './launch/launch.component';
     RamanathapuramContactComponent,
     ThanjavurComponent,
     RamanathapuramGalleryComponent,
-    LaunchComponent
+    LaunchComponent,
+    KarurComponent,
+    News1Component,
+    News2Component,
+    News3Component,
+    News4Component,
+    VillupuramComponent
   ],
   imports: [
     BrowserModule,

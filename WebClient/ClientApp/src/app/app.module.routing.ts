@@ -59,6 +59,12 @@ import { TrichyContactComponent} from './district-contact/trichy-contact/trichy-
 import {ThanjavurComponent} from './gallery/thanjavur/thanjavur.component';
 import { RamanathapuramGalleryComponent } from './gallery/ramanathapuram-gallery/ramanathapuram-gallery.component';
 import {LaunchComponent} from './launch/launch.component';
+import {KarurComponent} from './gallery/karur/karur.component';
+import {News1Component} from './district-news/news1/news1.component';
+import {News2Component} from './district-news/news2/news2.component';
+import {News3Component} from './district-news/news3/news3.component';
+import {News4Component} from './district-news/news4/news4.component';
+import {VillupuramComponent} from './gallery/villupuram/villupuram.component';
  
  
 
@@ -118,10 +124,10 @@ const appRoutes: Routes = [
     { path: 'career', component: CareerComponent },
     { path: 'counciling', component: CouncilingComponent },
     { path: 'gallery', component: GalleryComponent },
-    { path: 'chennai', component:ChennaiComponent},
-    { path: 'kancheepuram',component:KancheepuramComponent},
-    { path: 'madurai',component:MaduraiComponent},
-    { path: 'theni',component:TheniComponent},
+    { path: 'chennai-gallery', component:ChennaiComponent},
+    { path: 'kancheepuram-gallery',component:KancheepuramComponent},
+    { path: 'madurai-gallery',component:MaduraiComponent},
+    { path: 'theni-gallery',component:TheniComponent},
     { path: 'national-gallery',component:NationalComponent},
     { path: 'state-gallery', component:StateComponent},
     { path: 'under-construction', component:ConstructionComponent},
@@ -137,6 +143,12 @@ const appRoutes: Routes = [
     { path: 'thanjavur-gallery', component:ThanjavurComponent},
     { path: 'ramanathapuram-gallery',component:RamanathapuramGalleryComponent},
     { path: 'launching-today', component:LaunchComponent},
+    { path: 'karur-gallery', component:KarurComponent},
+    { path:'district-news1',component:News1Component},
+    { path:'district-news2', component:News2Component},
+    { path:'district-news3',component:News3Component},
+    { path:'district-news4',component:News4Component},
+    { path:'villupuram-gallery',component:VillupuramComponent},
 
 
 
