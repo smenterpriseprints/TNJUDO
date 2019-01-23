@@ -58,6 +58,7 @@ import { TirunelveliContactComponent} from './district-contact/tirunelveli-conta
 import { TrichyContactComponent} from './district-contact/trichy-contact/trichy-contact.component';
 import {ThanjavurComponent} from './gallery/thanjavur/thanjavur.component';
 import { RamanathapuramGalleryComponent } from './gallery/ramanathapuram-gallery/ramanathapuram-gallery.component';
+import {LaunchComponent} from './launch/launch.component';
  
  
 
@@ -70,7 +71,7 @@ const appRoutes: Routes = [
     //{ path: 'Club', component: RegistrationClubComponent, canActivate: [AuthGuard] },
     { path: 'event', component: EventRegistrationComponent, canActivate: [AuthGuard] },
     {
-        path: 'home', component: HomeComponent,
+        path: 'home', component: LaunchComponent,
         //     children: [           
         //         { path: 'registration-district', component: './registration/registration-district.module#RegistrationDistrictModule' },
         // ]
@@ -135,6 +136,7 @@ const appRoutes: Routes = [
     { path: 'trichy-contact', component:TrichyContactComponent},
     { path: 'thanjavur-gallery', component:ThanjavurComponent},
     { path: 'ramanathapuram-gallery',component:RamanathapuramGalleryComponent},
+    { path: 'launching-today', component:LaunchComponent},
 
 
 
