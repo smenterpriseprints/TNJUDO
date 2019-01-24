@@ -69,6 +69,7 @@ import {Team1Component} from './halloffame/team1/team1.component';
 import {Team2Component} from './halloffame/team2/team2.component';
 import {Team3Component} from './halloffame/team3/team3.component';
 import {Team4Component} from './halloffame/team4/team4.component';
+import {PoliceComponent} from './gallery/police/police.component';
  
  
 
@@ -157,6 +158,7 @@ const appRoutes: Routes = [
     { path: 'team2', component:Team2Component},
     { path: 'team3', component:Team3Component},
     { path: 'team4', component:Team4Component},
+    { path: 'police-gallery', component:PoliceComponent},
 
 
 
