@@ -7,7 +7,8 @@
         color: white;
     }
 </style>
-
+<link rel="stylesheet" href="assets/js/slicknav.min.css" />
+<script src="assets/js/jquery.slicknav.min.js"></script>
 
 
 <script>
@@ -37,12 +38,16 @@
             }
         });
     });
+   
+    $(function(){
+        $('#menu').slicknav();
+    });
 </script>
 <!--Home Page Slider-->
+
 <div class="row">
 
     <div class="col-md-12">
-
         <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 980px; height: 600px; overflow: hidden;">
 
             <!-- Loading Screen -->
