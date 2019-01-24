@@ -65,6 +65,10 @@ import {News2Component} from './district-news/news2/news2.component';
 import {News3Component} from './district-news/news3/news3.component';
 import {News4Component} from './district-news/news4/news4.component';
 import {VillupuramComponent} from './gallery/villupuram/villupuram.component';
+import {Team1Component} from './halloffame/team1/team1.component';
+import {Team2Component} from './halloffame/team2/team2.component';
+import {Team3Component} from './halloffame/team3/team3.component';
+import {Team4Component} from './halloffame/team4/team4.component';
  
  
 
@@ -149,6 +153,10 @@ const appRoutes: Routes = [
     { path:'district-news3',component:News3Component},
     { path:'district-news4',component:News4Component},
     { path:'villupuram-gallery',component:VillupuramComponent},
+    { path: 'team1',component:Team1Component},
+    { path: 'team2', component:Team2Component},
+    { path: 'team3', component:Team3Component},
+    { path: 'team4', component:Team4Component},
 
 
 
