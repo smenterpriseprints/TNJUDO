@@ -1,6 +1,6 @@
 .page-title{
-    font-size: 18px !important;
-    color: black !important;
+    font-size: 32px !important;
+    color: white !important;
     font-weight: 500 !important;
 }
 img{
@@ -8,4 +8,10 @@ img{
     max-width: 90% !important;
     height: 500px !important;
     width:800px !important;
+}
+.des{
+    margin:25px 25px 25px 25px !important;
+    font-size:18px !important;
+    color:black !important;
+    font-weight:500 !important;
 }

@@ -8,3 +8,8 @@ img{
     max-width: 95% !important;   
     height:500px !important;
 }
+.title{
+    font-size: 22px !important;
+    color:white !important;
+    font-weight: 500 !important;
+}
