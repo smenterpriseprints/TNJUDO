@@ -21,7 +21,7 @@ h5{
      font-size:15px !important;
      color: black !important;
  }
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 600px) {
     img{
         max-width: 100% !important;
     }   
