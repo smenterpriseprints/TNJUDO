@@ -38,7 +38,7 @@
 
                 $ArrowKeyNavigation: 1,   			                //[Optional] Steps to go for each navigation request by pressing arrow key, default value is 1.
                 $SlideEasing: $Jease$.$OutQuint,                    //[Optional] Specifies easing for right to left animation, default value is $Jease$.$OutQuad
-                $SlideDuration: 3000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $SlideDuration: 4000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide, default value is 20
                 $SlideWidth: 1000,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
                 $SlideHeight: 600,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
@@ -94,7 +94,7 @@
         /* jssor slider loading skin spin css */
         .jssorl-009-spin img {
             animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
+            animation-duration: 2.6s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
@@ -223,6 +223,9 @@
  .bts-popup-container {
  margin: 8em auto;
  }
+ #mtopbar{
+        display:none !important;
+    } 
  }
  </style>
     <style>
@@ -309,7 +312,17 @@ aside,.sidebar-toggle-fold{
     header{
         display: none !important;
     }
-    
+    #mtopbar{
+        display:block !important;
+        background-color: white !important;
+    } 
+    .sidebar-header {
+        background-color: white !important;
+    }
+    .sidebar-open .sidebar{
+        width:70% !important;
+    }
+
 }
     </style>
 
@@ -319,9 +332,9 @@ aside,.sidebar-toggle-fold{
 
 
 <body>
-        <header class="topbar"  style="display:none !important">
-                <div class="topbar-left">
-                  <span style="display:none " class="topbar-btn sidebar-toggler"><i>☰</i></span>
+        <header class="topbar"  id="mtopbar">
+                <div class="topbar-left" >
+                  <span class="topbar-btn sidebar-toggler"><i>☰</i></span>
                   </div></header>
     <!-- Preloader -->
     <div class="preloader">
@@ -332,7 +345,7 @@ aside,.sidebar-toggle-fold{
         </div>
     </div>
      <!-- Sidebar -->
-     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm" >
+     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm"  >
 
             <header class="sidebar-header "  >
               <span class="logo">
@@ -341,7 +354,7 @@ aside,.sidebar-toggle-fold{
               <span class="sidebar-toggle-fold"><i>☰</i></span>
             </header>
       
-            <nav class="sidebar-navigation"  style="display:none">
+            <nav class="sidebar-navigation">
               <ul class="menu menu-sm menu-bordery">
       
                 <li class="menu-item active">
@@ -349,7 +362,7 @@ aside,.sidebar-toggle-fold{
                     <span class="icon ti-home"></span>
                     <span class="title">Home</span>
                   </a>
-                  <ul class="menu-submenu" style="z-index:999;">
+                  <ul class="menu-submenu" style="z-index:999;background-color: white;">
                         <li class="menu-item ">
                             <a class="menu-link" href="under-construction">
                                 <span class="title">History of Tamil Nadu Judo</span>
@@ -363,7 +376,7 @@ aside,.sidebar-toggle-fold{
                     <span class="icon ti-user"></span>
                     <span class="title">Registration</span>
                   </a>
-                  <ul class="menu-submenu" style="z-index:999; ">
+                  <ul class="menu-submenu" style="z-index:999;">
                             <li class="menu-item">
                                 <a class="menu-link" href="Club">
                                     <span class="title">Club</span>
@@ -408,7 +421,7 @@ aside,.sidebar-toggle-fold{
                             <a class="menu-link" href="#">
                                 <span class="title">News</span>
                             </a>
-                            <ul class="menu-sub-submenu" style="z-index:999;">
+                            <ul class="menu-sub-submenu" style="z-index:999;background-color: white !important">
                                 <li class="menu-item">
                                     <a class="menu-link" href="national-news">
                                         <span class="title">National</span>
@@ -450,7 +463,7 @@ aside,.sidebar-toggle-fold{
                     <span class="icon ti-settings"></span>
                     <span class="title">Educaton & Career</span>
                   </a>
-                  <ul class="menu-submenu" style="z-index:999;">
+                  <ul class="menu-submenu" style="z-index:999; ">
                     
                         <li class="menu-item">
                             <a class="menu-link" href="counciling">
@@ -476,7 +489,7 @@ aside,.sidebar-toggle-fold{
                           <span class="icon ti-receipt"></span>
                           <span class="title">Gallery</span>
                         </a>
-                        <ul class="menu-submenu" style="z-index:999;">
+                        <ul class="menu-submenu" style="z-index:999; ">
                                 <li class="menu-item ">
                                         <a class="menu-link" href="#">
                                             <span class="title">Police Team </span>
@@ -486,7 +499,7 @@ aside,.sidebar-toggle-fold{
                                     <a class="menu-link" href="#">
                                         <span class="title">District </span>
                                     </a>
-                                    <ul class="menu-sub-submenu" style="z-index:999">
+                                    <ul class="menu-sub-submenu" style="z-index:999; ">
                                         <li class="menu-item" style="float:left; border:none;">
                                             <a class="menu-link" style="display:inline-block" href="under-construction">
                                                 <span class="title">Ariyalur</span>
@@ -674,7 +687,7 @@ aside,.sidebar-toggle-fold{
                                   <span class="icon ti-receipt"></span>
                                   <span class="title">Ecommerce</span>
                                 </a>
-                                <ul class="menu-submenu" style="z-index:999;">
+                                <ul class="menu-submenu" style="z-index:999; ">
                                         <li class="menu-item">
                                             <a class="menu-link" href="under-construction">
                                                 <span class="title">Judo Products</span>
