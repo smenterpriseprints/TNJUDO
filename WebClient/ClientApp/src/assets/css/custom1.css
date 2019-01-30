@@ -41,13 +41,13 @@ label{
 	background-color: orange !important;
 }
 @media only screen and (max-width: 600px) {
-	.menu-submenu,.menu-sub-sub-submenu,.title{
+	.menu-submenu,.menu-sub-sub-submenu{
 		background-color: white !important;
-		color:black !important;
-		font-weight:500 !important;
 	}
-	.menu-submenu .menu-link .title, .menu-sub-submenu .menu-link .title{
-		font-weight:600 !important;
+	.menu-submenu .menu-item .title, .menu-sub-submenu .menu-item .title , .menu-item .title{
+		font-weight:500 !important;
+		color:black !important;
+		background-color: white !important;
 	}
 	
 }
