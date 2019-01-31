@@ -273,6 +273,12 @@
             font-family:Lato;
             color:white;
         }
+        #testslide{
+            font-weight:600;
+            font-size:18px;
+            font-family:Lato;
+            color:white;
+        }
         .site-footer{
             background: linear-gradient(#EC1711, orange) !important;
             color:black !important;
@@ -332,10 +338,11 @@ aside,.sidebar-toggle-fold{
 
 
 <body>
-        <header class="topbar"  id="mtopbar">
-                <div class="topbar-left" >
-                  <span class="topbar-btn sidebar-toggler"><i>☰</i></span>
-                  </div></header>
+    <header class="topbar" id="mtopbar">
+        <div class="topbar-left">
+            <span class="topbar-btn sidebar-toggler"><i>☰</i></span>
+        </div>
+    </header>
     <!-- Preloader -->
     <div class="preloader">
         <div class="spinner-dots">
@@ -344,70 +351,70 @@ aside,.sidebar-toggle-fold{
             <span class="dot3"></span>
         </div>
     </div>
-     <!-- Sidebar -->
-     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm"  >
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm">
 
-            <header class="sidebar-header "  >
-              <span class="logo">
-                <a href="index.html"><img src="assets/img/001.jpg" alt="logo"  style="    width: 25%;"></a>
-              </span>
-              <span class="sidebar-toggle-fold"><i>☰</i></span>
-            </header>
-      
-            <nav class="sidebar-navigation">
-              <ul class="menu menu-sm menu-bordery">
-      
+        <header class="sidebar-header ">
+            <span class="logo">
+                <a href="index.html"><img src="assets/img/001.jpg" alt="logo" style="    width: 25%;"></a>
+            </span>
+            <span class="sidebar-toggle-fold"><i>☰</i></span>
+        </header>
+
+        <nav class="sidebar-navigation">
+            <ul class="menu menu-sm menu-bordery">
+
                 <li class="menu-item active">
-                  <a class="menu-link" href="home">
-                    <span class="icon ti-home"></span>
-                    <span class="title">Home</span>
-                  </a>
-                 
+                    <a class="menu-link" href="home">
+                        <span class="icon ti-home"></span>
+                        <span class="title">Home</span>
+                    </a>
+
                 </li>
-      
+
                 <li class="menu-item">
-                  <a class="menu-link" href="#">
-                    <span class="icon ti-user"></span>
-                    <span class="title">Registration</span>
-                    <span class="arrow"></span>
-                  </a>
-                  <ul class="menu-submenu" style="z-index:999;">
-                            <li class="menu-item">
-                                <a class="menu-link" href="Club">
-                                    <span class="title">Club</span>
-                                </a>
+                    <a class="menu-link" href="#">
+                        <span class="icon ti-user"></span>
+                        <span class="title">Registration</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999;">
+                        <li class="menu-item">
+                            <a class="menu-link" href="Club">
+                                <span class="title">Club</span>
+                            </a>
 
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" [routerLink]="['Student']" href="student">
-                                    <span class="title">Student</span>
-                                </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" [routerLink]="['Student']" href="student">
+                                <span class="title">Student</span>
+                            </a>
 
-                            </li>
+                        </li>
 
-                            <li class="menu-item">
-                                <a class="menu-link" href="Tournament">
-                                    <span class="title">Tournament</span>
-                                </a>
-                            </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="Tournament">
+                                <span class="title">Tournament</span>
+                            </a>
+                        </li>
 
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Payment</span>
-                                    <!--<span class="arrow"></span>-->
-                                </a>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Payment</span>
+                                <!--<span class="arrow"></span>-->
+                            </a>
 
-                            </li>
-                        </ul>
+                        </li>
+                    </ul>
                 </li>
-      
+
                 <li class="menu-item">
-                  <a class="menu-link" href="#">
-                    <span class="icon ti-briefcase"></span>
-                    <span class="title">News & Events</span>
-                    <span class="arrow"></span>
-                  </a>
-                  <ul class="menu-submenu" style="z-index:999;">
+                    <a class="menu-link" href="#">
+                        <span class="icon ti-briefcase"></span>
+                        <span class="title">News & Events</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999;">
                         <li class="menu-item">
                             <a class="menu-link" href="events">
                                 <span class="title">Events</span>
@@ -451,22 +458,22 @@ aside,.sidebar-toggle-fold{
 
                     </ul>
                 </li>
-      
+
                 <li class="menu-item">
-                  <a class="menu-link" href="district-contact">
-                    <span class="icon ti-receipt"></span>
-                    <span class="title">District Contact</span>
-                  </a>
+                    <a class="menu-link" href="district-contact">
+                        <span class="icon ti-receipt"></span>
+                        <span class="title">District Contact</span>
+                    </a>
                 </li>
-      
+
                 <li class="menu-item">
-                  <a class="menu-link" href="#">
-                    <span class="icon ti-settings"></span>
-                    <span class="title">Educaton & Career</span>
-                    <span class="arrow"></span>
-                  </a>
-                  <ul class="menu-submenu" style="z-index:999; ">
-                    
+                    <a class="menu-link" href="#">
+                        <span class="icon ti-settings"></span>
+                        <span class="title">Educaton & Career</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999; ">
+
                         <li class="menu-item">
                             <a class="menu-link" href="counciling">
                                 <span class="title">Counciling</span>
@@ -487,259 +494,259 @@ aside,.sidebar-toggle-fold{
                     </ul>
                 </li>
                 <li class="menu-item">
-                        <a class="menu-link" href="#">
-                          <span class="icon ti-receipt"></span>
-                          <span class="title">Gallery</span>
-                          <span class="arrow"></span>
-                        </a>
-                        <ul class="menu-submenu" style="z-index:999; ">
-                                <li class="menu-item ">
-                                        <a class="menu-link" href="police-gallery">
-                                            <span class="title">Police Team </span>
-                                        </a>
-                                </li>
-                                <li class="menu-item ">
-                                    <a class="menu-link" href="#">
-                                        <span class="title">District </span>
-                                        <span class="arrow"></span>
+                    <a class="menu-link" href="#">
+                        <span class="icon ti-receipt"></span>
+                        <span class="title">Gallery</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999; ">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="police-gallery">
+                                <span class="title">Police Team </span>
+                            </a>
+                        </li>
+                        <li class="menu-item ">
+                            <a class="menu-link" href="#">
+                                <span class="title">District </span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="menu-sub-submenu" style="z-index:999; background-color: white !important">
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Ariyalur</span>
                                     </a>
-                                    <ul class="menu-sub-submenu" style="z-index:999; background-color: white !important">
-                                        <li class="menu-item">
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Ariyalur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" style="display:inline-block" href="chennai-gallery">
-                                                <span class="title">Chennai</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Coimbatore</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Cuddalore</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Dharmapuri</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Dindigul</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Erode</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="kancheepuram-gallery">
-                                                <span class="title">Kanchipuram</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Kanniyakumari</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="karur-gallery">
-                                                <span class="title">Karur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Krishnagiri</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="madurai-gallery">
-                                                <span class="title">Madurai</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Nagapattinam</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Namakkal</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Nilgiris</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Perambalur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Pudukkottai</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Ramanathapuram</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Salem</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Sivaganga</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="thanjavur-gallery">
-                                                <span class="title">Thanjavur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="theni-gallery">
-                                                <span class="title">Theni</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Thoothukudi</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tiruchirappalli</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tirunelveli</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tiruppur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tiruvallur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tiruvannamalai</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Tiruvarur</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Vellore</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="villupuram-gallery">
-                                                <span class="title">Viluppuram</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item" >
-                                            <a class="menu-link" style="display:inline-block" href="under-construction">
-                                                <span class="title">Virudhunagar</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li class="menu-item">
-                                    <a class="menu-link" href="state-gallery">
-                                        <span class="title">State</span>
+                                    <a class="menu-link" style="display:inline-block" href="chennai-gallery">
+                                        <span class="title">Chennai</span>
                                     </a>
                                 </li>
-    
-                                <li class="menu-item" >
-                                    <a class="menu-link" href="under-construction">
-                                        <span class="title">National</span>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Coimbatore</span>
                                     </a>
                                 </li>
-    
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Cuddalore</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Dharmapuri</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Dindigul</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Erode</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="kancheepuram-gallery">
+                                        <span class="title">Kanchipuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Kanniyakumari</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="karur-gallery">
+                                        <span class="title">Karur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Krishnagiri</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="madurai-gallery">
+                                        <span class="title">Madurai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Nagapattinam</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Namakkal</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Nilgiris</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Perambalur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Pudukkottai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Ramanathapuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Salem</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Sivaganga</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="thanjavur-gallery">
+                                        <span class="title">Thanjavur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="theni-gallery">
+                                        <span class="title">Theni</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Thoothukudi</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruchirappalli</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tirunelveli</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruppur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvallur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvannamalai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvarur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Vellore</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="villupuram-gallery">
+                                        <span class="title">Viluppuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Virudhunagar</span>
+                                    </a>
+                                </li>
                             </ul>
-                      </li>
-                      <li class="menu-item">
-                            <a class="menu-link" href="halloffame">
-                              <span class="icon ti-receipt"></span>
-                              <span class="title">Hall of Fame</span>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="state-gallery">
+                                <span class="title">State</span>
                             </a>
-                          </li>
-                          <li class="menu-item">
-                                <a class="menu-link" href="#">
-                                  <span class="icon ti-receipt"></span>
-                                  <span class="title">Ecommerce</span>
-                                  <span class="arrow"></span>
-                                </a>
-                                <ul class="menu-submenu" style="z-index:999; ">
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">Judo Products</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">Sport Products</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">Nutrition Products</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">General Retails</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">Pharmaceuticals</span>
-                                            </a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a class="menu-link" href="under-construction">
-                                                <span class="title">Insurance </span>
-                                            </a>
-                                        </li>
-                                    
-                                    </ul>
-                              </li>
-                              <li class="menu-item">
-                                    <a class="menu-link" href="under-construction">
-                                      <span class="icon ti-receipt"></span>
-                                      <span class="title">Tution</span>
-                                    </a>
-                                  </li>
-      
-              </ul>
-            </nav>
-      
-          </aside>
-          <!-- END Sidebar -->
-      
-      
+                        </li>
+
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">National</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="halloffame">
+                        <span class="icon ti-receipt"></span>
+                        <span class="title">Hall of Fame</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span class="icon ti-receipt"></span>
+                        <span class="title">Ecommerce</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999; ">
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Judo Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Sport Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Nutrition Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">General Retails</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Pharmaceuticals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Insurance </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="under-construction">
+                        <span class="icon ti-receipt"></span>
+                        <span class="title">Tution</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+    <!-- END Sidebar -->
+
+
 
     <!-- Preloader -->
     <!--
@@ -747,63 +754,65 @@ aside,.sidebar-toggle-fold{
            | Three parts TOP BAR
            |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
            !-->
-           <center>
-           <div class="col-sm-12 mobile-menu" style="display:none" >
-                   
-             
-                <div class="row">
-                        <div class="col-lg-3" style="    width: 25%;">
-                            <img src="assets/img/Ilamparuthi.jpeg" width="75" height="75" alt="TNJA LOGO">
-                        </div>
-        
-                        <div class="col-lg-3" style="    width: 25%;">
-                            <img src="assets/img/image1.jpeg" width="75" height="75" alt="TNJA LOGO">
-                        </div>
-                        <div class="col-lg-3" style="    width: 25%;">
-                            <img src="assets/img/2.jpg" width="75" height="75" alt="TNJA LOGO">
-                        </div>
-                        <div class="col-lg-3" style="    width: 25%;">
-                            <img src="assets/img/sadiish 2.jpg" width="75" height="75" alt="TNJA LOGO">
-                        </div>
-        
-                    </div>
-          </div>
-          </br>
-          <div class="col-sm-12 mobile-menu" style="display:none" >
-                <img src="assets/img/001.jpg" width="75" height="75" alt="TNJA LOGO"></br>
-        
-                <p><code id="title1" style="font-size:26px">Tamil Nadu Judo Association</code></p>
-              </div>
-            
-              <div class="col-sm-12 mobile-menu" style="display:none" >
-                    <div class="row">
-                            <div class="col-sm-3" style="    width: 25%;">
-                                <img src="assets/img/image2.jpg" width="75" height="75" alt="TNJA LOGO">
-                            </div>
-                            <div class="col-sm-3" style="    width: 25%;">
-                                <img src="assets/img/image3.jpeg" width="75" height="75" alt="TNJA LOGO">
-                            </div>
-                            <div class="col-sm-3" style="    width: 25%;">
-                                <img src="assets/img/jaiswal.jpg" width="75" height="75" alt="TNJA LOGO">
-                            </div>
-                            <div class="col-sm-3" style="    width: 25%;">
-                                <img src="assets/img/kano6.jpg" width="75" height="75" alt="TNJA LOGO">
-                            </div>
-                        </div>
-                            
-       </div>   
-                  
-            </center>
-            
+    <center>
+        <div class="col-sm-12 mobile-menu" style="display:none">
 
+
+            <div class="row">
+                <div class="col-lg-3" style="    width: 25%;">
+                    <img src="assets/img/Ilamparuthi.jpeg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+
+                <div class="col-lg-3" style="    width: 25%;">
+                    <img src="assets/img/image1.jpeg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-lg-3" style="    width: 25%;">
+                    <img src="assets/img/2.jpg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-lg-3" style="    width: 25%;">
+                    <img src="assets/img/sadiish 2.jpg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+
+            </div>
+        </div>
+        </br>
+        <div class="col-sm-12 mobile-menu" style="display:none">
+            <img src="assets/img/001.jpg" width="75" height="75" alt="TNJA LOGO"></br>
+
+            <p><code id="title1" style="font-size:26px">Tamil Nadu Judo Association</code></p>
+        </div>
+
+        <div class="col-sm-12 mobile-menu" style="display:none">
+            <div class="row">
+                <div class="col-sm-3" style="    width: 25%;">
+                    <img src="assets/img/image2.jpg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-sm-3" style="    width: 25%;">
+                    <img src="assets/img/image3.jpeg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-sm-3" style="    width: 25%;">
+                    <img src="assets/img/jaiswal.jpg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+                <div class="col-sm-3" style="    width: 25%;">
+                    <img src="assets/img/kano6.jpg" width="75" height="75" alt="TNJA LOGO">
+                </div>
+            </div>
+
+        </div>
+
+    </center>
+
+    <marquee id="testslide" direction="left"> Website under testing and development. Support only
+            Chrome and Firefox </marquee>
     <header class="topbar" style="height:110px !important">
         <div class="topbar-left">
-                <span style="display:none" class="topbar-btn sidebar-toggler"><i>&#9776;</i></span>
-                <span class="sidebar-toggle-fold"></span>
-                
-     
-    </aside>
-    <!-- END Sidebar -->     
+            <span style="display:none" class="topbar-btn sidebar-toggler"><i>&#9776;</i></span>
+            <span class="sidebar-toggle-fold"></span>
+
+
+            </aside>
+            <!-- END Sidebar -->
+            
             <div class="row">
                 <div class="col-lg-3">
                     <img src="assets/img/Ilamparuthi.jpeg" width="75" height="75" alt="TNJA LOGO">
@@ -865,7 +874,7 @@ aside,.sidebar-toggle-fold{
                         <a class="menu-link" href="home">
                             <span class="title">Home</span>
                         </a>
-                        
+
                     </li>
 
                     <li class="menu-item">
@@ -943,295 +952,295 @@ aside,.sidebar-toggle-fold{
                                             </li>
                                         </ul>
                                 </ul>
-                                <li class="menu-item ">
-                                    <a class="menu-link" href="under-construction">
-                                        <span class="title">History of Tamil Nadu Judo</span>
+                            <li class="menu-item ">
+                                <a class="menu-link" href="under-construction">
+                                    <span class="title">History of Tamil Nadu Judo</span>
+                                </a>
+                            </li>
+
+                    </li>
+
+                </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="district-contact">
+                        <span class="title">District Contact</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span class="title">Education & Careers</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999;">
+
+                        <li class="menu-item">
+                            <a class="menu-link" href="counciling">
+                                <span class="title">Counciling</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-item" style="float:left;">
+                            <a class="menu-link" href="career">
+                                <span class="title">Career Options</span>
+                            </a>
+                        </li>
+                        <li class="menu-item" style="float:left;">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Testimonials</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span class="title">Gallery </span>
+                        <span class="arrow"></span>
+
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999;">
+                        <li class="menu-item ">
+                            <a class="menu-link" href="police-gallery">
+                                <span class="title">Police Team </span>
+                            </a>
+                        </li>
+                        <li class="menu-item ">
+                            <a class="menu-link" href="#">
+                                <span class="title">District </span>
+                            </a>
+                            <ul class="menu-sub-submenu" style="z-index:999; background-color: orange;">
+                                <li class="menu-item" style="float:left; border:none;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Ariyalur</span>
                                     </a>
                                 </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="chennai-gallery">
+                                        <span class="title">Chennai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Coimbatore</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Cuddalore</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Dharmapuri</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Dindigul</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Erode</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="kancheepuram-gallery">
+                                        <span class="title">Kanchipuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Kanniyakumari</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="karur-gallery">
+                                        <span class="title">Karur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Krishnagiri</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="madurai-gallery">
+                                        <span class="title">Madurai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Nagapattinam</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Namakkal</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Nilgiris</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Perambalur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Pudukkottai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Ramanathapuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Salem</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Sivaganga</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="thanjavur-gallery">
+                                        <span class="title">Thanjavur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="theni-gallery">
+                                        <span class="title">Theni</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Thoothukudi</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruchirappalli</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tirunelveli</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruppur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvallur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvannamalai</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Tiruvarur</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Vellore</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="villupuram-gallery">
+                                        <span class="title">Viluppuram</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" style="float:left;">
+                                    <a class="menu-link" style="display:inline-block" href="under-construction">
+                                        <span class="title">Virudhunagar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="state-gallery">
+                                <span class="title">State</span>
+                            </a>
+                        </li>
 
-                            </li>
+                        <li class="menu-item" style="float:left;">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">National</span>
+                            </a>
+                        </li>
 
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="district-contact">
-                            <span class="title">District Contact</span>
-                        </a>
-                    </li>
+                    </ul>
+                </li>
 
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <span class="title">Education & Careers</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="menu-submenu" style="z-index:999;">
-                        
-                            <li class="menu-item">
-                                <a class="menu-link" href="counciling">
-                                    <span class="title">Counciling</span>
-                                </a>
-                            </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="halloffame">
+                        <span class="title">Hall of Fame</span>
 
-                            <li class="menu-item" style="float:left;">
-                                <a class="menu-link" href="career">
-                                    <span class="title">Career Options</span>
-                                </a>
-                            </li>
-                            <li class="menu-item" style="float:left;">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Testimonials</span>
-                                </a>
-                            </li>
+                    </a>
+                </li>
 
-                        </ul>
-                    </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">
+                        <span class="title">Ecommerce</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="menu-submenu" style="z-index:999;">
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Judo Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Sport Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Nutrition Products</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">General Retails</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Pharmaceuticals</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="under-construction">
+                                <span class="title">Insurance </span>
+                            </a>
+                        </li>
 
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <span class="title">Gallery </span>
-                            <span class="arrow"></span>
+                    </ul>
+                </li>
 
-                        </a>
-                        <ul class="menu-submenu" style="z-index:999;">
-                                <li class="menu-item ">
-                                        <a class="menu-link" href="police-gallery">
-                                            <span class="title">Police Team </span>
-                                        </a>
-                                        </li>
-                            <li class="menu-item ">
-                                <a class="menu-link" href="#">
-                                    <span class="title">District </span>
-                                </a>
-                                <ul class="menu-sub-submenu" style="z-index:999; background-color: orange;">
-                                    <li class="menu-item" style="float:left; border:none;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Ariyalur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="chennai-gallery">
-                                            <span class="title">Chennai</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Coimbatore</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Cuddalore</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Dharmapuri</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Dindigul</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Erode</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="kancheepuram-gallery">
-                                            <span class="title">Kanchipuram</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Kanniyakumari</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="karur-gallery">
-                                            <span class="title">Karur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Krishnagiri</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="madurai-gallery">
-                                            <span class="title">Madurai</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Nagapattinam</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Namakkal</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Nilgiris</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Perambalur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Pudukkottai</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Ramanathapuram</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Salem</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Sivaganga</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="thanjavur-gallery">
-                                            <span class="title">Thanjavur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="theni-gallery">
-                                            <span class="title">Theni</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Thoothukudi</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tiruchirappalli</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tirunelveli</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tiruppur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tiruvallur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tiruvannamalai</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Tiruvarur</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Vellore</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="villupuram-gallery">
-                                            <span class="title">Viluppuram</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item" style="float:left;">
-                                        <a class="menu-link" style="display:inline-block" href="under-construction">
-                                            <span class="title">Virudhunagar</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="state-gallery">
-                                    <span class="title">State</span>
-                                </a>
-                            </li>
-
-                            <li class="menu-item" style="float:left;">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">National</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                    <li class="menu-item">
-                        <a class="menu-link" href="halloffame">
-                            <span class="title">Hall of Fame</span>
-
-                        </a>
-                    </li>
-
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            <span class="title">Ecommerce</span>
-                            <span class="arrow"></span>
-                        </a>
-                        <ul class="menu-submenu" style="z-index:999;">
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Judo Products</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Sport Products</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Nutrition Products</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">General Retails</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Pharmaceuticals</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="under-construction">
-                                    <span class="title">Insurance </span>
-                                </a>
-                            </li>
-                        
-                        </ul>
-                    </li>
-
-                    <li class="menu-item">
-                        <a class="menu-link" href="under-construction">
-                            <span class="title">Tution</span>
-                        </a>
-                    </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="under-construction">
+                        <span class="title">Tution</span>
+                    </a>
+                </li>
             </nav>
         </div>
     </header>
