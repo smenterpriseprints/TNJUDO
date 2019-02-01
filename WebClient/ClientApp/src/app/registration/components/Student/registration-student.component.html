@@ -16,7 +16,11 @@
             <div class="card-body" style="background-color: orange">
                 <form [formGroup]="registrationForm" (ngSubmit)="onStudentRegistration()" data-provide="wizard">
                     <ul class="nav nav-process nav-process-circle">
-                        <li class="nav-item">
+                       <li class="nav-item">
+                        <span class="nav-title" style="font-size:25px">Student Registration will be activated in 30days </span>
+                       </li>
+                       
+                       <!-- <li class="nav-item">
                             <span class="nav-title" style="color:black">Club Selection</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-1"></a>
                         </li>
@@ -25,7 +29,7 @@
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-2"></a>
                         </li>   
 
-                       <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <span class="nav-title" style="color:black">Subscribe</span>
                             <a class="nav-link" data-toggle="tab" href="#wizard-form-3"></a>
                         </li>
@@ -37,7 +41,7 @@
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane fade active show" id="wizard-form-1">
+                        <div class="tab-pane fade" id="wizard-form-1"> <!-- active show" command to be added during live -->
                             <div class="row">
                                 <div class="form-group col-md-8">
                                     <label class="col-form-label">Select your District </label>
