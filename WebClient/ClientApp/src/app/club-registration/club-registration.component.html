@@ -28,7 +28,7 @@
                             <br>
                             <div class="form-row" style="background-color:orange;">
 
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-10">
                                     <label for="District" class="col-form-label">Choose your District</label>
                                     <jqxDropDownButton #districtdropdown [width]="190" [height]="35">
                                         <jqxGrid #districtdropdowngrid (onRowselect)="districtdropdownselect($event)"
@@ -40,13 +40,15 @@
 
                                 </div>
 
-                                <div class="form-group col-md-8">
+                                <div class="form-group col-md-4">
                                     <label for="ClubArea" class="col-form-label">Enter Club Area</label>
                                     <custom-textbox [group]="clubregistration" name="ClubArea" [required]="true"
                                         [editMode]="isEditMode" [isValid]="isValid" [max]="100" placeHolder="Club Area"></custom-textbox>
                                 </div>
-
-
+                                <div class="form-group col-md-6">
+                                    <br>
+                                </div>
+                               
                                 <div class="form-group col-md-8">
                                     <label for="ClubName" class="col-form-label">Name Of the Club</label>
                                     <custom-textbox [group]="clubregistration" name="ClubName" [required]="true"

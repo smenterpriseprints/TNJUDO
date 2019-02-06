@@ -1,6 +1,6 @@
 .page-title{
     font-size: 26px !important;
-    color: black !important;
+    color:white !important;
     font-weight: 500 !important;
 }
 img{
@@ -9,4 +9,9 @@ img{
     height:500px !important;
     width:700px !important;
     
+}
+.title{
+    font-size: 22px !important;
+    color:white !important;
+    font-weight: 500 !important;
 }

@@ -88,6 +88,8 @@ import { Team2Component } from './halloffame/team2/team2.component';
 import { Team3Component } from './halloffame/team3/team3.component';
 import { Team4Component } from './halloffame/team4/team4.component';
 import { PoliceComponent } from './gallery/police/police.component';
+import { TiruppurComponent } from './gallery/tiruppur/tiruppur.component';
+import { NamakkalComponent } from './gallery/namakkal/namakkal.component';
 
 
 @NgModule({
@@ -166,7 +168,9 @@ import { PoliceComponent } from './gallery/police/police.component';
     Team2Component,
     Team3Component,
     Team4Component,
-    PoliceComponent
+    PoliceComponent,
+    TiruppurComponent,
+    NamakkalComponent
   ],
   imports: [
     BrowserModule,
