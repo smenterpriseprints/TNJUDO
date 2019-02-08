@@ -34,13 +34,12 @@ export class ClubRegistrationComponent implements OnInit {
   columns: any[] =
     [
 
-      { text: 'District Name', datafield: 'DistrictName'},
+      { text: 'District Name', datafield: 'DistrictName' },
     ];
   ready = (): void => {
     //this.districtdropdowngrid.selectrow(-1);
   }
   districtdropdownselect(event: any): void {
-    debugger;
     let args = event.args;
     let row = this.districtdropdowngrid.getrowdata(args.rowindex);
     let dropDownContent = '<div style="position: relative; margin-left: 3px; margin-top: 5px;">' + row['DistrictName'] + '</div>';
@@ -60,7 +59,6 @@ export class ClubRegistrationComponent implements OnInit {
 
   ngOnInit() {
     this.changeDetectorRef.detectChanges();
-    debugger;
   }
 
   onSelectPhoto(event, modelName) {
@@ -80,7 +78,6 @@ export class ClubRegistrationComponent implements OnInit {
   }
 
   onClubSubmiit() {
-    debugger;
     if (this.clubregistration.valid) {
       let clubRegistrationForm = this.clubregistration.value;
       clubRegistrationForm.District = this.registrationTempData.district;
@@ -92,7 +89,10 @@ export class ClubRegistrationComponent implements OnInit {
         let parsedData = JSON.parse(response._body);
         if (parsedData.Status == "Success") {
           this.displayMessage.NotifyDomToasterMessage("Club Registered Successfully." + parsedData.Message, parsedData.Status);
-          //this.router.navigate(['/Tournament']);
+          let routerins = this.router;
+          setTimeout(function () {
+            routerins.navigate(['home'])
+          }, 1000)
         }
         else if (parsedData.Status == "Warning") {
           this.displayMessage.NotifyDomToasterMessage(parsedData.Message, parsedData.Status);
@@ -102,7 +102,6 @@ export class ClubRegistrationComponent implements OnInit {
         }
       },
         err => {
-          debugger;
 
         });
     }
